@@ -1,0 +1,6 @@
+[submodule "MATHWELL"]
+	path = MATHWELL
+	url = https://github.com/bryanchrist/MATHWELL.git
+[submodule "InfoBench"]
+	path = InfoBench
+	url = https://github.com/qinyiwei/InfoBench.git

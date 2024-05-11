@@ -1,0 +1,29 @@
+{
+    "models" : {
+        "llama3" : {
+            "model_name" : "llama3",
+            "base_url" : "http://localhost:11434/v1",
+            "api_key" : "ollama"
+        },
+        "mistral" : {
+            "model_name" : "mistral",
+            "base_url" : "http://localhost:11434/v1",
+            "api_key" : "ollama"
+        },
+        "gemma" : {
+            "model_name" : "gemma",
+            "base_url" : "http://localhost:11434/v1",
+            "api_key" : "ollama"
+        },
+        "gpt4" : {
+            "model_name" : "gpt-4-turbo",
+            "base_url" : "",
+            "api_key": "openai"
+        },
+        "gpt3" : {
+            "model_name" : "gpt-3.5-turbo-0125",
+            "base_url" : "",
+            "api_key": "openai"
+        }
+    }
+}

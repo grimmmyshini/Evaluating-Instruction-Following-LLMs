@@ -25,7 +25,7 @@ from absl import app
 from absl import flags
 from absl import logging
 
-from instruction_following_eval import instructions_registry
+import instructions_registry
 
 
 _INPUT_DATA = flags.DEFINE_string(

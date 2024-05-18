@@ -24,7 +24,7 @@ from typing import Dict, Optional, Sequence, Union
 from absl import logging
 import langdetect
 
-from instruction_following_eval import instructions_util
+import instructions_util
 
 
 _InstructionArgsDtype = Optional[Dict[str, Union[int, str, Sequence[str]]]]
@@ -1564,3 +1564,97 @@ class QuotationChecker(Instruction):
     """Checks if the response is wrapped with double quotation marks."""
     value = value.strip()
     return len(value) > 1 and value[0] == '"' and value[-1] == '"'
+
+class StepsChecker(Instruction):
+  """Checks existence of steps."""
+
+  def build_description(self, min_steps = None, max_steps = None):
+    """Build the instruction description.
+
+    Args:
+      min_steps: An integer specifying the minimum number of steps.
+      max_steps: An integer specifying the max number of steps.
+
+    Returns:
+      A string representing the instruction description.
+    """
+    base = "Answer in a step-by-step manner. Each step should contain the highlighted step number. Use markdown to highlight, i.e. **Step i:**, where i is the current step number."
+    self.min_max = None
+    self.max_steps = None
+    self.min_steps = 1
+    if min_steps and max_steps is not None:
+      assert min_steps <= max_steps
+      self._description_pattern = (base + " Your answer should contain between {min_steps} to {max_steps} steps.")
+      self.min_steps = min_steps
+      self.max_steps = max_steps
+    elif min_steps is not None:
+      self._description_pattern = (base + " Your answer should contain a {min_max} of {min_steps} steps.")
+      self.min_steps = min_steps
+      self.min_max = "minimum"
+    elif max_steps is not None:
+      assert max_steps > 0
+      self._description_pattern = (base + " Your answer should contain a {min_max} of {max_steps} steps.")
+      self.max_steps = max_steps
+      self.min_max = "maximum"
+    else:
+      self._description_pattern = (base)
+
+    return self._description_pattern.format(min_max=self.min_max, max_steps=self.max_steps,min_steps=self.min_steps)
+
+  def get_instruction_args(self):
+    """Returns the keyward args of `build_description`."""
+    return {'min_steps':self.min_steps, 'max_steps':self.max_steps}
+
+  def get_instruction_args_keys(self):
+    """Returns the args keys of `build_description`."""
+    return ["min_steps", "max_steps"]
+
+  def check_following(self, value):
+    """Checks if the number of steps meets the requirement.
+
+    Args:
+      value: a string repesenting the response. The response is expected to
+        contain highlighted steps in the format **Step i:**.
+
+    Returns:
+      True if the response follows the instruction; otherwise False.
+    """
+    highlights = re.findall(r'\*\*Step \d+:\*\*', value)
+    steps = re.findall(r'Step \d+:', value)
+    max_cnstr = True
+    if self.max_steps is not None:
+      max_cnstr = len(highlights) <= self.max_steps
+    return len(highlights) == len(steps) and len(highlights) >= self.min_steps and max_cnstr
+
+
+class AnswerHighlightChecker(Instruction):
+  """Checks existence of a highlighted answer."""
+
+  def build_description(self):
+    """Build the instruction description.
+
+    Returns:
+      A string representing the instruction description.
+    """
+    self._description_pattern = ("Highlight the final answer (and the final answer only) in bold.")
+    return self._description_pattern.format()
+
+  def get_instruction_args(self):
+    """Returns the keyward args of `build_description`."""
+    return None
+
+  def get_instruction_args_keys(self):
+    """Returns the args keys of `build_description`."""
+    return []
+
+  def check_following(self, value):
+    """Checks if the number of steps meets the requirement.
+
+    Args:
+      value: a string repesenting the response.
+
+    Returns:
+      True if the response follows the instruction; otherwise False.
+    """
+    ans = re.findall(r'\*\*(.*?)\*\*', value)
+    return len(ans) == 1

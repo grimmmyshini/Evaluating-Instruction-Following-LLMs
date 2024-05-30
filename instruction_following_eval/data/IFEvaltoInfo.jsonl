@@ -1,0 +1,1455 @@
+{
+    "id": "",
+    "input": "Adam and Eve",
+    "category": "",
+    "instruction": "Write a document entirely in the Portuguese language, no other language is allowed, about Adam and Eve. Additionally, make sure to wrap your entire response with double quotation marks.",
+    "decomposed_questions": [
+        "Does the generated text have any other language?",
+        "Is the generated text about Adam and Eve?",
+        "Is the entire response wrapped with double quotation marks?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Linguistic"],
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "2000 presidential election",
+    "category": "",
+    "instruction": "Write a 200 word essay on the 2000 presidential election. The title should be wrapped in double angular brackets, i.e. <<title>>.",
+    "decomposed_questions": [
+        "Is the text approximately 200 words?",
+        "Is the essay about the 2000 presidential election?",
+        "Is the title wrapped in double angular brackets?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Length"],
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "how to learn a language",
+    "category": "",
+    "instruction": "Improve the following text, which is about how to learn a language. Also, provide two alternatives. The text is: \"The best way to learn about a new culture is by living in it. Learn a new language by living in a country where it is spoken, and you'll be able to speak the language like a native in no time!\". Finish your response with \"Is there anything else I can help with?\". No other words should follow this phrase.",
+    "decomposed_questions": [
+        "Are there improvements made to the provided text?",
+        "Are there two alternative versions provided?",
+        "Does the response end with 'Is there anything else I can help with?' and no other words follow?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "limerick about nursery and storytelling",
+    "category": "",
+    "instruction": "Rewrite the limerick in a strange way. In particular, the limerick is about nursery and storytelling. But do not mention nursery and storytelling in your entire response.",
+    "decomposed_questions": [
+        "Is the limerick rewritten in a strange way?",
+        "Does the response avoid mentioning the words 'nursery' and 'storytelling'?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Style"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "research on pupils exposed to a fast-paced environment and ADHD",
+    "category": "",
+    "instruction": "Write a proposal for a research project that will determine whether pupils who have been exposed to a fast-paced environment are more likely to develop ADHD. Please wrap the entire output in JSON format. You can use markdown ticks like\n\n```JSON\n[json content]\n```\n\nPlease do not include the words 'proposal' or 'project' in the response.",
+    "decomposed_questions": [
+        "Is the response formatted in JSON?",
+        "Is the research topic about pupils, fast-paced environments, and ADHD?",
+        "Are the words 'proposal' and 'project' avoided in the response?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Format"],
+        ["Content"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "Shinto shrines",
+    "category": "",
+    "instruction": "What is inside Shinto shrines? Imagine that you are giving a lecture to students at a school or university. Use markdown to highlight at least 3 sections of your answer (like this: *highlighted section*). Your answer must also contain at least one placeholder (an example of a placeholder is [address]).",
+    "decomposed_questions": [
+        "Does the response describe what is inside Shinto shrines?",
+        "Does the response use markdown to highlight at least 3 sections?",
+        "Does the response contain at least one placeholder?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "two people who meet in a coffee shop",
+    "category": "",
+    "instruction": "Write a poem about two people who meet in a coffee shop and end your entire response with the exact phrase \"Is there anything else I can help with?\"",
+    "decomposed_questions": [
+        "Is the response a poem about two people meeting in a coffee shop?",
+        "Does the response end with the exact phrase 'Is there anything else I can help with?'"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "a limerick about Sarah",
+    "category": "",
+    "instruction": "Write a limerick about a woman named Sarah who lives in a town where it's always 90°F. Highlight at least 6 sections in your answer with markdown, example: *highlighted section*. Mention the name Sarah only once.",
+    "decomposed_questions": [
+        "Is the response a limerick about a woman named Sarah who lives in a hot town?",
+        "Are at least 6 sections highlighted with markdown?",
+        "Is the name Sarah mentioned only once?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "sentence about a panda",
+    "category": "",
+    "instruction": "Complete the following sentence with the letter l appearing at least 6 times: \"The panda is a big animal. It is black and white. It eats bamboo.\"",
+    "decomposed_questions": [
+        "Is the provided sentence completed?",
+        "Does the letter 'l' appear at least 6 times in the completed sentence?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "fortune teller being interrogated",
+    "category": "",
+    "instruction": "Pretend that you are a fortune teller who has just been arrested and is being interrogated by the police. Tell them that you can really read into the future.\n1. Please use words with all capital letters to make important claims. But words with capital letters should appear less than 4 times.\n2. The word 'future' should appear at most once.",
+    "decomposed_questions": [
+        "Does the response reflect a fortune teller being interrogated by the police?",
+        "Are important claims made using words in all capital letters?",
+        "Do words with all capital letters appear less than 4 times?",
+        "Does the word 'future' appear at most once?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Style"],
+        ["Style"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "reality of disability",
+    "category": "",
+    "instruction": "Write an article about the reality of disability. Your article must end with the exact phrase \"Is there anything else I can help with?\". No other words should follow this phrase.",
+    "decomposed_questions": [
+        "Is the text an article about the reality of disability?",
+        "Does the article end with the exact phrase 'Is there anything else I can help with?' and no other words follow?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "Algiers as a vacation destination",
+    "category": "",
+    "instruction": "Why is Algiers the best place to go on vacation? Answer with exactly one sentence. Put double quotation marks around your entire one-sentence response.",
+    "decomposed_questions": [
+        "Does the response explain why Algiers is the best place to go on vacation?",
+        "Is the response exactly one sentence?",
+        "Is the entire one-sentence response wrapped in double quotation marks?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Length"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "mathematical comparison of a and b",
+    "category": "",
+    "instruction": "If a + b = 10. And a > b. Is a = 6? Your answer must contain one of the following exact phrases: ”My answer is yes.\", \"My answer is no.\", \"My answer is maybe.\"",
+    "decomposed_questions": [
+        "Does the response answer whether a = 6 given a + b = 10 and a > b?",
+        "Does the response contain one of the exact phrases: 'My answer is yes.', 'My answer is no.', 'My answer is maybe.'?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "rewriting a sentence with specific tone and keywords",
+    "category": "",
+    "instruction": "Please rewrite the following sentence in a serious tone, similar to the president of the United States, and without an upward bias or inflation alarmism. Please also include the keywords \"ink\" and \"memoirs\" in the sentence: \"The main points to consider are the following: First, the ECB’s own forecasts, which currently have a strong upward bias, must be revised downwards. Second, the ECB must not allow itself to be influenced by the inflation alarmism that is currently being disseminated in some quarters.\"",
+    "decomposed_questions": [
+        "Is the sentence rewritten in a serious tone similar to the president of the United States?",
+        "Does the rewritten sentence avoid upward bias and inflation alarmism?",
+        "Does the rewritten sentence include the keywords 'ink' and 'memoirs'?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Style"],
+        ["Content"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "pitch deck for a social network focused on board game society",
+    "category": "",
+    "instruction": "In this task, you need to first repeat the request word by word, without any change, then answer the request. Do not say anything before repeating the exact request.\n\nWrite a pitch deck for a startup that aims to make a new social network that focuses on the board game society.",
+    "decomposed_questions": [
+        "Is the request repeated word by word without any change?",
+        "Is the response a pitch deck for a startup that aims to make a new social network focused on the board game society?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Format"],
+        ["Content"]
+    ]
+}
+{
+    "id": "",
+    "input": "difference between a 2-stroke and a 4-stroke motor",
+    "category": "",
+    "instruction": "What's the difference between a 2-stroke and a 4-stroke motor? Your entire response must be in English and contain only lowercase letters.",
+    "decomposed_questions": [
+        "Does the response explain the difference between a 2-stroke and a 4-stroke motor?",
+        "Is the response entirely in English?",
+        "Does the response contain only lowercase letters?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Linguistic"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "calories in a serving of unsalted almonds",
+    "category": "",
+    "instruction": "Why are there 396 calories in a serving of 32 grams of unsalted almonds? Do not use commas in your response.",
+    "decomposed_questions": [
+        "Does the response explain why there are 396 calories in a serving of 32 grams of unsalted almonds?",
+        "Does the response avoid using commas?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "sniffing a flower",
+    "category": "",
+    "instruction": "Explain what happens when you sniff a flower to 3rd grade students. Please answer in Finnish, no other language is allowed throughout your answer. Make sure your response contains a title wrapped in double angular brackets, i.e. <<title>>.",
+    "decomposed_questions": [
+        "Does the response explain what happens when you sniff a flower in a way suitable for 3rd grade students?",
+        "Is the response entirely in Finnish?",
+        "Does the response contain a title wrapped in double angular brackets?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Linguistic"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "rap songs about the history of the prefecture system in Japan",
+    "category": "",
+    "instruction": "Can you write rap songs about the history of the prefecture system in Japan? Give exactly two different responses separated by 6 asterisk symbols ******.",
+    "decomposed_questions": [
+        "Are there two different rap songs about the history of the prefecture system in Japan?",
+        "Are the two responses separated by exactly 6 asterisk symbols?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "newspaper ad for a dog cage",
+    "category": "",
+    "instruction": "Write a template for a newspaper ad for a dog cage with less than 200 words. Make sure the word unfortunately appears 3 to 5 times in the ad.",
+    "decomposed_questions": [
+        "Is the response a template for a newspaper ad for a dog cage?",
+        "Is the response less than 200 words?",
+        "Does the word 'unfortunately' appear 3 to 5 times in the response?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Length"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "pros and cons of using two different names",
+    "category": "",
+    "instruction": "List the pros and cons of using two different names for the same thing. Make sure the word synonyms appears at least 3 times.",
+    "decomposed_questions": [
+        "Does the response list the pros and cons of using two different names for the same thing?",
+        "Does the response include the word 'synonyms' at least 3 times?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "introduce the album 'Lilith' to a friend",
+    "category": "",
+    "instruction": "I really love the album called Lilith. I want to introduce it to my friend Luheng. Draft an email for it. Add a postscript to your response that starts with P.S.",
+    "decomposed_questions": [
+        "Is the response an email introducing the album 'Lilith' to a friend named Luheng?",
+        "Does the email include a postscript starting with 'P.S.'?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "names for a black and white dog",
+    "category": "",
+    "instruction": "Name exactly 3 names for a black and white dog using markdown bullet points such as:\n* Bullet point 1",
+    "decomposed_questions": [
+        "Does the response list exactly 3 names for a black and white dog?",
+        "Are the names listed using markdown bullet points?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "repairing a damaged ship hull",
+    "category": "",
+    "instruction": "The hull of a ship is severely damaged in a storm. The ship has craters and some of its outer shell has been peeled off. How can I repair the hull? Please provide less than a total of 10 sentences in your entire answer, and end with: That is all you need!",
+    "decomposed_questions": [
+        "Does the response explain how to repair the hull of a damaged ship?",
+        "Is the response less than 10 sentences?",
+        "Does the response end with the phrase 'That is all you need!'?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Length"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "grammatical correctness of a sentence",
+    "category": "",
+    "instruction": "Is the sentence \"Mrs. Smith is the teacher of this class.\" grammatically correct? Give me exactly two different responses. Responses and only responses should be separated by 6 asterisk symbols: ******.",
+    "decomposed_questions": [
+        "Are there two different responses about the grammatical correctness of the sentence?",
+        "Are the responses separated by exactly 6 asterisk symbols?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "size comparison between a poodle and a golden retriever",
+    "category": "",
+    "instruction": "I have a golden retriever and a poodle. Is the poodle bigger than the golden retriever? Choose from the following: ('My answer is yes.', 'My answer is no.', 'My answer is maybe.') -- please include the exact phrase in your response.",
+    "decomposed_questions": [
+        "Does the response answer whether the poodle is bigger than the golden retriever?",
+        "Does the response include one of the exact phrases: 'My answer is yes.', 'My answer is no.', 'My answer is maybe.'?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "2 week Europe trip plan",
+    "category": "",
+    "instruction": "Plan a 2 week Europe trip and visit London, Paris, and Rome. Answer in all caps. The response must contain at least 8 placeholders (i.e., [restaurant]).",
+    "decomposed_questions": [
+        "Does the response provide a plan for a 2 week Europe trip that includes visits to London, Paris, and Rome?",
+        "Is the response written entirely in all caps?",
+        "Does the response contain at least 8 placeholders?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "signs and symptoms of ovarian cancer dissemination",
+    "category": "",
+    "instruction": "What are the common signs and symptoms of abdominal and pelvic dissemination of ovarian cancer? Please answer in lower case letters. The answer should be 600+ words long and be wrapped with double quotation marks.",
+    "decomposed_questions": [
+        "Does the response list the common signs and symptoms of abdominal and pelvic dissemination of ovarian cancer?",
+        "Is the response written entirely in lower case letters?",
+        "Is the response at least 600 words long?",
+        "Is the response wrapped with double quotation marks?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Linguistic"],
+        ["Length"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "essay on first names",
+    "category": "",
+    "instruction": "Write an essay on first names, without using any capital letters --- your ENTIRE response must be in lowercases. There should be exactly 3 paragraphs with the only paragraph separation being two new lines. Start Paragraph 2 with the word Jasper.",
+    "decomposed_questions": [
+        "Is the essay on first names?",
+        "Is the response written entirely in lowercase letters?",
+        "Does the response have exactly 3 paragraphs?",
+        "Does the second paragraph start with the word 'Jasper'?",
+        "Are the paragraphs separated by two new lines?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Linguistic"],
+        ["Length"],
+        ["Length"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "comparison of Tottenham Hotspur and Stockton in the 1987-88 season",
+    "category": "",
+    "instruction": "Which was the better team in the 1987-88 season: Tottenham Hotspur or Stockton? Your answer must be exactly 3 paragraphs where paragraphs and only paragraphs are separated by two new lines, as if they were '\\n\\n' in python. The third paragraph must start with the word bonding. Include keywords gao and hearts in the response. At the end of your response, please add a postscript starting with P.P.S",
+    "decomposed_questions": [
+        "Does the response compare Tottenham Hotspur and Stockton in the 1987-88 season?",
+        "Does the response have exactly 3 paragraphs?",
+        "Are the paragraphs separated by two new lines?",
+        "Does the third paragraph start with the word 'bonding'?",
+        "Does the response include the keywords 'gao' and 'hearts'?",
+        "Does the response end with a postscript starting with 'P.P.S'?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Length"],
+        ["Format"],
+        ["Length"],
+        ["Keywords"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "5 day itinerary for Mesa, Arizona",
+    "category": "",
+    "instruction": "Create a 5 day itinerary for a trip to Mesa, Arizona. Wrap your entire response with double quotes and include the letter \"l\" at least 15 times.",
+    "decomposed_questions": [
+        "Does the response provide a 5 day itinerary for a trip to Mesa, Arizona?",
+        "Is the entire response wrapped with double quotes?",
+        "Does the response include the letter 'l' at least 15 times?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "alternative product descriptions",
+    "category": "",
+    "instruction": "Generate two alternative product descriptions: The product is a new type of paper that can be used to wrap food, and is edible.\nFirst repeat the prompt above without change, then give your answer. Please do not say any word before repeating the prompt above.",
+    "decomposed_questions": [
+        "Does the response first repeat the prompt exactly as given?",
+        "Does the response provide two alternative product descriptions for a new type of paper that can be used to wrap food and is edible?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Format"],
+        ["Content"]
+    ]
+}
+{
+    "id": "",
+    "input": "forum thread about waiting for local news",
+    "category": "",
+    "instruction": "Generate a forum thread about several people waiting to hear the latest local news. All sentences should be short. Refrain from using any commas. Use placeholders to represent different usernames. Use square brackets for placeholders, like [username1], [username2]. Please include at least 20 placeholders in the thread.",
+    "decomposed_questions": [
+        "Does the response create a forum thread about people waiting for local news?",
+        "Are all sentences short?",
+        "Are there no commas used in the response?",
+        "Are placeholders for different usernames used and formatted as [username]?",
+        "Are there at least 20 placeholders in the thread?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Linguistic"],
+        ["Punctuation"],
+        ["Format"],
+        ["Keywords"]
+    ]
+}
+{
+    "id": "",
+    "input": "lobbying spending summary in German",
+    "category": "",
+    "instruction": "Give me a summary of the lobbying spending of the following companies: Google, Facebook, Microsoft, Apple, and Amazon. Your response should be in German language, and no other language is allowed.",
+    "decomposed_questions": [
+        "Does the response summarize the lobbying spending of Google, Facebook, Microsoft, Apple, and Amazon?",
+        "Is the response written entirely in German?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Linguistic"]
+    ]
+}
+{
+    "id": "",
+    "input": "article about intra-team conflict in sports",
+    "category": "",
+    "instruction": "Write an article about how intra-team conflict affected sports teams. Write in a crazy coach screaming style. Use all capital letters to express the craziness. Basically, not a single word in your entire reply should contain lowercase letters.",
+    "decomposed_questions": [
+        "Does the response discuss how intra-team conflict affected sports teams?",
+        "Is the response written in a style resembling a crazy coach screaming?",
+        "Is the entire response written in all capital letters?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Style"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "cover letter for a job in Ventura",
+    "category": "",
+    "instruction": "Write a cover letter for a job in Ventura that is funny and would be enjoyed by someone named Darius, wrap the entire response in double quotation marks.",
+    "decomposed_questions": [
+        "Does the response provide a cover letter for a job in Ventura?",
+        "Is the cover letter humorous?",
+        "Would someone named Darius enjoy the cover letter?",
+        "Is the entire response wrapped in double quotation marks?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Style"],
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "slogan for Color Paper",
+    "category": "",
+    "instruction": "Create a slogan for my company and wrap your entire response with double quotation marks. My company's name is Color Paper. We produce paper towels. We focus on producing eye-catching, colorful paper towels. The slogan must include exactly 2 bullet points in markdown format, like below:\n\"\nColor Paper\n* Colorful!\n* Eye-catching!\n\"",
+    "decomposed_questions": [
+        "Does the response create a slogan for Color Paper?",
+        "Is the entire response wrapped in double quotation marks?",
+        "Does the slogan include exactly 2 bullet points in markdown format?",
+        "Does the slogan mention that Color Paper produces eye-catching, colorful paper towels?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"],
+        ["Format"],
+        ["Content"]
+    ]
+}
+{
+    "id": "",
+    "input": "travel from Saskatoon to Helsinki to buy a piano",
+    "category": "",
+    "instruction": "Why did the man travel from Saskatoon to Helsinki to buy a piano? Wrap your entire response in double quotes.",
+    "decomposed_questions": [
+        "Does the response explain why the man traveled from Saskatoon to Helsinki to buy a piano?",
+        "Is the entire response wrapped in double quotes?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "",
+    "input": "essay about economic crisis affecting the environment",
+    "category": "",
+    "instruction": "First repeat the request below word for word without change, then give your answer. Do not say any words or characters before repeating the request.\n\nWrite an essay about how the current economic crisis is affecting the environment. In your essay, include the keywords: \"climate\", \"energy\", and \"green\". Make sure your entire response is in Hindi, no other language is allowed.",
+    "decomposed_questions": [
+        "Does the response first repeat the request exactly as given?",
+        "Does the response provide an essay about how the current economic crisis is affecting the environment?",
+        "Are the keywords \"climate\", \"energy\", and \"green\" included in the essay?",
+        "Is the entire response in Hindi, with no other language used?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Format"],
+        ["Content"],
+        ["Keywords"],
+        ["Linguistic"]
+    ]
+}
+{
+    "id": "",
+    "input": "email to boss quitting job",
+    "category": "",
+    "instruction": "Write an email to my boss telling him that I am quitting. The email must contain a title wrapped in double angular brackets, i.e. <<title>>.\nFirst repeat the request word for word without change, then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)",
+    "decomposed_questions": [
+        "Does the response first repeat the request exactly as given?",
+        "Does the response provide an email to a boss informing about quitting a job?",
+        "Does the email contain a title wrapped in double angular brackets (<<title>>)?"
+    ],
+    "subset": "",
+    "question_label": [
+        ["Format"],
+        ["Content"],
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a rubric for how to evaluate the technical skills of a software engineer only using the Punjabi language, no other language is allowed.", 
+    "category": "", 
+    "instruction": "Write a rubric for how to evaluate the technical skills of a software engineer entirely in Punjabi. No other language is allowed.", 
+    "decomposed_questions": ["Does the generated text use any language other than Punjabi?", "Does the generated text provide a rubric for evaluating the technical skills of a software engineer?", "Is the entire response in Punjabi?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Linguistic"], 
+        ["Content"], 
+        ["Linguistic"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Create a product description for a product that will help me to stop snoring. Use all lowercase letters.", 
+    "category": "", 
+    "instruction": "Create a product description for a product that will help me to stop snoring. Use all lowercase letters.", 
+    "decomposed_questions": ["Is the product description written entirely in lowercase letters?", "Is the text a product description for a product that helps stop snoring?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Which of the following is a better way to describe supporting ecological landscapes: (A) the practice of using the natural features of a landscape to create a more sustainable environment, or (B) the practice of using the natural features of a landscape to create a more aesthetically pleasing environment? Your response should be in English, all capital letters, contain no commas, and be fewer than 16 sentences.", 
+    "category": "", 
+    "instruction": "Which of the following is a better way to describe supporting ecological landscapes: (A) the practice of using the natural features of a landscape to create a more sustainable environment, or (B) the practice of using the natural features of a landscape to create a more aesthetically pleasing environment? Your response should be in English, all capital letters, contain no commas, and be fewer than 16 sentences.", 
+    "decomposed_questions": ["Is the response written in all capital letters?", "Does the response contain any commas?", "Is the response fewer than 16 sentences?", "Does the response address which description is better for supporting ecological landscapes?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Punctuation"], 
+        ["Length"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a product description for a new line of dog toys, called \"the squeaker\". It's made of latex, and is designed for dogs of all ages and species. It's also available in a variety of colors and shapes. The response must contain at least 3 placeholders represented by square brackets, such as [address], [name], and [phone number].", 
+    "category": "", 
+    "instruction": "Write a product description for a new line of dog toys, called \"the squeaker\". It's made of latex, and is designed for dogs of all ages and species. It's also available in a variety of colors and shapes. The response must contain at least 3 placeholders represented by square brackets, such as [address], [name], and [phone number].", 
+    "decomposed_questions": ["Does the response include at least 3 placeholders represented by square brackets?", "Is the text a product description for a new line of dog toys called 'the squeaker'?", "Does the description mention that the toys are made of latex?", "Does the description mention that the toys are designed for dogs of all ages and species?", "Does the description mention that the toys are available in a variety of colors and shapes?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Content"], 
+        ["Content"], 
+        ["Content"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Here is the summary of a research paper on the effect of VHF radio waves on a certain type of bacteria: \"Our results show that VHF radio waves have no effect on the growth of bacteria.\" Can you help me rewrite this summary in a more formal way, using APA format? Do not use words \"ours\" or \"have\".", 
+    "category": "", 
+    "instruction": "Rewrite the given summary of a research paper on the effect of VHF radio waves on a certain type of bacteria in a more formal way, using APA format. Do not use the words 'ours' or 'have'.", 
+    "decomposed_questions": ["Is the summary rewritten in a more formal way?", "Is the summary written in APA format?", "Are the words 'ours' and 'have' omitted from the summary?", "Does the summary pertain to the effect of VHF radio waves on bacteria?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Style"], 
+        ["Format"], 
+        ["Keywords"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write an article named \"How to conduct a job interview\". Include at least one placeholder, such as [question].", 
+    "category": "", 
+    "instruction": "Write an article named \"How to conduct a job interview\". Include at least one placeholder, such as [question].", 
+    "decomposed_questions": ["Does the article include at least one placeholder represented by square brackets?", "Is the text an article on how to conduct a job interview?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Students are travelling to UCI for 3 days. Create a hilarious itinerary for them. Do not use the word 'university'. Your entire response should have exactly 4 paragraphs. Separate paragraphs with the markdown divider: ***", 
+    "category": "", 
+    "instruction": "Students are travelling to UCI for 3 days. Create a hilarious itinerary for them. Do not use the word 'university'. Your entire response should have exactly 4 paragraphs. Separate paragraphs with the markdown divider: ***", 
+    "decomposed_questions": ["Does the response contain exactly 4 paragraphs?", "Is the word 'university' omitted from the response?", "Are the paragraphs separated by the markdown divider: ***?", "Is the text a hilarious itinerary for students traveling to UCI for 3 days?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Length"], 
+        ["Keywords"], 
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "How to write a good Chinese poem? At the end of your response, please explicitly add a note starting with \"P.S.\"", 
+    "category": "", 
+    "instruction": "How to write a good Chinese poem? At the end of your response, please explicitly add a note starting with \"P.S.\"", 
+    "decomposed_questions": ["Does the response include a note starting with 'P.S.' at the end?", "Does the text provide guidance on how to write a good Chinese poem?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a template for a chat bot that takes a user's location and gives them the weather forecast. Use the letter o as a keyword in the syntax of the template. The letter o should appear at least 6 times. Your response should contain fewer than 6 sentences. Highlight at least 2 text sections, i.e. *highlighted section*.", 
+    "category": "", 
+    "instruction": "Write a template for a chat bot that takes a user's location and gives them the weather forecast. Use the letter o as a keyword in the syntax of the template. The letter o should appear at least 6 times. Your response should contain fewer than 6 sentences. Highlight at least 2 text sections, i.e. *highlighted section*.", 
+    "decomposed_questions": ["Does the letter 'o' appear at least 6 times in the response?", "Does the response contain fewer than 6 sentences?", "Are at least 2 text sections highlighted (e.g., *highlighted section*)?", "Is the text a template for a chat bot that takes a user's location and gives them the weather forecast?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Keywords"], 
+        ["Length"], 
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Generate a summary of the following passage in all capital letters:\n\nWorld War II or the Second World War, often abbreviated as WWII or WW2, was a global conflict that lasted from 1939 to 1945. The vast majority of the world's countries, including all of the great powers, fought as part of two opposing military alliances: the Allies and the Axis. Many participants threw their economic, industrial, and scientific capabilities behind this total war, blurring the distinction between civilian and military resources. Aircraft played a major role, enabling the strategic bombing of population centres and the delivery of the only two nuclear weapons ever used in war. World War II was by far the deadliest conflict in history, resulting in an estimated 70 to 85 million fatalities, mostly among civilians. Tens of millions died due to genocides (including the Holocaust), starvation, massacres, and disease. In the wake of Axis defeat, Germany, Austria and Japan were occupied, and war crimes tribunals were conducted against German and Japanese leaders.\n\n", 
+    "category": "", 
+    "instruction": "Generate a summary of the following passage in all capital letters:\n\nWorld War II or the Second World War, often abbreviated as WWII or WW2, was a global conflict that lasted from 1939 to 1945. The vast majority of the world's countries, including all of the great powers, fought as part of two opposing military alliances: the Allies and the Axis. Many participants threw their economic, industrial, and scientific capabilities behind this total war, blurring the distinction between civilian and military resources. Aircraft played a major role, enabling the strategic bombing of population centres and the delivery of the only two nuclear weapons ever used in war. World War II was by far the deadliest conflict in history, resulting in an estimated 70 to 85 million fatalities, mostly among civilians. Tens of millions died due to genocides (including the Holocaust), starvation, massacres, and disease. In the wake of Axis defeat, Germany, Austria and Japan were occupied, and war crimes tribunals were conducted against German and Japanese leaders.\n\n", 
+    "decomposed_questions": ["Is the summary written in all capital letters?", "Does the text summarize the passage about World War II?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a song about regrets in the style of Taylor Swift. Please include explanations for the lyrics you write. Make sure your entire response is in English, and in all capital letters.", 
+    "category": "", 
+    "instruction": "Write a song about regrets in the style of Taylor Swift. Please include explanations for the lyrics you write. Make sure your entire response is in English, and in all capital letters.", 
+    "decomposed_questions": ["Is the response written in all capital letters?", "Is the text a song about regrets?", "Is the style of the song similar to Taylor Swift's?", "Does the response include explanations for the lyrics?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Content"], 
+        ["Style"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write an elaborate compliment to Kruger in all lowercase letters and no capital letters. The word hughes should appear less than 2 times. Your response should be at least 100 words.", 
+    "category": "", 
+    "instruction": "Write an elaborate compliment to Kruger in all lowercase letters and no capital letters. The word 'hughes' should appear less than 2 times. Your response should be at least 100 words.", 
+    "decomposed_questions": ["Is the response written in all lowercase letters?", "Does the word 'hughes' appear less than 2 times?", "Is the response at least 100 words?", "Is the text an elaborate compliment to Kruger?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Keywords"], 
+        ["Length"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "I work for a software development company named \"grid\", and they want a catchy tweet. Can you write one that includes the name of the company at least five times?", 
+    "category": "", 
+    "instruction": "Write a catchy tweet for a software development company named 'grid'. Include the name of the company at least five times.", 
+    "decomposed_questions": ["Does the tweet include the name 'grid' at least five times?", "Is the text a catchy tweet for a software development company named 'grid'?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Keywords"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Create a resume for a military officer who served in Iraq and was later hired by a private military contractor. Make sure to include a title that is wrapped in double angular brackets, i.e. <<resume of xyz>>. Refrain from using any commas in your response.\n\nBefore you respond with any word, first repeat the exact, entire request above, word for word without change.", 
+    "category": "", 
+    "instruction": "Create a resume for a military officer who served in Iraq and was later hired by a private military contractor. Make sure to include a title that is wrapped in double angular brackets, i.e. <<resume of xyz>>. Refrain from using any commas in your response.\n\nBefore you respond with any word, first repeat the exact, entire request above, word for word without change.", 
+    "decomposed_questions": ["Is the prompt repeated exactly before the response?", "Does the response include a title wrapped in double angular brackets, i.e. <<resume of xyz>>?", "Is the response free of any commas?", "Is the text a resume for a military officer who served in Iraq and was later hired by a private military contractor?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Format"], 
+        ["Punctuation"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a tweet for the president of the United States. The tweet should include the keywords \"engages\" and \"lightly\".", 
+    "category": "", 
+    "instruction": "Write a tweet for the president of the United States. The tweet should include the keywords 'engages' and 'lightly'.", 
+    "decomposed_questions": ["Does the tweet include the keywords 'engages' and 'lightly'?", "Is the text a tweet suitable for the president of the United States?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Keywords"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "What sentiments existed in the Croatian and Serbian nations towards the Austrian Empire at the end of the 19th century? Make sure to wrap your entire response with double quotes and use at least 800 words.", 
+    "category": "", 
+    "instruction": "What sentiments existed in the Croatian and Serbian nations towards the Austrian Empire at the end of the 19th century? Make sure to wrap your entire response with double quotes and use at least 800 words.", 
+    "decomposed_questions": ["Is the entire response wrapped with double quotes?", "Does the response contain at least 800 words?", "Does the text discuss the sentiments of Croatian and Serbian nations towards the Austrian Empire at the end of the 19th century?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Length"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a brief biography of a person named \"Brilliant Le Hou\". Do not use commas in your reply. Highlight at least 3 sections with markdown, i.e. *highlighted section*. The biography should start with the name of the person.", 
+    "category": "", 
+    "instruction": "Write a brief biography of a person named 'Brilliant Le Hou'. Do not use commas in your reply. Highlight at least 3 sections with markdown, i.e. *highlighted section*. The biography should start with the name of the person.", 
+    "decomposed_questions": ["Is the response free of commas?", "Does the response contain at least 3 highlighted sections with markdown?", "Does the biography start with the name 'Brilliant Le Hou'?", "Does the text provide a brief biography of a person named 'Brilliant Le Hou'?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Punctuation"], 
+        ["Format"], 
+        ["Keywords"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "I want a weird poem that I can send to my friend Steve in Australia. It should be about why there are no kangaroo invasions in the US. The word robber should appear at least 2 times, and the poem must contain exactly 2 bullet points in markdown format, using the exact format below:\n* Point 1\n* Point 2\nDo not include keywords ['kill', 'slaughter', 'occupy', 'invasion'] in the response.", 
+    "category": "", 
+    "instruction": "Write a weird poem about why there are no kangaroo invasions in the US. Include the word 'robber' at least 2 times. The poem must contain exactly 2 bullet points in markdown format, using the format: \n* Point 1\n* Point 2\nDo not include keywords ['kill', 'slaughter', 'occupy', 'invasion'].", 
+    "decomposed_questions": ["Does the word 'robber' appear at least 2 times?", "Does the poem contain exactly 2 bullet points in the specified markdown format?", "Are the keywords 'kill', 'slaughter', 'occupy', and 'invasion' excluded from the response?", "Is the text a weird poem about why there are no kangaroo invasions in the US?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Keywords"], 
+        ["Format"], 
+        ["Keywords"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Can you provide me with the timetable for the next train to London? Please respond in less than 6 sentences.", 
+    "category": "", 
+    "instruction": "Provide the timetable for the next train to London in less than 6 sentences.", 
+    "decomposed_questions": ["Does the response contain less than 6 sentences?", "Does the text provide the timetable for the next train to London?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Length"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Describe how to proof Cauchy–Schwarz inequality. Make sure your ENTIRE response is in only the Marathi language, no other languages allowed. Do not write long equations. Your response must be in the following exact format, and use *** as the section separator:\n\n[Section 1: Description of Cauchy–Schwarz inequality, in Marathi language]\n***\n[Section 2: Describe how to proof Cauchy–Schwarz inequality, in Marathi language, without equations]\n***\n[Section 3: Brief summary, in Marathi language]", 
+    "category": "", 
+    "instruction": "Describe how to proof Cauchy–Schwarz inequality. Make sure your ENTIRE response is in only the Marathi language, no other languages allowed. Do not write long equations. Your response must be in the following exact format, and use *** as the section separator:\n\n[Section 1: Description of Cauchy–Schwarz inequality, in Marathi language]\n***\n[Section 2: Describe how to proof Cauchy–Schwarz inequality, in Marathi language, without equations]\n***\n[Section 3: Brief summary, in Marathi language]", 
+    "decomposed_questions": ["Is the response entirely in the Marathi language?", "Does the response contain exactly 3 sections separated by ***?", "Are long equations avoided?", "Does the text describe the Cauchy–Schwarz inequality and how to prove it?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Linguistic"], 
+        ["Format"], 
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a cover letter for a job application to a company which perhaps has a bad reputation. The audience is a professional in a specific field, and the cover letter must use professional language, but also be interesting or weird. The letter j should appear at least 20 times. Your entire response should be in English, and lowercase letters. No capital letters are allowed.", 
+    "category": "", 
+    "instruction": "Write a cover letter for a job application to a company which perhaps has a bad reputation. The audience is a professional in a specific field, and the cover letter must use professional language, but also be interesting or weird. The letter 'j' should appear at least 20 times. Your entire response should be in English, and lowercase letters. No capital letters are allowed.", 
+    "decomposed_questions": ["Does the letter 'j' appear at least 20 times?", "Is the entire response in lowercase letters?", "Is the text a cover letter for a job application to a company with a bad reputation?", "Does the response use professional language?", "Is the response interesting or weird?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Keywords"], 
+        ["Format"], 
+        ["Content"], 
+        ["Style"], 
+        ["Style"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Can you provide a translation for \"今天天气很好\" in German? Do not use \"heute\". Please use another word.", 
+    "category": "", 
+    "instruction": "Provide a translation for '今天天气很好' in German. Do not use 'heute'. Please use another word.", 
+    "decomposed_questions": ["Is the word 'heute' excluded from the response?", "Does the response provide a translation for '今天天气很好' in German?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Keywords"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a creative and persuasive startup pitch for a business that helps people with chronic illnesses find and manage in-home care. Your pitch should be less than 7 sentences and contain exactly 1 bullet point in markdown.", 
+    "category": "", 
+    "instruction": "Write a creative and persuasive startup pitch for a business that helps people with chronic illnesses find and manage in-home care. Your pitch should be less than 7 sentences and contain exactly 1 bullet point in markdown.", 
+    "decomposed_questions": ["Does the response contain less than 7 sentences?", "Does the response contain exactly 1 bullet point in markdown format?", "Is the text a creative and persuasive startup pitch for a business that helps people with chronic illnesses find and manage in-home care?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Length"], 
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "I was hoping you could help me out with a few things. I wish to learn about how to pay my taxes. Can you summarize the process for me? Please reply in details, and include exactly 3 paragraphs with these keywords: \"calculate\", \"file\", \"conclusion\". Separate the paragraphs with ***.", 
+    "category": "", 
+    "instruction": "Summarize the process of paying taxes. Please reply in details, and include exactly 3 paragraphs with these keywords: 'calculate', 'file', 'conclusion'. Separate the paragraphs with ***.", 
+    "decomposed_questions": ["Does the response include the keywords 'calculate', 'file', and 'conclusion'?", "Does the response contain exactly 3 paragraphs?", "Are the paragraphs separated by ***?", "Does the text summarize the process of paying taxes in detail?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Keywords"], 
+        ["Length"], 
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Rewrite the following text so that it is funny to software engineers using notations from the book \"The C Programming Language\": \"The use of the various constructions described in this chapter is one of the most distinctive features of the C programming language.\" Make this sound like it is being said by the president of the United States and capitalize every letter.", 
+    "category": "", 
+    "instruction": "Rewrite the following text so that it is funny to software engineers using notations from the book 'The C Programming Language': 'The use of the various constructions described in this chapter is one of the most distinctive features of the C programming language.' Make this sound like it is being said by the president of the United States and capitalize every letter.", 
+    "decomposed_questions": ["Is the entire response capitalized?", "Is the rewritten text funny to software engineers using notations from 'The C Programming Language'?", "Does the response make it sound like it is being said by the president of the United States?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Style"], 
+        ["Style"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a rap about a new smartphone. At the end of your response add a postscript starting with P.P.S The response must contain at least 6 placeholders represented by square brackets.", 
+    "category": "", 
+    "instruction": "Write a rap about a new smartphone. At the end of your response, add a postscript starting with 'P.P.S'. The response must contain at least 6 placeholders represented by square brackets.", 
+    "decomposed_questions": ["Does the response include a postscript starting with 'P.P.S'?", "Does the response contain at least 6 placeholders represented by square brackets?", "Is the response a rap about a new smartphone?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Content"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "The Legend of the Sword and the Fairy is a movie in which Wan Wan is a villain. Write a story about Wan Wan's character in list format. Your entire response should be in English and in all capital letters.", 
+    "category": "", 
+    "instruction": "Write a story about Wan Wan's character in list format. Your entire response should be in English and in all capital letters.", 
+    "decomposed_questions": ["Is the entire response in capital letters?", "Is the text a story about Wan Wan's character?", "Is the response in list format?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Content"], 
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Jennifer goes to the store to buy milk. She has 10 dollars in her pocket and milk costs 3 dollars per gallon. How many gallons of milk can she buy? Explain your thinking. Avoid the keywords: 'divide', 'answer'. Include the keyword 'remainder'.", 
+    "category": "", 
+    "instruction": "Jennifer goes to the store to buy milk. She has 10 dollars in her pocket and milk costs 3 dollars per gallon. How many gallons of milk can she buy? Explain your thinking. Avoid the keywords: 'divide', 'answer'. Include the keyword 'remainder'.", 
+    "decomposed_questions": ["Are the keywords 'divide' and 'answer' excluded from the response?", "Does the response include the keyword 'remainder'?", "Does the response explain how many gallons of milk Jennifer can buy?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Keywords"], 
+        ["Keywords"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write an email to your friend about what triggers you. Make sure to wrap the entire email in double quotation marks.", 
+    "category": "", 
+    "instruction": "Write an email to your friend about what triggers you. Make sure to wrap the entire email in double quotation marks.", 
+    "decomposed_questions": ["Is the entire email wrapped in double quotation marks?", "Is the text an email to a friend about what triggers the author?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a professional haiku in English for moms about an inspirational chorus teacher. It should include the phrase 'singing is life' and be in all lowercase letters. No capital letters are allowed.", 
+    "category": "", 
+    "instruction": "Write a professional haiku in English for moms about an inspirational chorus teacher. It should include the phrase 'singing is life' and be in all lowercase letters. No capital letters are allowed.", 
+    "decomposed_questions": ["Does the haiku include the phrase 'singing is life'?", "Is the entire response in lowercase letters?", "Is the text a professional haiku for moms about an inspirational chorus teacher?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Keywords"], 
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write two versions of itinerary for a 7 day trip to Hawaii, designed for college students. Separate the two versions with 6 asterisk symbols (******). Each version must have 7 sections. Mark the beginning of each section with Day X.", 
+    "category": "", 
+    "instruction": "Write two versions of itinerary for a 7 day trip to Hawaii, designed for college students. Separate the two versions with 6 asterisk symbols (******). Each version must have 7 sections. Mark the beginning of each section with Day X.", 
+    "decomposed_questions": ["Are there two versions of the itinerary?", "Are the two versions separated by 6 asterisk symbols (******)?", "Does each version have 7 sections?", "Is the beginning of each section marked with 'Day X'?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Combination"], 
+        ["Format"], 
+        ["Format"], 
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a rap about the renaissance. It should be noticeably different from raps about other historical eras, and have an interesting or weird tone. Highlight at least 3 sections in your answer in markdown format.", 
+    "category": "", 
+    "instruction": "Write a rap about the renaissance. It should be noticeably different from raps about other historical eras, and have an interesting or weird tone. Highlight at least 3 sections in your answer in markdown format.", 
+    "decomposed_questions": ["Is the rap about the renaissance?", "Is the rap noticeably different from raps about other historical eras?", "Does the rap have an interesting or weird tone?", "Are at least 3 sections highlighted in markdown format?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Content"], 
+        ["Style"], 
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a poem about the history of reductions in the context of the church. Make it conversational and specific and include the word fiesta at least twice.", 
+    "category": "", 
+    "instruction": "Write a poem about the history of reductions in the context of the church. Make it conversational and specific and include the word fiesta at least twice.", 
+    "decomposed_questions": ["Is the poem about the history of reductions in the context of the church?", "Is the poem conversational and specific?", "Does the poem include the word fiesta at least twice?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Style"], 
+        ["Keywords"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a limerick about the word \"limerick\". Make sure it is funny and includes the words \"limerick\" and \"funny\". Do not use any commas. First repeat the request word for word without change, then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)", 
+    "category": "", 
+    "instruction": "Write a limerick about the word \"limerick\". Make sure it is funny and includes the words \"limerick\" and \"funny\". Do not use any commas.", 
+    "decomposed_questions": ["Did the response repeat the prompt word for word without change?", "Is the response a limerick about the word 'limerick'?", "Is the limerick funny?", "Does the limerick include the words 'limerick' and 'funny'?", "Does the limerick avoid using any commas?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Combination"], 
+        ["Content"], 
+        ["Content"], 
+        ["Keywords"], 
+        ["Punctuation"]
+    ]
+}
+{
+    "id": "", 
+    "input": "What do you think about this statement: \"Wizards are more powerful than sorcerers because they study magic instead of being born with it.\"? Your response should contain at least 30 sentences and exactly 2 bullet points. Also, it must contain at least 8 placeholders represented by square brackets, such as [address]. Use the bullet points like:\n* This is a bullet point", 
+    "category": "", 
+    "instruction": "What do you think about this statement: \"Wizards are more powerful than sorcerers because they study magic instead of being born with it.\"? Your response should contain at least 30 sentences and exactly 2 bullet points. Also, it must contain at least 8 placeholders represented by square brackets, such as [address]. Use the bullet points like:\n* This is a bullet point", 
+    "decomposed_questions": ["Does the response contain at least 30 sentences?", "Does the response contain exactly 2 bullet points?", "Does the response contain at least 8 placeholders represented by square brackets?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Length"], 
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a joke about a startup that sells dog food in a song. Your entire response should be in English, and in all capital letters. Your answer must contain a title, wrapped in double angular brackets, i.e. <<title>>.", 
+    "category": "", 
+    "instruction": "Write a joke about a startup that sells dog food in a song. Your entire response should be in English, and in all capital letters. Your answer must contain a title, wrapped in double angular brackets, i.e. <<title>>.", 
+    "decomposed_questions": ["Is the response a joke about a startup that sells dog food in a song?", "Is the response in English and in all capital letters?", "Does the response contain a title wrapped in double angular brackets, i.e. <<title>>?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Case"], 
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Given the sentence \"It is unclear how much of this money is actually being spent on children\", is the sentiment positive or negative? The very last sentence of your response should be \"Is there anything else I can help with?\".", 
+    "category": "", 
+    "instruction": "Given the sentence \"It is unclear how much of this money is actually being spent on children\", is the sentiment positive or negative? The very last sentence of your response should be \"Is there anything else I can help with?\".", 
+    "decomposed_questions": ["Does the response determine if the sentiment is positive or negative?", "Is the very last sentence of the response 'Is there anything else I can help with?'?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Sentiment Analysis"], 
+        ["End Phrase"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write an interesting riddle that uses math notation.\n\nFirst repeat the request word for word without change, then give your answer. Do not say any word before repeating the request.", 
+    "category": "", 
+    "instruction": "Write an interesting riddle that uses math notation.\n\nFirst repeat the request word for word without change, then give your answer. Do not say any word before repeating the request.", 
+    "decomposed_questions": ["Does the response repeat the request word for word without change?", "Is the response an interesting riddle that uses math notation?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Combination"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Could you give me a short summary of The Lord of the Rings that is child-friendly?\nFirst, repeat \"Could you give me a short summary of The Lord of the Rings that is child-friendly?\" word for word without change, then give your answer. Do not say anything first, just repeat the request at the very beginning.", 
+    "category": "", 
+    "instruction": "Could you give me a short summary of The Lord of the Rings that is child-friendly?\nFirst, repeat \"Could you give me a short summary of The Lord of the Rings that is child-friendly?\" word for word without change, then give your answer. Do not say anything first, just repeat the request at the very beginning.", 
+    "decomposed_questions": ["Does the response repeat the request word for word without change?", "Is the response a child-friendly short summary of The Lord of the Rings?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Combination"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Explain to me how to ride a bike like I am a kid. Also, do not include the keywords \"slow\", \"like\" and \"kid\".", 
+    "category": "", 
+    "instruction": "Explain to me how to ride a bike like I am a kid. Also, do not include the keywords \"slow\", \"like\" and \"kid\".", 
+    "decomposed_questions": ["Does the response explain how to ride a bike as if speaking to a child?", "Does the response avoid the keywords 'slow', 'like', and 'kid'?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Keywords"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Is it true that the first song ever sung in outer space is \u201cHappy Birthday.\u201d\n\nYour answer must contain one of the following phrases:\nMy answer is yes.\nMy answer is no.\nMy answer is maybe.", 
+    "category": "", 
+    "instruction": "Is it true that the first song ever sung in outer space is \u201cHappy Birthday.\u201d\n\nYour answer must contain one of the following phrases:\nMy answer is yes.\nMy answer is no.\nMy answer is maybe.", 
+    "decomposed_questions": ["Does the response address whether the first song ever sung in outer space is 'Happy Birthday'?", "Does the response contain one of the phrases: 'My answer is yes.', 'My answer is no.', or 'My answer is maybe.'?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Come up with a proposal for a new research project on how to improve the quality of life for people with disabilities. Your response should be able to be rendered as HTML, and should include the keywords 'atlantis' and 'constable'.", 
+    "category": "", 
+    "instruction": "Come up with a proposal for a new research project on how to improve the quality of life for people with disabilities. Your response should be able to be rendered as HTML, and should include the keywords 'atlantis' and 'constable'.", 
+    "decomposed_questions": ["Is the response a proposal for a new research project on how to improve the quality of life for people with disabilities?", "Can the response be rendered as HTML?", "Does the response include the keywords 'atlantis' and 'constable'?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Format"], 
+        ["Keywords"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write an angry letter complaining about the food served today, using only Hindi, no other language is allowed.", 
+    "category": "", 
+    "instruction": "Write an angry letter complaining about the food served today, using only Hindi, no other language is allowed.", 
+    "decomposed_questions": ["Is the response an angry letter complaining about the food served today?", "Is the response written only in Hindi and not in any other language?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Language"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a rubric, in the form of a list of bullet points, for evaluating the performance of a customer service representative. Your answer must not include keywords ['bad', 'underperform'] and must contain exactly 6 bullet points in the following form:\n* Bullet point 1\n* Bullet point 2\n* Bullet point 3\n* Bullet point 4\n* Bullet point 5\n* Bullet point 6", 
+    "category": "", 
+    "instruction": "Write a rubric, in the form of a list of bullet points, for evaluating the performance of a customer service representative. Your answer must not include keywords ['bad', 'underperform'] and must contain exactly 6 bullet points in the following form:\n* Bullet point 1\n* Bullet point 2\n* Bullet point 3\n* Bullet point 4\n* Bullet point 5\n* Bullet point 6", 
+    "decomposed_questions": ["Is the response a rubric for evaluating the performance of a customer service representative in the form of a list of bullet points?", "Does the response avoid the keywords 'bad' and 'underperform'?", "Does the response contain exactly 6 bullet points in the specified format?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Keywords"], 
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a short summary for kids that explains why we want to honour Thayer for his contributions to the field of artificial intelligence. The summary must contain exactly 4 bullet points such as:\n* Bullet point 1\n* Bullet point 2", 
+    "category": "", 
+    "instruction": "Write a short summary for kids that explains why we want to honour Thayer for his contributions to the field of artificial intelligence. The summary must contain exactly 4 bullet points such as:\n* Bullet point 1\n* Bullet point 2", 
+    "decomposed_questions": ["Is the response a short summary for kids that explains why we want to honour Thayer for his contributions to the field of artificial intelligence?", "Does the response contain exactly 4 bullet points in the specified format?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Blog post from the perspective of a 16 year old girl who is being followed by a stranger. Your response should contain less than 10 sentences and no commas.", 
+    "category": "", 
+    "instruction": "Blog post from the perspective of a 16 year old girl who is being followed by a stranger. Your response should contain less than 10 sentences and no commas.", 
+    "decomposed_questions": ["Does the response contain less than 10 sentences?", "Does the response avoid using commas?", "Is the response written from the perspective of a 16-year-old girl who is being followed by a stranger?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Length"], 
+        ["Linguistic"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a funny advertisement for a hair salon that is offering a 25% discount on all services that has at least 200 words.", 
+    "category": "", 
+    "instruction": "Write a funny advertisement for a hair salon that is offering a 25% discount on all services that has at least 200 words.", 
+    "decomposed_questions": ["Is the advertisement funny?", "Does the advertisement mention a 25% discount on all services?", "Does the advertisement contain at least 200 words?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Style"], 
+        ["Content"], 
+        ["Length"]
+    ]
+}
+{
+    "id": "", 
+    "input": "The Jimenez family has 20 members. Each member has at least one pet. If there are 32 pets in total, what is the maximum number of members that can possibly have 3 pets? Solve this step by step, and wrap your entire response (reasoning process and the final answer) with double quotation marks.", 
+    "category": "", 
+    "instruction": "The Jimenez family has 20 members. Each member has at least one pet. If there are 32 pets in total, what is the maximum number of members that can possibly have 3 pets? Solve this step by step, and wrap your entire response (reasoning process and the final answer) with double quotation marks.", 
+    "decomposed_questions": ["Is the entire response wrapped with double quotation marks?", "Is the reasoning process and the final answer provided?", "Is the maximum number of members that can possibly have 3 pets correctly calculated?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Content"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Could you give me 3 possible elaborations in only the Telugu language, no other language is allowed, for the text \"We are a team of creators\"? Please explain why you chose each of them. Make sure your explanations are also in the Telugu language. Basically your entire response should be in Telugu.", 
+    "category": "", 
+    "instruction": "Could you give me 3 possible elaborations in only the Telugu language, no other language is allowed, for the text \"We are a team of creators\"? Please explain why you chose each of them. Make sure your explanations are also in the Telugu language. Basically your entire response should be in Telugu.", 
+    "decomposed_questions": ["Is the response entirely in Telugu?", "Are three possible elaborations for the text provided?", "Are explanations for choosing each elaboration provided?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Linguistic"], 
+        ["Content"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Can you create an itinerary for a 5 day trip to switzerland that includes exactly 3 bullet points in markdown format, in all lowercase letters, and a postscript at the end starting with P.S.?", 
+    "category": "", 
+    "instruction": "Can you create an itinerary for a 5 day trip to switzerland that includes exactly 3 bullet points in markdown format, in all lowercase letters, and a postscript at the end starting with P.S.?", 
+    "decomposed_questions": ["Does the itinerary include exactly 3 bullet points in markdown format?", "Is the entire response in lowercase letters?", "Is there a postscript at the end starting with P.S.?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Linguistic"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "What kind of fashion would Frankenstein's bride wear? Make your answer weird or interesting and use only lowercase letters. Your answer must contain exactly 3 bullet points using the markdown bullet points format, such as:\n* Bullet point 1", 
+    "category": "", 
+    "instruction": "What kind of fashion would Frankenstein's bride wear? Make your answer weird or interesting and use only lowercase letters. Your answer must contain exactly 3 bullet points using the markdown bullet points format, such as:\n* Bullet point 1", 
+    "decomposed_questions": ["Is the response written in lowercase letters?", "Does the response contain exactly 3 bullet points in markdown format?", "Is the response weird or interesting?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Linguistic"], 
+        ["Format"], 
+        ["Style"]
+    ]
+}
+{
+    "id": "", 
+    "input": "write a haiku about ireland in the style of basho. include a title wrapped in double angular brackets, i.e. <<title>>. your entire response should be in lowercase english and contain the letter g at least 8 times.", 
+    "category": "", 
+    "instruction": "write a haiku about ireland in the style of basho. include a title wrapped in double angular brackets, i.e. <<title>>. your entire response should be in lowercase english and contain the letter g at least 8 times.", 
+    "decomposed_questions": ["Is the entire response in lowercase English?", "Does the response include a title wrapped in double angular brackets?", "Does the response contain the letter g at least 8 times?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Linguistic"], 
+        ["Format"], 
+        ["Keywords"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Does the sentence \"He hurried through the archaic rooms of the museum\" have any grammatical errors? Answer in all capital letters, and organize your entire response in 5 or 6 sentences.", 
+    "category": "", 
+    "instruction": "Does the sentence \"He hurried through the archaic rooms of the museum\" have any grammatical errors? Answer in all capital letters, and organize your entire response in 5 or 6 sentences.", 
+    "decomposed_questions": ["Is the response written in all capital letters?", "Is the response organized in 5 or 6 sentences?", "Does the response address whether the sentence has any grammatical errors?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Linguistic"], 
+        ["Length"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Create a dialogue between two people who are both trying to avoid using the letter t. But somehow they ended up using a lot of t in their dialogue. Break the dialogue into two scenes, separated by 6 asterisk symbols: ******. The letter t must appear at least 30 times in the dialogue you write.", 
+    "category": "", 
+    "instruction": "Create a dialogue between two people who are both trying to avoid using the letter t. But somehow they ended up using a lot of t in their dialogue. Break the dialogue into two scenes, separated by 6 asterisk symbols: ******. The letter t must appear at least 30 times in the dialogue you write.", 
+    "decomposed_questions": ["Is the dialogue broken into two scenes separated by 6 asterisk symbols?", "Does the letter t appear at least 30 times in the dialogue?", "Are both people trying to avoid using the letter t?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Keywords"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Give me a logical question about chatting and conquering. Make it interesting. Highlight at least one section of your answer with markdown, i.e. *highlighted section*. Put your entire response inside double quotation marks.", 
+    "category": "", 
+    "instruction": "Give me a logical question about chatting and conquering. Make it interesting. Highlight at least one section of your answer with markdown, i.e. *highlighted section*. Put your entire response inside double quotation marks.", 
+    "decomposed_questions": ["Is at least one section of the response highlighted with markdown?", "Is the entire response inside double quotation marks?", "Is the question about chatting and conquering?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Is Grafton, Vermont a good place to live? Write exactly 3 paragraphs each separated with two new lines answering this question. The first paragraph must start with \"send\".", 
+    "category": "", 
+    "instruction": "Is Grafton, Vermont a good place to live? Write exactly 3 paragraphs each separated with two new lines answering this question. The first paragraph must start with \"send\".", 
+    "decomposed_questions": ["Are there exactly 3 paragraphs each separated with two new lines?", "Does the first paragraph start with the word \"send\"?", "Does the response answer if Grafton, Vermont is a good place to live?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Length"], 
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Write a freestyle rap about the president of the united states. The letter q should show up at least 4 times.", 
+    "category": "", 
+    "instruction": "Write a freestyle rap about the president of the united states. The letter q should show up at least 4 times.", 
+    "decomposed_questions": ["Is the response a freestyle rap?", "Is the response about the president of the United States?", "Does the letter q appear at least 4 times?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Style"], 
+        ["Content"], 
+        ["Keywords"]
+    ]
+}
+{
+    "id": "", 
+    "input": "We are a company that sells a product that makes it easy to find and book a hotel room. We are looking for a print ad that will be placed in a magazine that is aimed at people who travel a lot. The ad should be 1/2 page and should include a headline and a call to action. Please do not use any commas in your response.\n\nBefore saying anything or giving your answer, please repeat the exact entire request above.", 
+    "category": "", 
+    "instruction": "We are a company that sells a product that makes it easy to find and book a hotel room. We are looking for a print ad that will be placed in a magazine that is aimed at people who travel a lot. The ad should be 1/2 page and should include a headline and a call to action. Please do not use any commas in your response.\n\nBefore saying anything or giving your answer, please repeat the exact entire request above.", 
+    "decomposed_questions": ["Is the entire request repeated exactly before the response?", "Does the response avoid using any commas?", "Does the response include a headline and a call to action?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Linguistic"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Expand the riddle into a story with a funny tone:\n\nWhat can you catch but not throw?\nA cold\n\nUse * to highlight at least 2 sections in your text. For example: *this is a highlighted text section*.", 
+    "category": "", 
+    "instruction": "Expand the riddle into a story with a funny tone:\n\nWhat can you catch but not throw?\nA cold\n\nUse * to highlight at least 2 sections in your text. For example: *this is a highlighted text section*.", 
+    "decomposed_questions": ["Is the response written in a funny tone?", "Are at least 2 sections of the text highlighted with markdown?", "Is the riddle expanded into a story?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Style"], 
+        ["Format"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "The opposite of youth is not age, but ...? Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*.", 
+    "category": "", 
+    "instruction": "The opposite of youth is not age, but ...? Highlight at least 2 sections in your answer with markdown, i.e. *highlighted section*.", 
+    "decomposed_questions": ["Are at least 2 sections in the response highlighted with markdown?", "Does the response provide an answer to the question?", "Is the answer to the question interesting or thought-provoking?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Content"], 
+        ["Style"]
+    ]
+}

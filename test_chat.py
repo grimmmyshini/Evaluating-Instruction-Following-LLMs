@@ -1,3 +1,3 @@
 from utils.chat import chat
 
-print(chat("gemini", message="Who are you?"))
+print(chat("llama3", message="Do you know about ChatGPT?"))

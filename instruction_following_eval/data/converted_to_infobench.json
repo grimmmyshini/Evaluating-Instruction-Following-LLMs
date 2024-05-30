@@ -1,0 +1,43 @@
+[
+    {
+        "id": "", 
+        "input": "2000 presidential election", 
+        "category": "", 
+        "instruction": "Write a 200 word essay on the 2000 presidential election. The title should be wrapped in double angular brackets, i.e. <<title>>.", 
+        "decomposed_questions": ["Is the generated text approximately 200 words long?", "Does the generated text discuss the 2000 presidential election?", "Is the title wrapped in double angular brackets?"], 
+        "subset": "Easy_set", 
+        "question_label": [
+            ["Length"], 
+            ["Content"], 
+            ["Format"]
+        ]
+    },
+    
+    {
+        "id": "", 
+        "input": "Rewrite the limerick in a strange way", 
+        "category": "", 
+        "instruction": "Rewrite the limerick in a strange way. In particular, the limerick is about nursery and storytelling. But do not mention nursery and storytelling in your entire response.", 
+        "decomposed_questions": ["Is the response a limerick rewritten in a strange way?", "Is the limerick about nursery and storytelling?", "Are the words 'nursery' and 'storytelling' not mentioned in the response?"], 
+        "subset": "Easy_set", 
+        "question_label": [
+            ["Format"], 
+            ["Content"], 
+            ["Keywords"]
+        ]
+    },
+
+    {
+        "id": "", 
+        "input": "Determine whether pupils exposed to a fast-paced environment are more likely to develop ADHD", 
+        "category": "", 
+        "instruction": "Write a proposal for a research project that will determine whether pupils who have been exposed to a fast-paced environment are more likely to develop ADHD. Please wrap the entire output in JSON format. You can use markdown ticks like\n\n```JSON\n[json content]\n```\n\nPlease do not include the words 'proposal' or 'project' in the response.", 
+        "decomposed_questions": ["Is the response written in JSON format?", "Does the response outline a research plan to determine if pupils exposed to a fast-paced environment are more likely to develop ADHD?", "Are the words 'proposal' and 'project' not mentioned in the response?"], 
+        "subset": "Easy_set", 
+        "question_label": [
+            ["Format"], 
+            ["Content"], 
+            ["Keywords"]
+        ]
+    }
+]

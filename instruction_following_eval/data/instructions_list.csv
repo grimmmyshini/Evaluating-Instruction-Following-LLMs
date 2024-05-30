@@ -1,0 +1,26 @@
+Instruction Group,Instruction
+Keywords,Include Keywords
+Keywords,Keyword Frequency
+Keywords,Forbidden Words
+Keywords,Letter Frequency
+Language,Response Language
+Length Constraints,Number Paragraphs
+Length Constraints,Number Words
+Length Constraints,Number Sentences
+Length Constraints,Number Paragraphs + First Word in i-th Paragraph
+Detectable Content,Postscript
+Detectable Content,Number Placeholder
+Detectable Format,Number Bullets
+Detectable Format,Title
+Detectable Format,Choose From
+Detectable Format,Minimum Number Highlighted Section
+Detectable Format,Multiple Sections
+Detectable Format,JSON Format
+Combination,Repeat Prompt
+Combination,Two Responses
+Change Cases,All Uppercase
+Change Cases,All Lowercase
+Change Cases,Frequency of All-capital Words
+Start with / End with,End Checker
+Start with / End with,Quotation
+Punctuation,No Commas

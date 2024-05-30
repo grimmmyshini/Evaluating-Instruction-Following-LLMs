@@ -1,0 +1,47 @@
+IFEVAL:
+{
+    "key": 2724, 
+    "prompt": "Write a document entirely in the Portuguese language, no other language is allowed, about Adam and Eve. Additionally, make sure to wrap your entire response with double quotation marks.", 
+    "instruction_id_list": ["language:response_language", "startend:quotation"], 
+    "kwargs": [{"language": "pt"}, {}]
+}
+
+{
+    "id": "", 
+    "input": "Adam and Eve", 
+    "category": "", 
+    "instruction": "Write a document entirely in the Portuguese language, no other language is allowed, about Adam and Eve. Additionally, make sure to wrap your entire response with double quotation marks.", 
+    "decomposed_questions": ["Does the generated text have any other language?", "Is the generated text about Adam and Eve?", "Is the entire response wrapped with double quotation marks?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Linguistic"], 
+        ["Content"]
+    ]
+}
+
+
+
+INFOBENCH:
+{
+    "id": "user_oriented_task_167", 
+    "input": "The typical avocado is over 300 calories from the oil in it. That\u2019s the amount of calories in a large candy bar. If you get enough exercise to eat a large candy bar every day without gaining weight, it wouldn\u2019t be a problem to eat an avocado every day. Other wise you should probably eat them sparingly.", 
+    "category": "Quora", 
+    "instruction": "Choose an appealing title for your post.", 
+    "decomposed_questions": ["Is the generated text a post title?", "Is the generated text appealing as a post tile?", "Is the generated post title suitable for the post in the given input?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Content"], 
+        ["Content"]
+    ]
+}
+
+{
+    "key": "", 
+    "prompt": "The typical avocado is over 300 calories from the oil in it. That\u2019s the amount of calories in a large candy bar. If you get enough exercise to eat a large candy bar every day without gaining weight, it wouldn\u2019t be a problem to eat an avocado every day. Other wise you should probably eat them sparingly. Choose an appealing title for your post. Make sure it is wrapped in double angular brackets, i.e. <<title>>.",
+    "instruction_id_list": ["detectable_format:title"], 
+    "kwargs": [{}]
+}
+
+content,linguistic, style,format,number limitations

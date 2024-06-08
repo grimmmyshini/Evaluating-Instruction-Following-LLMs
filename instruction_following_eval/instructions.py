@@ -15,7 +15,9 @@
 
 """Library of instructions."""
 import collections
+import decimal
 import json
+import math
 import random
 import re
 import string
@@ -32,7 +34,7 @@ _InstructionArgsDtype = Optional[Dict[str, Union[int, str, Sequence[str]]]]
 _LANGUAGES = instructions_util.LANGUAGE_CODES
 
 # The relational operation for comparison.
-_COMPARISON_RELATION = ("less than", "at least")
+_COMPARISON_RELATION = ("less than", "at least", "no greater than")
 
 # The maximum number of sentences.
 _MAX_NUM_SENTENCES = 20
@@ -824,7 +826,8 @@ class NumberOfWords(Instruction):
         operator for comparison.
         Two relational comparisons are supported for now:
         if 'less than', the actual number of words < num_words;
-        if 'at least', the actual number of words >= num_words.
+        if 'at least', the actual number of words >= num_words;
+        if 'no greater than', the actual number of words <= num_words;
 
     Returns:
       A string representing the instruction description.
@@ -868,7 +871,8 @@ class NumberOfWords(Instruction):
       return num_words < self._num_words
     elif self._comparison_relation == _COMPARISON_RELATION[1]:
       return num_words >= self._num_words
-
+    elif self._comparison_relation == _COMPARISON_RELATION[2]:
+      return num_words <= self._num_words
 
 class JsonFormat(Instruction):
   """Check the Json format."""
@@ -1658,3 +1662,133 @@ class AnswerHighlightChecker(Instruction):
     """
     ans = re.findall(r'\*\*(.*?)\*\*', value)
     return len(ans) == 1
+
+
+class EquationAnswerChecker(Instruction):
+  """Checks existence of a the formatted answer as an equation."""
+
+  def build_description(self):
+    """Build the instruction description.
+
+    Returns:
+      A string representing the instruction description.
+    """
+    self._description_pattern = (
+        "Along with providing an answer to the question, give the mathematical equation that solves this problem. Wrap this (and only this) equation in a box. Use Latex style formatting to format the math equation.")
+    return self._description_pattern.format()
+
+  def get_instruction_args(self):
+    """Returns the keyward args of `build_description`."""
+    return None
+
+  def get_instruction_args_keys(self):
+    """Returns the args keys of `build_description`."""
+    return []
+
+  def check_following(self, value):
+    """Checks if the number of steps meets the requirement.
+
+    Args:
+      value: a string representing the response.
+
+    Returns:
+      True if the response follows the instruction; otherwise False.
+    """
+    ans = re.findall(r'\\boxed\{[^}]*\}', value)
+    return len(ans) == 1
+
+
+class AnswerRoundChecker(Instruction):
+  """Checks existence of a the formatted answer as an equation. checks whether the answer is rounded to the correct places"""
+
+  def build_description(self, correct_ans, decimal_places, type = "Round"):
+    """Build the instruction description. Requires prior knowledge of correct answer.
+
+    Args:
+      decimal_places: the number of correct decimal places to format the answer in.
+      type: Either "Round" or "Truncate".
+
+    Returns:
+      A string representing the instruction description.
+    """
+    if type not in ("Round", "Truncate"):
+      self.type = "Round"
+    else:
+      self.type = type
+    self.decimal_places = decimal_places
+    self.correct_answer = correct_ans
+    self._description_pattern = (
+        "{type} your answer to {decimal_places} correct decimal places.")
+    return self._description_pattern.format(type=self.type, decimal_places=self.decimal_places)
+
+  def get_instruction_args(self):
+    """Returns the keyward args of `build_description`."""
+    return {'correct_ans': self.correct_answer, 'decimal_places':self.decimal_places, 'type':self.type}
+
+  def get_instruction_args_keys(self):
+    """Returns the args keys of `build_description`."""
+    return ['correct_ans', 'decimal_places', 'type']
+
+  @staticmethod
+  def truncate(num, digits):
+    neg = False if num >= 0 else True
+    if neg:
+      ans = '-' + str(math.trunc(-num)) + '.' + str(num).split('.')[1][:digits]
+    else:
+      ans = str(math.trunc(num)) + '.' + str(num).split('.')[1][:digits]
+    return ans
+
+  def check_following(self, value):
+    """Checks if the number of steps meets the requirement.
+
+    Args:
+      value: a string representing the response.
+
+    Returns:
+      True if the response follows the instruction; otherwise False.
+    """
+    if self.type == "Round":
+      res = str(round(self.correct_answer, self.decimal_places))
+      res = res.split('.')[0] + '\.' + res.split('.')[1]
+    else:
+      res = AnswerRoundChecker.truncate(self.correct_answer, self.decimal_places)
+      res = res.split('.')[0] + '\.' + res.split('.')[1]
+    print(res)
+    ans = re.findall(r'(?<![0-9])' + res + r'(?![0-9])', value)
+    print(len(ans))
+    return len(ans) != 0
+
+
+class PythonFunctionChecker(Instruction):
+  """Checks existence of a python function with a specifc name."""
+
+  def build_description(self):
+    """Build the instruction description.
+
+    Returns:
+      A string representing the instruction description.
+    """
+    self.name = "func" + str(random.choice(range(1, 100)))
+    self._description_pattern = (
+        "Along with providing an answer to the question, provide an implementation of a Python function named {name} that solves this problem.")
+    return self._description_pattern.format(name=self.name)
+
+  def get_instruction_args(self):
+    """Returns the keyward args of `build_description`."""
+    return None
+
+  def get_instruction_args_keys(self):
+    """Returns the args keys of `build_description`."""
+    return []
+
+  def check_following(self, value):
+    """Checks if the response contains the python function.
+
+    Args:
+      value: a string representing the response.
+
+    Returns:
+      True if the response follows the instruction; otherwise False.
+    """
+    ans = re.findall(r'def\s+' + self.name + r'\s*\(.*?\)\s*:', value)
+    return len(ans) != 0

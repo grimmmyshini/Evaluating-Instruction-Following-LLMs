@@ -6,6 +6,9 @@ import instructions_registry as ir
 math_instr = {
     'highlight_steps':{'type':ir._FORMAT, 'class':instructions.StepsChecker, 'args':{'min_steps':None, 'max_steps':None}},
     'highlight_answer':{'type':ir._FORMAT, 'class':instructions.AnswerHighlightChecker, 'args':{}},
+    'equation_answer':{'type':ir._CONTENT, 'class':instructions.EquationAnswerChecker, 'args':{}},
+    'answer_round':{'type':ir._CONTENT, 'class':instructions.AnswerRoundChecker, 'args':{'decimal_places':None, 'type':None}},
+    'python_answer':{'type':ir._CONTENT, 'class':instructions.PythonFunctionChecker, 'args':{}}
 }
 opt_list = list(math_instr.keys())
 
@@ -14,6 +17,10 @@ if __name__ == "__main__":
     for _, row in df.iterrows():
         print("Current Prompt")
         print(row['prompt'])
+        # promt_result = """ """
+        # instr = instructions.PythonFunctionChecker(0)
+        # instr.build_description()
+        # print(instr.check_following(promt_result))
         res_prompt = row['prompt']
         instr_id = 0
 
@@ -37,7 +44,10 @@ if __name__ == "__main__":
                 if arg_ch == '':
                     args.append(None)
                 else:
-                    args.append(int(arg_ch))
+                    try:
+                        args.append(int(arg_ch))
+                    except:
+                        args.append(arg_ch)
             res_prompt += " " + val.build_description(*args)
             print("Resulting prompt: ")
             print(res_prompt)

@@ -1,0 +1,1055 @@
+{
+    "key": "",
+    "prompt": "Provide a brief description of three major climate zones and their characteristics, listing them as \"zone name: characteristics.\" Limit the whole response to 250 words.",
+    "instruction_id_list": [
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "less than",
+            "num_words": 50
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Come up with exactly 10 words that rhyme with the given word 'instruct'. Use bullet points to list these words. Please use the following bullet point format:\n* Text for bullet 1\n* Text for bullet 2\n. . .",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 10
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Write a short description (less than 100 words) about the given movie or series 'The Witcher (2019)'.",
+    "instruction_id_list": [
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "less than",
+            "num_words": 100
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Can a mental exercise help people manage their anxiety? Choose from the following: ('My answer is yes.', 'My answer is no.', 'My answer is maybe.') -- please include the exact phrase in your response.",
+    "instruction_id_list": [
+        "detectable_format:constrained_response"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "Write a step-by-step tutorial (200-300 words) on how to create a unique and eye-catching scrapbook layout. Include a list of required materials, techniques, and tips for beginners. Focus on clear and concise instructions that are easy for hobbyists of all skill levels to follow.",
+    "instruction_id_list": [
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "between",
+            "num_words_min": 200,
+            "num_words_max": 300
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Create three 'breaking news' Tweets in sequence that report on the launch of the first fully self-sustaining colony on Mars. Each Tweet should:\n\n1. Begin with the phrase \"BREAKING NEWS\".\n2. Build upon the information provided in the previous Tweet.\n3. Generate suspense and interest within the Twitter character limit.\n4. Include at least one relevant hashtag.\n5. Incorporate a specific time or timeframe reference.",
+    "instruction_id_list": [
+        "keywords:frequency",
+        "keywords:frequency"
+    ],
+    "kwargs": [
+        {
+            "relation": "at least",
+            "keyword": "BREAKING NEWS",
+            "frequency": 3
+        },
+        {
+            "relation": "less than",
+            "keyword": "BREAKING NEWS",
+            "frequency": 4
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Prepare an email signature template for a graduate student of computer science. Make sure to include at least 2 placeholder represented by square brackets, such as [major], [name]",
+    "instruction_id_list":[
+        "detectable_content:number_placeholders"
+    ],
+    "kwargs": [
+        {
+            "num_placeholders": 2
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "For answering the chat, think of a funny response you can use for '+ how are you?'.\nFirst repeat the request word for word without change, then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)",
+    "instruction_id_list": [
+        "combination:repeat_prompt"
+    ],
+    "kwargs": [
+        {
+            "prompt_to_repeat": "For answering the chat, think of a funny response you can use for '+ how are you?'"
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Make a list of the 6 most popular podcasts. Your answer must contain exactly 6 bullet points in the following form:\n* Bullet point 1\n* Bullet point 2\n* Bullet point 3\n* Bullet point 4\n* Bullet point 5\n* Bullet point 6",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {"num_bullets": 6}
+    ]
+}
+{
+    "key": "",
+    "prompt": "Provide two examples of how individuals in different professions (software engineer and marketing manager) can apply the concept of continuous learning to advance their careers. Make sure each example highlights unique challenges and opportunities within that profession, while staying under 200 words in total. Each example should be marked with SECTION X where X is the number of the example.",
+    "instruction_id_list": [
+        "length_constraints:number_words",
+        "detectable_format:multiple_sections"
+    ],
+    "kwargs": [
+        {
+            "relation": "under",
+            "num_words_max": 200
+        },
+        {
+            "section_spliter": "SECTION",
+            "num_sections": 2
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Write an article aimed at middle school students explaining plate tectonics and how it contributes to earthquakes and volcanic eruptions. Additionally, create a short quiz with 3 multiple-choice and 2 True-False questions alone with correct answers based on the article's content. Mark each section with SECTION X where X is the number of the section.",
+    "instruction_id_list": [
+        "detectable_format:multiple_sections"
+    ],
+    "kwargs": [
+        {
+            "section_spliter": "SECTION",
+            "num_sections": 2
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Please draft a letter of recommendation for a high school student applying to college. The letter should be less than 250 words and emphasize the student's academic accomplishments, extracurricular involvement, and personal attributes. Include a specific example to illustrate the student's outstanding qualities. Put double quotations marks around your whole response.",
+    "instruction_id_list": [
+        "startend:quotation",
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {},
+        {
+            "relation": "less than",
+            "num_words": 250
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Write an email to attendees as a reminder that the event is coming up. Make sure to include at least 7 placeholder represented by square brackets, such as [address], [name]",
+    "instruction_id_list":[
+        "detectable_content:number_placeholders"
+    ],
+    "kwargs": [
+        {
+            "num_placeholders": 7
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Compose an employment offer letter using the company's letterhead. Address the candidate by their name and specify the job position they are being offered, along with the proposed start date. Provide a detailed description of the compensation package, and explain any contingencies that apply, including a deadline for accepting the offer. Maintain a professional and welcoming tone throughout the letter, and ensure all relevant information is clearly outlined. Make sure to include at least 12 placeholder represented by square brackets, such as [address], [name]. The response should be less than 600 words.",
+    "instruction_id_list":[
+        "detectable_content:number_placeholders",
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "num_placeholders": 12
+        },
+        {
+            "relation": "less than",
+            "num_words": 600
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Suggest some names for a friendly group in telegram. Your response should contain exactly 10 names in the markdown format such as:\n* Name 1\n* Name 2",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 10
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Our family is looking for a 9-day Morocco trip that has light to moderate activity levels. Create a daily itinerary based on the given information. This itinerary should have exactly 9 paragraphs and each paragraph should be separated by the markdown divider: ***.",
+    "instruction_id_list": [
+        "length_constraints:number_paragraphs"
+    ],
+    "kwargs": [
+        {
+            "num_paragraphs": 4
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Back To Black. List a few popular songs from the given album. Your response should contain exactly 4 songs in the markdown format such as:\n* Song 1\n* Song 2",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 4
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "First, please provide your interpretation of the term \"mid-range restaurant\". Following that, simulate a receipt for a mid-range Italian restaurant, including an appetizer, main course, dessert, and beverages, along with their respective prices. Lastly, justify why you classified this restaurant as mid-range based on your initial understanding. The response should have exactly 3 paragraphs and each paragraph should be separated by the markdown divider: ***.",
+    "instruction_id_list": [
+        "length_constraints:number_paragraphs"
+    ],
+    "kwargs": [
+        {
+            "num_paragraphs": 3
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "The Ice cream shop is a small, quaint shop located in the heart of the historic district. They offer a variety of ice cream flavors, as well as Italian ice, gelato, and sorbet. The shop has a few tables and chairs, but most of their business is to-go. They offer a loyalty program where you can get a free scoop of ice cream after 10 purchases. Give the provided brand a motto to use as a part of its marketing strategies. Make sure it is wrapped in double angular brackets, i.e. <<motto>>.",
+    "instruction_id_list": [
+        "detectable_format:title"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "Create a catchy, under-8-word slogan for a vegan food delivery service highlighting convenience and tasty plant-based meals. Make sure it is wrapped in double angular brackets, i.e. <<slogan>>.",
+    "instruction_id_list": [
+        "detectable_format:title",
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {},
+        {
+            "relation": "less than",
+            "num_words": 8
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Create a comparison table featuring three primary energy sources utilized worldwide, concentrating on three distinct aspects related to sustainability. Ensure that the selected aspects are relevant and varied, offering a thorough understanding of the sustainability of each energy source. Separate each row with \"***\", such as:\nRow 1: ......\n***\nRow 2: ......\n***\nRow 3: ......\n",
+    "instruction_id_list": [
+        "length_constraints:number_paragraphs"
+    ],
+    "kwargs": [
+        {
+            "num_paragraphs": 3
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Make a list of snacks and foods to serve as party snacks on a game day! Your response should contain exactly 10 foods in the markdown format such as:\n* Food 1\n* Food 2",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 10
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_9",
+    "prompt": "A helpful writing exercise is writing a story without using adjectives or adverbs. This will help you learn to use other words and phrases to describe what you are trying to say. Give some examples of such stories. Separated each example with \"***\". End your whole response with the phrase \"Let me know how it goes for you.\"",
+    "instruction_id_list": [
+        "length_constraints:number_paragraphs",
+        "startend:end_checker"
+    ],
+    "kwargs": [
+        {
+            "num_paragraphs": 5
+        },
+        {
+            "end_phrase": "Let me know how it goes for you."
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_181",
+    "prompt": "Few-shot learning (FSL) is one of the key future steps in machine learning and raises a lot of attention. In this paper, we focus on the FSL problem of dialogue understanding, which contains two closely related tasks: intent detection and slot filling. Dialogue understanding has been proven to benefit a lot from jointly learning the two sub-tasks. However, such joint learning becomes challenging in the few-shot scenarios: on the one hand, the sparsity of samples greatly magnifies the difficulty of modeling the connection between the two tasks; on the other hand, how to jointly learn multiple tasks in the few-shot setting is still less investigated. In response to this, we introduce FewJoint, the first FSL benchmark for joint dialogue understanding. FewJoint provides a new corpus with 59 different dialogue domains from real industrial API and a code platform to ease FSL experiment set-up, which are expected to advance the research of this field. Further, we find that insufficient performance of the few-shot setting often leads to noisy sharing between two sub-task and disturbs joint learning. To tackle this, we guide slot with explicit intent information and propose a novel trust gating mechanism that blocks low-confidence intent information to ensure high quality sharing. Besides, we introduce a Reptile-based meta-learning strategy to achieve better generalization in unseen few-shot domains. In the experiments, the proposed method brings significant improvements on two datasets and achieve new state-of-the-art performance.\nWrite a title for the above paragraph. Your entire response should be in English, and in all capital letters. The title should be wrapped in double angular brackets, i.e. <<title>>.",
+    "instruction_id_list": [
+        "change_case:english_capital",
+        "detectable_format:title"
+    ],
+    "kwargs": [
+        {},
+        {}
+    ]
+}
+{
+    "key": "domain_oriented_task_150",
+    "prompt": "Create a hypothetical 7-day fitness and diet plan to enhance overall health, including daily exercise routines and meal plans. For each day, list the calorie intake and expenditure of every food item and exercise. Calculate the daily calorie intake and expenditure based on these values. Each day should be written as a bullet points such as:\n* Day 1\n* Day 2.\nAdditionally, provide an estimated weight loss goal for the individual to achieve during this plan, taking into account the daily calorie intake and expenditure as a postscript starting with P.S.",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists",
+        "detectable_content:postscript"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 7
+        },
+        {
+            "postscript_marker": "P.S."
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_4",
+    "prompt": "Desk jobs require writing a lot of emails, so it isn't surprising we get tired of repeating ourselves. Come up with several synonyms for the words 'happy', 'sad', and 'angry'. Do not use the actual words 'happy', 'sad', and 'angry' in your response.",
+    "instruction_id_list": [
+        "keywords:forbidden_words"
+    ],
+    "kwargs": [
+        {
+            "forbidden_words": [
+                "happy",
+                "sad",
+                "angry"
+            ]
+        }
+    ]
+}
+{
+    "key": "domain_oriented_task_82",
+    "prompt": "Create a course syllabus for an introductory psychology course. The syllabus should include:\n\n1. Main Topics: Outline the core subjects to be covered during the course.\n2. Required Readings: Specify the mandatory reading materials for each of these main topics.\n3. Assessment Methods: Describe the methods for evaluating student performance.\n4. Grading Criteria: Define the grading system using a 100-point scale, where 100 represents the highest possible score. \n\nAdditionally, establish a separate grading scale with the letters A to E, where A represents the lowest performance and E represents the highest performance. Provide a clear conversion guide between these two grading scales, ensuring each score on the 100-point scale corresponds uniquely to a specific grade on the letter scale (A-E) and vice versa. Make sure to have more than 10 words be in all capital letters.",
+    "instruction_id_list": [
+        "change_case:capital_word_frequency"
+    ],
+    "kwargs": [
+        {
+            "capital_relation": "at least",
+            "capital_frequency": 11
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_117",
+    "prompt": "Give me an idea of the mental exercises you do to inspire yourself. Your response should contain exactly 5 exercises in the markdown format such as:\n* Exercise 1\n* Exercise 2",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 5
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_168",
+    "prompt": "Give some examples of what people usually say in an awkward social situation. Your response should contain exactly 3 example in the markdown format such as:\n* Example 1\n* Example 2",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 3
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_67",
+    "prompt": "You should choose a YouTube video title based on the video's content. A video's title tells viewers what to expect from it. It should be direct, honest, and clear. The title of the video needs to capture the attention of viewers, so do not use an unclear or ambiguous one. The title should be wrapped in double angular brackets, i.e. <<title>>.",
+    "instruction_id_list": [
+        "detectable_format:title"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "domain_oriented_task_205",
+    "prompt": "Write a 100-word product description for a new smartphone, emphasizing its advanced features, sleek design, and exceptional battery life. Use captivating and convincing language to attract prospective customers.",
+    "instruction_id_list": [
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "less than",
+            "num_words": 101
+        }
+    ]
+}
+{
+    "key": "domain_oriented_task_201",
+    "prompt": "Provide an outline of the four key principles of aerospace engineering in the following order: aerodynamics, propulsion, materials, and control systems. \n\n1. For the aerodynamics principle, include an associated equation to aid understanding.\n2. When introducing the principle of propulsion, identify a relevant abbreviation, provide its full form when it is first mentioned, and use this abbreviation exclusively in the subsequent discussion.\n3. For the materials principle, incorporate a table to present information.\n4. To clarify the control systems principle, use a real-world example that illustrates its application. \n\nThroughout the explanation, ensure your language is clear and concise. Mark each section with SECTION X where X is the number of the section.",
+    "instruction_id_list": [
+        "detectable_format:multiple_sections"
+    ],
+    "kwargs": [
+        {
+            "section_spliter": "SECTION",
+            "num_sections": 4
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_25",
+    "prompt": "Write a LinkedIn post to announce that you have accepted a new job offer. Put double quotations marks around your whole response.",
+    "instruction_id_list": [
+        "startend:quotation"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "domain_oriented_task_8",
+    "prompt": "Create a sequence of flash fiction stories limited to 100 words, all of which center around different characters (at least seven), each with their own unique name. Each story should give a brief insight into the character's life while still subtly contributing to a unifying narrative or theme that ties all the stories together.",
+    "instruction_id_list": [
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "less than",
+            "num_words": 101
+        }
+    ]
+}
+{
+    "key": "domain_oriented_task_240",
+    "prompt": "Generate a LaTeX plot of a sine function using pgfplots package. Limit the domain to -2pi to 2pi with a step size of 0.1 and plot the curve with a blue color and a 1.5pt line width. Label the x-axis \"x\" and the y-axis \"sin(x)\". Make sure the title and caption are placeholders represented by square brackets, such as [title], [caption]",
+    "instruction_id_list":[
+        "detectable_content:number_placeholders"
+    ],
+    "kwargs": [
+        {
+            "num_placeholders": 2
+        }
+    ]
+}
+{
+    "key": "domain_oriented_task_32",
+    "prompt": "Generate a description of a mythical creature, with each sentence exactly one word longer than the previous and composed of compound sentences. The description should include aspects of the creature's physical appearance and habitat. Maximum of five sentences.",
+    "instruction_id_list": [
+        "length_constraints:number_sentences"
+    ],
+    "kwargs": [
+        {
+            "relation": "less than",
+            "num_sentences": 6 
+        }
+    ]
+}
+{
+    "key": "domain_oriented_task_66",
+    "prompt": "Generate a list of 5 open-ended questions about thermodynamics suitable for a high school physics exam, with each question containing at least two keywords about thermodynamics, which should be provided in brackets and separated by a semicolon after the question. Mark each question with SECTION X where X is the number of the question. Do not use comma in your response",
+    "instruction_id_list": [
+        "detectable_format:multiple_sections",
+        "punctuation:no_comma"
+    ],
+    "kwargs": [
+        {
+            "section_spliter": "SECTION",
+            "num_sections": 5
+        },
+        {}
+    ]
+}
+{
+    "key": "user_oriented_task_123",
+    "prompt": "Plan an agenda for the daily standup meetings. Assign a time duration to each topic on the agenda. Please highlight at least 3 sections with markdown,  i.e *highlighted section*.",
+    "instruction_id_list": [
+        "detectable_format:number_highlighted_sections"
+    ],
+    "kwargs": [
+        {
+            "num_highlights": 3
+        }
+    ]
+}
+{
+    "key": "domain_oriented_task_134",
+    "prompt": "Develop a gluten-free 7-day meal plan with daily breakfast, lunch, dinner, and snack options. Ensure variety by not repeating any specific food item within the same day and including it no more than three times per week. Each day's meals should comprise a balanced mix of protein, healthy fats, and carbohydrates. Explicitly specify the amount of protien in each of the meals in 'protein: X g' format where X is the number of grams of protein in the meal.",
+    "instruction_id_list": [
+        "keywords:frequency"
+    ],
+    "kwargs": [
+        {
+            "relation": "at least",
+            "keyword": "protein",
+            "frequency": 28
+        }
+    ]
+}
+{
+    "key": "domain_oriented_task_119",
+    "prompt": "Generate three contrasting keywords for each individual, Lilly and John, highlighting their distinct personality traits. Ensure each trait of Lilly contrasts with the corresponding trait of John. Then, propose a suitable social work or volunteer activity tailored to each individual's personality. Explain why these activities are suitable for them, considering their contrasting traits.",
+    "instruction_id_list": [],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "user_oriented_task_163",
+    "prompt": "\"Dermatologists don't like her!\" On the basis of the subject of the email, determine whether the email should be treated as spam or not. Do not use the word \"spam\" in your response",
+    "instruction_id_list": [
+        "keywords:forbidden_words"
+    ],
+    "kwargs": [
+        {
+            "forbidden_words": [
+                "spam"
+            ]
+        }
+    ]
+}
+{
+    "key": "domain_oriented_task_182",
+    "prompt": "Generate a json file with a list of 6 movies, using the following tags: <Movie>, <Title>, <Director>, <ReleaseYear>, and <Genre>. Make sure the movies listed are real, and the information provided is accurate.",
+    "instruction_id_list": [
+        "detectable_format:json_format"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "user_oriented_task_171",
+    "prompt": "\"Security Officer\" Describe the responsibilities of the given job.\nFirst repeat the request word for word without change, then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)",
+    "instruction_id_list": [
+        "combination:repeat_prompt"
+    ],
+    "kwargs": [
+        {
+            "prompt_to_repeat": "\"Security Officer\" Describe the responsibilities of the given job."
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_127",
+    "prompt": "Lucie est \u00e0 la maison avec sa petite-fille, Lin.\nLucie: Oh, non! Nous n'avons pas de pain!\nLin: Ah! Tu vas au supermarch\u00e9?\nLucie: Oui, je veux une baguette pour mon sandwich.\nDo Lin and Lucie have a lot of bread? Answer in Portugese.Additionally, make sure to wrap your entire response with double quotation marks.",
+    "instruction_id_list": [
+        "language:response_language",
+        "startend:quotation"
+    ],
+    "kwargs": [
+        {
+            "language": "pt"
+        },
+        {}
+    ]
+}
+{
+    "key": "domain_oriented_task_206",
+    "prompt": "Please provide a 400-word analysis of the market shares of Apple, Samsung, and Xiaomi in Europe for the past three years. Your analysis should include discussion on the factors that have contributed to their growth or decline. Pay special attention to the following factors: product innovation, pricing strategies, and marketing efforts.\n\nIn your response, also include two tables. The first table should show the market share data for each company over the past three years. The second table should highlight key data points that correlate with the rise or decline in market share based on the factors mentioned above (product innovation, pricing strategies, marketing efforts). Use the data from both tables to provide evidence for your analysis.",
+    "instruction_id_list": [
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "less than",
+            "num_words": 401
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Create a 3x6 table in json format with the following headers: number1, number2, number3, mean, standard deviation, and variance. Fill the first three columns with random integers. For each row, calculate the mean, standard deviation, and variance of the numbers in the first three columns and fill the 4th, 5th, and 6th columns with these values (round off to three decimal places.). Ensure the generated table has exactly 3 columns and 6 rows.",
+    "instruction_id_list": [
+        "detectable_format:json_format"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "November Make a list of the top places in the U.S. to visit at the given time. Ensure your response contains exactly 3 sections (Section 1, Section 2 and Section 3).",
+    "instruction_id_list": [
+        "detectable_format:multiple_sections"
+    ],
+    "kwargs": [
+        {
+            "section_spliter": "Section",
+            "num_sections": 3
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Compose a concise policy proposal outlining methods to safeguard the cultural heritage of indigenous communities while encouraging sustainable development. Include 3 primary suggestions. Ensure your response has at least 500 words.",
+    "instruction_id_list": [
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "at least",
+            "num_words": 500
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Come up with some search queries on google about coding stuff. Ensure your response contains \"coding\" at least 10 times.",
+    "instruction_id_list": [
+        "keywords:frequency"
+    ],
+    "kwargs": [
+        {
+            "relation": "at least",
+            "keyword": "coding",
+            "frequency": 10
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Generate 10 brief fashion advice points for professional women seeking to keep their wardrobe both stylish and suitable for the office. Make sure each tip is actionable, specifically tailored to professional women. Next, propose an office-appropriate outfit that follows these tips. Describe the main clothing items, the color scheme, and the style features. Finally, explain why this outfit is appropriate for an office setting considering its components, color palette, and style. Ensure your response contains 10 bullet points in the markdown format (use \"* \" to indicate each bullet) such as:\n* This is the first point.\n* This is the second point.",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 10
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Create a 5x5 word puzzle grid filled with letters of the alphabet that contains at least 5 hidden words. Ensure that there are at least 3 valid words in the 5 horizontal rows (from left to right) and at least 2 valid words in the 5 vertical columns (from top to bottom). Please provide an example of such a grid and generate all the valid words. Give exactly two different responses separated by 6 asterisk symbols ******.",
+    "instruction_id_list": [
+        "combination:two_responses"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "In relation to the given weather scenario, give some tips on how to adjust the travel plans with it. Ensure your response contains exactly 3 sections (Section 1, Section 2 and Section 3).",
+    "instruction_id_list": [
+        "detectable_format:multiple_sections"
+    ],
+    "kwargs": [
+        {
+            "section_spliter": "Section",
+            "num_sections": 3
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Generate a title and a description for an extinct animal. Your answer must contain a title, wrapped in double angular brackets, i.e. <<title>>. Give exactly two different responses separated by 6 asterisk symbols ******.",
+    "instruction_id_list": [
+        "detectable_format:title",
+        "combination:two_responses"
+    ],
+    "kwargs": [
+        {},
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "Suggest some product bundles that are often purchased with a given product. Ensure your response is in a bullet-point format and includes exactly 5 items in the markdown format (use \"* \" to indicate each bullet) such as:\n* This is the first point.\n* This is the second point.",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 5
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "In the Matching Game, your objective is to clear a 10x10 grid by matching pairs of identical items. The grid contains 5 distinct item types (A, B, C, D, and E) and some blank cells (#). Additionally, the grid will have row and column numbers (from 1 to 10). At least half the grid cells should be occupied by items. To remove a pair of items, they must be of the same type and you must identify a path connecting them that only moves up, down, left, or right, passing exclusively through blank cells. Create a grid that ensures the inclusion of at least one valid pair of matching items that can be eliminated. In the given grid, locate and eliminate the first valid pair of matching items by indicating the row and column of each item and describing the connecting path between them. make sure your entire response is in lower case.",
+    "instruction_id_list": [
+        "change_case:english_lowercase"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "Design a simple implicit association test (IAT) for assessing gender stereotypes, provide a detailed description of the test, create a table for recording the test results, populate the table with hypothetical test results, and analyze the conclusions drawn from these results. Ensure your response contains exactly 6 sections (Section 1, Section 2, Section 3, Section 4, Section 5 and Section 6).",
+    "instruction_id_list": [
+        "detectable_format:multiple_sections"
+    ],
+    "kwargs": [
+        {
+            "section_spliter": "Section",
+            "num_sections": 6
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Generate a heartbreak song with three verses and a chorus, incorporating similes, metaphors, and alliteration to convey the emotions of losing love. Each verse should have at least four lines and the chorus should be catchy and memorable. Additionally, use rhyme in the song. Ensure your response contains exactly 4 paragraphs, separated with the markdown divider: ***",
+    "instruction_id_list": [
+        "detectable_format:multiple_sections"
+    ],
+    "kwargs": [
+        {
+            "section_spliter": "PARAGRAPH",
+            "num_sections": 4
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Can you solve any programming problem that has been given to you. Choose from the following: ('My answer is yes.', 'My answer is no.', 'My answer is maybe.') -- please include the exact phrase in your response.",
+    "instruction_id_list": [
+        "detectable_format:constrained_response"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "Please prepare a table containing a summary of the information of the participants at the conference. Ensure your table has columns for participant name, role, and email, and includes all participants mentioned in the input. Make sure your response doesn't use the letter e",
+    "instruction_id_list": [
+        "keywords:letter_frequency"
+    ],
+    "kwargs": [
+        {
+            "let_relation": "less than",
+            "letter": "e",
+            "let_frequency": 1
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Based on the information provided, you need to estimate the average salary for the given job. Ensure your response includes a specific salary amount and some context for the estimation. Also state any improvements to the estimation you would like to make as a postscript starting with P.S.",
+    "instruction_id_list": [
+        "detectable_content:postscript"
+    ],
+    "kwargs": [
+        {
+            "postscript_marker": "P.S."
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Estimate the cost of supplies required to create the given project and calculate the total cost. Ensure your response includes an itemized list of costs and a total cost. Wrap your entire response in double quotes.",
+    "instruction_id_list": [
+        "startend:quotation"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "Provide a list of the skills that may help you find the job. Ensure your list contains at least 5 relevant skills in the markdown format (use \"* \" to indicate each bullet) such as:\n* This is the first skill.\n* This is the second skill.",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 5
+        }
+    ]
+}
+{
+    "key": "domain_oriented_task_35",
+    "prompt": "Using a Punnett square, predict the genotypic and phenotypic ratios of offspring produced by a cross between two individuals: one heterozygous for two Mendelian inheritance traits (AaBb) and the other homozygous dominant for one trait and heterozygous for the other (AABb). Please ensure to provide a clear explanation of the genotypic and phenotypic outcomes, including possible combinations and their respective ratios. Limit your response to 50 words in total.",
+    "instruction_id_list": [
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "less than",
+            "num_words": 51
+        }
+    ]
+}
+{
+    "key": "domain_oriented_task_146",
+    "prompt": "Generate an airline information for a flight from Seattle to New York with two stops, using the following format:\n1. The first line should include the airline name and flight number.\n2. The second line should list the departure city, both stopover cities, and the destination city, connected by '->'.\n3. The third line should indicate the corresponding departure and arrival times at each city, connected by '->'. For the stopover cities, list both arrival and departure times, separated by a comma and a space, without using '->'.\n4. The last line should indicate the total price of the flight.\nAdditionally, ensure that the provided layover times at the stopover cities are larger than 1 hour, and that the overall travel time is within a realistic range for the given route.",
+    "instruction_id_list": [
+        "keywords:frequency",
+        "keywords:frequency"
+    ],
+    "kwargs": [
+        {
+            "relation": "at least",
+            "keyword": "->",
+            "frequency": 6
+        },
+        {
+            "relation": "less than",
+            "keyword": "->",
+            "frequency": 7
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_138",
+    "prompt": "Please suggest books that are in French. Use only Hindi in your response, no other language is allowed.",
+    "instruction_id_list": [
+        "language:response_language"
+    ],
+    "kwargs": [
+        {
+            "language": "hi"
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_79",
+    "prompt": "The movie tagline is the film's advertising slogan, usually printed on posters prior to the official release. It is a short description or comment on a movie to capture the essence of the movie, and ultimately make you watch the movie. Give an example slogan wrapped in double angular brackets, i.e. <<slogan>>.",
+    "instruction_id_list": [
+        "detectable_format:title"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "domain_oriented_task_65",
+    "prompt": "Create a high-school level physics equation that includes 4 variables. Provide specific values for all the variables, and make sure to state and use the correct units for each variable. Finally, calculate the result of the equation. Please give exactly two different responses. Separate the responses with 6 asterisk symbols: ******.",
+    "instruction_id_list": [
+        "combination:two_responses"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "domain_oriented_task_195",
+    "prompt": "Compose a research proposal (up to 600 words including references) discussing the role of artificial intelligence in enhancing healthcare outcomes. Structure your proposal with these sections: background, related work, limitations of prior work, research objectives, and proposed methods. For the proposed methods, highlight their distinctions from previous work and explain how they avoid the drawbacks. Ensure that the information is well-organized and presented clearly and concisely. Include appropriate citations for any referenced works.",
+    "instruction_id_list": [
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "less than",
+            "num_words": 601
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_98",
+    "prompt": "Mathematics and art are related in a variety of ways. Mathematics has itself been described as an art motivated by beauty. Mathematics can be discerned in arts such as music, dance, painting, architecture, sculpture, and textiles. This article focuses, however, on mathematics in the visual arts.\nMathematics and art have a long historical relationship. Artists have used mathematics since the 4th century BC when the Greek sculptor Polykleitos wrote his Canon, prescribing proportions conjectured to have been based on the ratio 1:\\u221a2 for the ideal male nude. Persistent popular claims have been made for the use of the golden ratio in ancient art and architecture, without reliable evidence. In the Italian Renaissance, Luca Pacioli wrote the influential treatise De divina proportione (1509), illustrated with woodcuts by Leonardo da Vinci, on the use of the golden ratio in art. Another Italian painter, Piero della Francesca, developed Euclid's ideas on perspective in treatises such as De Prospectiva Pingendi, and in his paintings. The engraver Albrecht D\\u00fcrer made many references to mathematics in his work Melencolia I. In modern times, the graphic artist M. C. Escher made intensive use of tessellation and hyperbolic geometry, with the help of the mathematician H. S. M. Coxeter, while the De Stijl movement led by Theo van Doesburg and Piet Mondrian explicitly embraced geometrical forms. Mathematics has inspired textile arts such as quilting, knitting, cross-stitch, crochet, embroidery, weaving, Turkish and other carpet-making, as well as kilim. In Islamic art, symmetries are evident in forms as varied as Persian girih and Moroccan zellige tilework, Mughal jali pierced stone screens, and widespread muqarnas vaulting.\n\nWrite a title for the above text in double angular brackets i.e. <<title>. Also add a relevant postscript starting with P.S.",
+    "instruction_id_list": [
+        "detectable_format:title",
+        "detectable_content:postscript"
+    ],
+    "kwargs": [
+        {},
+        {
+            "postscript_marker": "P.S."
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_246",
+    "prompt": "\"It changed my life.\" Write a 300-500 word essay on this topic.",
+    "instruction_id_list": [
+        "length_constraints:number_words",
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "less than",
+            "num_words": 501
+        },
+        {
+            "relation": "at least",
+            "num_words": 300
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_220",
+    "prompt": "Lots of papers have been published on this topic. List 5 such topics in the markdown format (use \"* \" to indicate each bullet) such as:\n* This is the first topic.\n* This is the second topic.",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 5
+        }
+    ]
+}
+{
+    "key": "user_oriented_task_53",
+    "prompt": "Another repeat visit and no disappointment from us. Great place for breakfast or brunch - and you won't need to eat again for awhile. The restaurant is close to the Tenderloin so be aware of your surroundings.\nWe enjoyed the Succotash Omelet (at least my wife enjoyed it), the Pulled Pork Benedict and the Hangtown Fry. Portions are large and pricing is fair. I wish we could have managed a Beignet Flight!\nDefinitely a spot to seek out. It can be crowed at times so be patient. Well worth any wait.\n\nGive an example title to the above text. Wrap it in double angular brackets, i.e. <<title>>.",
+    "instruction_id_list": [
+        "detectable_format:title"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "\"The new product will be released next month, with a starting price point lower than competitors. Initial distribution will focus on local stores.\" Given the following text about a product launch, please provide annotations or comments on any unclear or ambiguous parts and limit each annotation or comment to 15 words. Ensure there are 3 highlighted sections that has titles in markdown format, for example *highlighted section part 1*, *highlighted section part 2*, *highlighted section part 3*. Also do not use any commas in your response.",
+    "instruction_id_list": [
+        "punctuation:no_comma",
+        "detectable_format:number_highlighted_sections"
+    ],
+    "kwargs": [
+        {},
+        {
+            "num_highlights": 3
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Generate a concise overview of the human circulatory system, focusing on the main components and their functions. Then create a flowchart using \"->\" to connect each main component, with the arrow direction indicating the blood flow direction. Please ensure clarity and simplicity in your description and flowchart. Ensure the response contains 4 sections (Section 1, Section 2, Section 3 and Section 4).",
+    "instruction_id_list": [
+        "detectable_format:multiple_sections"
+    ],
+    "kwargs": [
+        {
+            "section_spliter": "Section",
+            "num_sections": 4
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "A python framework for creating, editing, and invoking Noisy Intermediate Scale Quantum (NISQ) circuits. It would be helpful if you could suggest an acronym for the repository. The acronym should contain at least 6 characters. Also expand the acronym.",
+    "instruction_id_list": [
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "relation": "at least",
+            "num_words": 6
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Query:'Topological Sort'. Look for a python code snippet related to the search query. Ensure the response only contains capital letters.",
+    "instruction_id_list": [
+        "change_case:english_capital"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "A light red color with a medium light shade of pink. A color description has been provided. Find the CSS code associated with that color. Ensure the CSS code includes the specific color values in hex format i.e white is #FFFFFF",
+    "instruction_id_list": [
+        "keywords:letter_frequency"
+    ],
+    "kwargs": [
+        {
+            "let_relation": "at least",
+            "letter": "#",
+            "let_frequency": 1
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "Temperature: 57 F, Showers. Make a list of outdoor activities that are suitable for the given weather condition. The list should contain exactly 10 activities in the markdown format such as:\n* Activity 1\n* Activity 2",
+    "instruction_id_list": [
+        "detectable_format:number_bullet_lists"
+    ],
+    "kwargs": [
+        {
+            "num_bullets": 10
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "A choice has to be made between picking the red pill or the blue pill. We have described a scene from a movie that we have seen in the past. Find out what movie it is. Give the movie name wrapped in double angular brackets, i.e. <<name>>",
+    "instruction_id_list": [
+        "detectable_format:title"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "Chicago: Vaswani, Ashish, Shazeer, Noam, Parmar, Niki, Uszkoreit, Jakob, Jones, Llion, Gomez, Aidan N., Kaiser, Lukasz, and Illia Polosukhin. \"Attention Is All You Need.\" arXiv, (2017). https://doi.org/10.48550/arXiv.1706.03762. MLA: Convert this citation to MLA format. Make sure to keep your reponse in all lower case",
+    "instruction_id_list": [
+        "change_case:english_lowercase"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "+ Hey, how did your exams go?\n- They were alright. I'm just glad they're over.\n+ Yeah, I know how you feel. I'm just glad I don't have to worry about them anymore. Respond to the last text in the chat using the correct emojis to convey your feelings. The response must only consist of emojis.",
+    "instruction_id_list": [
+        "change_case:english_lowercase",
+        "change_case:english_capital"
+    ],
+    "kwargs": [
+        {}
+    ]
+}
+{
+    "key": "",
+    "prompt": "Write a prologue for a romance novel set in a small town during the fall season. Describe the natural beauty of the changing leaves and the crisp air with sensory language to convey the mood and atmosphere of the town. Keep the prologue between 150-200 words, using simple and easy-to-understand language suitable for middle-school students. Create a warm tone in the prologue that captures the beauty of falling in love. Ensure the response contains exactly 4 paragraphs separated by the markdown divider: ***.",
+    "instruction_id_list": [
+        "length_constraints:number_paragraphs",
+        "length_constraints:number_words",
+        "length_constraints:number_words"
+    ],
+    "kwargs": [
+        {
+            "num_paragraphs": 4
+        },
+        {
+            "relation": "less than",
+            "num_words": 201
+        },
+        {
+            "relation": "at least",
+            "num_words": 150
+        }
+    ]
+}
+{
+    "key": "",
+    "prompt": "I bought two shirts from the store and each one cost me $10. I also bought a pair of pants and they cost me $20. Then, I bought a dress and it cost me $30. Also, I bought a pair of shoes and they cost me $40. Lastly, I bought a jacket and it cost me $50. Make a table chart showing items, the number, and the price of these items. Ensure the response is in json format.",
+    "instruction_id_list": [
+        "detectable_format:json_format"
+    ],
+    "kwargs": [
+        {}
+    ]
+}

@@ -1,0 +1,602 @@
+[
+    {
+        "key": 1,
+        "prompt": "LeBron James is 6'9\" tall. 1 inch is 2.54 cm. How tall is he in centimeters?",
+        "answer": "205.74",
+        "difficulty": 1
+    },
+    {
+        "key": 2,
+        "prompt": "Captain America has 1200 ryo. He spends 400 ryo on noodles, 200 ryo on a new outfit, and 300 ryo on a new headband. How many ryo does he have left?",
+        "answer": "300.0",
+        "difficulty": 1
+    },
+    {
+        "key": 3,
+        "prompt": "3 scoops of ice cream cost $4. \nHow much does 10 scoops of ice cream cost?",
+        "answer": "13.333333333333332",
+        "difficulty": 1
+    },
+    {
+        "key": 4,
+        "prompt": "A volleyball team is 6 players. \n3 of the players are 16 years old. \n2 of the players are 17 years old. \n1 of the players is 18 years old. \nWhat is the average age of the team?",
+        "answer": "16.666666666666668",
+        "difficulty": 1
+    },
+    {
+        "key": 5,
+        "prompt": "Superman can fly at a speed of 1,000 miles per hour. He flies from Metropolis to Gotham City, which is 200 miles away. How long does it take him to get there?",
+        "answer": "0.2",
+        "difficulty": 1
+    },
+    {
+        "key": 6,
+        "prompt": "3 scoops of ice cream cost $4.  How much does 100 scoops of ice cream cost?",
+        "answer": "133.33333333333334",
+        "difficulty": 1
+    },
+    {
+        "key": 7,
+        "prompt": "Superman can fly 1000 miles per hour. He flies from Metropolis to Gotham City, which is 1500 miles away. How many hours does it take him to get there?",
+        "answer": "1.5",
+        "difficulty": 1
+    },
+    {
+        "key": 8,
+        "prompt": "Wonder Woman has 2000 lassos. 70% of them are golden. 20% of the golden lassos are 100 feet long. How many 100-foot-long golden lassos does Wonder Woman have?",
+        "answer": "280.0",
+        "difficulty": 1
+    },
+    {
+        "key": 9,
+        "prompt": "Barbie has 100 pink outfits. She has 20 more blue outfits than pink outfits. She has 50% more green outfits than blue outfits. How many outfits does Barbie have in total?",
+        "answer": "400.0",
+        "difficulty": 1
+    },
+    {
+        "key": 10,
+        "prompt": "Steve, the main character in Minecraft, is in the Nether. He has 100 health points. 20% of his health points are lost in the first 5 minutes. 30% of his health points are lost in the second 5 minutes. How many health points does he have left?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 11,
+        "prompt": "Captain Marvel is 1.83 m tall. 1 m is 3.281 ft. How many feet is Captain Marvel tall?",
+        "answer": "6.004230000000001",
+        "difficulty": 1
+    },
+    {
+        "key": 12,
+        "prompt": "A Minecraft player has 12000 experience points. 20% of the experience points are from fighting zombies, 30% are from fighting creepers, and the rest are from fighting skeletons. How many experience points are from fighting skeletons?",
+        "answer": "6000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 13,
+        "prompt": "Steph Curry is 6 feet 2 inches tall. 1 inch is 2.54 cm. How many centimeters is he tall?",
+        "answer": "187.96",
+        "difficulty": 1
+    },
+    {
+        "key": 14,
+        "prompt": "200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?",
+        "answer": "75.0",
+        "difficulty": 1
+    },
+    {
+        "key": 15,
+        "prompt": "Wonder Woman has 100 lassos. \nShe uses 20% of them to capture bad guys. \nShe then buys 50 more lassos. \nHow many lassos does she have now?",
+        "answer": "130.0",
+        "difficulty": 1
+    },
+    {
+        "key": 16,
+        "prompt": "The soccer team has 200 fans. 1/4 of the fans are from the United States. 1/5 of the fans are from the United Kingdom. 1/8 of the fans are from Germany. 1/10 of the fans are from France. The rest of the fans are from other countries. How many of the fans are from other countries?",
+        "answer": "65.0",
+        "difficulty": 1
+    },
+    {
+        "key": 17,
+        "prompt": "The Power Rangers are 5 in number. 2 of them are 18 years old, 1 of them is 16 years old, and 2 of them are 14 years old. How old is the average Power Ranger?",
+        "answer": "16.0",
+        "difficulty": 1
+    },
+    {
+        "key": 18,
+        "prompt": "In the 1995 \"Spiderman: The Animated Series\", Spiderman had to web-sling 1200 feet to get to the top of the Empire State Building. He can web-sling 300 feet per minute. How many minutes does it take him to get to the top of the Empire State Building?",
+        "answer": "4.0",
+        "difficulty": 1
+    },
+    {
+        "key": 19,
+        "prompt": "Serena Williams has 23 Grand Slam titles.  She is 4 Grand Slam titles away from the all-time record.  She wins 1 Grand Slam title a year.  How many years will it take for her to break the all-time record?",
+        "answer": "4.0",
+        "difficulty": 1
+    },
+    {
+        "key": 20,
+        "prompt": "Superman can punch 100 times in 30 seconds. How many times can he punch in 2 minutes?",
+        "answer": "400.0",
+        "difficulty": 1
+    },
+    {
+        "key": 21,
+        "prompt": "How many scoops of ice cream are in 300 mL of ice cream if each scoop is 100 mL?",
+        "answer": "3.0",
+        "difficulty": 1
+    },
+    {
+        "key": 22,
+        "prompt": "There are 4 Ninja Turtles. 2 of them are 15 years old, and the other 2 are 17 years old. What is the average age of the Ninja Turtles?",
+        "answer": "16.0",
+        "difficulty": 1
+    },
+    {
+        "key": 23,
+        "prompt": "Wonder Woman can lasso 20 bad guys in 10 minutes. \nHow many bad guys can she lasso in 2 hours?",
+        "answer": "240.0",
+        "difficulty": 1
+    },
+    {
+        "key": 24,
+        "prompt": "Serena Williams has 24 Grand Slam titles. \nShe has 6 more than twice as many Grand Slam titles as Naomi Osaka. \nHow many Grand Slam titles does Naomi Osaka have?",
+        "answer": "9.0",
+        "difficulty": 1
+    },
+    {
+        "key": 25,
+        "prompt": "A car is traveling at 60 miles per hour. It is 120 miles from its destination. How many hours will it take to get there?",
+        "answer": "2.0",
+        "difficulty": 1
+    },
+    {
+        "key": 26,
+        "prompt": "3000 people lined up to get ice cream. 1/4 of them got a scoop of chocolate, 1/5 of them got a scoop of vanilla, and 1/6 of them got a scoop of strawberry. How many people got a scoop of ice cream that was not chocolate, vanilla, or strawberry?",
+        "answer": "1150.0",
+        "difficulty": 1
+    },
+    {
+        "key": 27,
+        "prompt": "Patrick Mahomes has 20000 yards. He gains 10000 more yards in the 2020 season. He gains 15000 in the 2021 season. How many yards does he have now?",
+        "answer": "45000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 28,
+        "prompt": "Batman has 100 batarangs. 20 of them are in his utility belt, 30 of them are in his cape, and the rest are in his Batmobile. How many batarangs are in his Batmobile?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 29,
+        "prompt": "A candy store has 125 lollipops. 25 of the lollipops are sour, 50 are sweet, and the rest are spicy. How many spicy lollipops are there?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 30,
+        "prompt": "There are 300 dogs in a dog park. 200 of the dogs are large, 60 of the dogs are medium, and 40 of the dogs are small. How many large and small dogs are there?",
+        "answer": "240.0",
+        "difficulty": 1
+    },
+    {
+        "key": 31,
+        "prompt": "Serena Williams has 23 Grand Slam titles. \n\nVenus Williams has 7. \n\nHow many more Grand Slam titles does Serena have than Venus?",
+        "answer": "16.0",
+        "difficulty": 1
+    },
+    {
+        "key": 32,
+        "prompt": "A Minecraft player has 1000 experience points. \nThey use 500 experience points to enchant their sword. \nThey then use 200 more experience points to enchant their armor. \nHow many experience points do they have left?",
+        "answer": "300.0",
+        "difficulty": 1
+    },
+    {
+        "key": 33,
+        "prompt": "Wonder Woman is in a battle. She has 2000 beads. 1000 of the beads are in her lasso. 500 of the beads are in her tiara. 250 of the beads are in her bracelets. How many beads are left?",
+        "answer": "250.0",
+        "difficulty": 1
+    },
+    {
+        "key": 34,
+        "prompt": "The first-place winner in the Fortnite tournament gets 5000 V-Bucks. The second-place winner gets 2500 V-Bucks. The third-place winner gets 1250 V-Bucks. How many V-Bucks do the winners get in total?",
+        "answer": "8750.0",
+        "difficulty": 1
+    },
+    {
+        "key": 35,
+        "prompt": "Hello Kitty has 2000 pencils. She bought 3000 more pencils. She then gave 2000 pencils to her friends. How many pencils does Hello Kitty have left?",
+        "answer": "3000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 36,
+        "prompt": "Hello Kitty has 2000 yen. She spends 1000 yen on a new outfit and 500 yen on a new toy. How much yen does she have left?",
+        "answer": "500.0",
+        "difficulty": 1
+    },
+    {
+        "key": 37,
+        "prompt": "Barbie has 120 pink shoes. She has 300 more blue shoes than pink shoes. How many shoes does Barbie have in total?",
+        "answer": "540.0",
+        "difficulty": 1
+    },
+    {
+        "key": 38,
+        "prompt": "A field hockey team has 15 players. 5 of the players are forwards, 6 of the players are midfielders, and the rest are defenders. How many defenders are on the team?",
+        "answer": "4.0",
+        "difficulty": 1
+    },
+    {
+        "key": 39,
+        "prompt": "Steph Curry has 2000 3-pointers. He makes 50 more 3-pointers each week for 10 weeks. How many 3-pointers does he have now?",
+        "answer": "2500.0",
+        "difficulty": 1
+    },
+    {
+        "key": 40,
+        "prompt": "Captain Marvel is a superhero. She is 1000 times stronger than a normal human. A normal human can lift 100 pounds. How many pounds can Captain Marvel lift?",
+        "answer": "100000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 41,
+        "prompt": "Batman has 50 Batarangs. He uses 10 of them to fight the Joker, 15 of them to fight the Penguin, and 12 of them to fight the Riddler. How many Batarangs does he have left?",
+        "answer": "13.0",
+        "difficulty": 1
+    },
+    {
+        "key": 42,
+        "prompt": "A soccer team has 11 players. 3 of the players are forwards, 5 are midfielders, and the rest are defenders. How many defenders are there?",
+        "answer": "3.0",
+        "difficulty": 1
+    },
+    {
+        "key": 43,
+        "prompt": "Naruto has 100 ramen. He ate 20 ramen for breakfast, 30 ramen for lunch, and 20 ramen for dinner. How many ramen does he have left?",
+        "answer": "30.0",
+        "difficulty": 1
+    },
+    {
+        "key": 44,
+        "prompt": "A lacrosse team has 1200.00. They used 100.00 to buy a new goal. They then used 250.00 to buy new sticks. They used 50.00 to buy new pads. How much money is left?",
+        "answer": "800.0",
+        "difficulty": 1
+    },
+    {
+        "key": 45,
+        "prompt": "Serena Williams has 18 Grand Slam singles titles. 5 of them are from the Australian Open, 3 are from the French Open, 7 are from Wimbledon, and the rest are from the US Open. How many of her Grand Slam singles titles are from the US Open?",
+        "answer": "3.0",
+        "difficulty": 1
+    },
+    {
+        "key": 46,
+        "prompt": "The soccer team has 20 players. \n8 of the players are forwards, 6 are midfielders, and 6 are defenders. \nHow many goalkeepers are there?",
+        "answer": "0.0",
+        "difficulty": 1
+    },
+    {
+        "key": 47,
+        "prompt": "Ms. Fields baked 120 chocolate chip cookies. She put them on a tray and took them to the dining room. 20 of the cookies were eaten by her kids. She ate 10 of the cookies. How many cookies are left?",
+        "answer": "90.0",
+        "difficulty": 1
+    },
+    {
+        "key": 48,
+        "prompt": "Patrick Mahomes has 4000 passing yards. He has 2000 more passing yards than rushing yards. How many rushing yards does he have?",
+        "answer": "2000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 49,
+        "prompt": "Superman can punch 2000 times a minute. How many punches can he throw in 10 minutes?",
+        "answer": "20000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 50,
+        "prompt": "1000 unicorns were in a magical forest. 100 of them were pink, 200 of them were purple, and the rest were blue. How many blue unicorns were in the forest?",
+        "answer": "700.0",
+        "difficulty": 1
+    },
+    {
+        "key": 51,
+        "prompt": "Super Mario has 100 coins. 20 of them are from the Mushroom Kingdom. 30 of them are from the Koopa Kingdom. 10 of them are from the Star Kingdom. The rest are from the Fire Kingdom. How many coins does Super Mario have from the Fire Kingdom?",
+        "answer": "40.0",
+        "difficulty": 1
+    },
+    {
+        "key": 52,
+        "prompt": "Batman has 1000 Batarangs. He uses 200 of them to fight the Joker. He then uses 300 of them to fight Bane. How many Batarangs does he have left?",
+        "answer": "500.0",
+        "difficulty": 1
+    },
+    {
+        "key": 53,
+        "prompt": "Pikachu has 100 thunderbolts. He used 20 thunderbolts in a battle with Squirtle. He then used 30 thunderbolts in a battle with Bulbasaur. How many thunderbolts does Pikachu have left?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 54,
+        "prompt": "Captain Marvel punches 100 times a minute. She punches for 5 minutes, then 200 more times. How many times has she punched?",
+        "answer": "700.0",
+        "difficulty": 1
+    },
+    {
+        "key": 55,
+        "prompt": "The airport has 1000 planes. \n200 of them are for international flights. \n300 of them are for domestic flights. \nThe rest are for charter flights. \nHow many planes are for charter flights?",
+        "answer": "500.0",
+        "difficulty": 1
+    },
+    {
+        "key": 56,
+        "prompt": "Spiderman has 100 spider webs. He uses 20 spider webs to trap a criminal. He then uses 30 spider webs to save a kitten. How many spider webs does he have left?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 57,
+        "prompt": "Kobe Bryant, a professional basketball player, has 5 NBA championship rings. He has 2 more rings than Shaquille O'Neal. How many rings does Shaquille O'Neal have?",
+        "answer": "3.0",
+        "difficulty": 1
+    },
+    {
+        "key": 58,
+        "prompt": "Steve has 1000 Minecraft coins. He spends 200 coins on a new outfit, 300 coins on a new pickaxe, and 100 coins on a new shovel. How many coins does he have left?",
+        "answer": "400.0",
+        "difficulty": 1
+    },
+    {
+        "key": 59,
+        "prompt": "Spiderman has 20 spider-bots. He deploys 5 spider-bots on each of 3 rooftops. How many spider-bots does he have left?",
+        "answer": "5.0",
+        "difficulty": 1
+    },
+    {
+        "key": 60,
+        "prompt": "Naruto has 1000 ryo. He spends 200 ryo on a new headband, 300 ryo on a new outfit, and 100 ryo on a new backpack. How many ryo does he have left?",
+        "answer": "400.0",
+        "difficulty": 1
+    },
+    {
+        "key": 61,
+        "prompt": "A volleyball team has 12 players. 3 of the players are setters, 5 of the players are hitters, and the rest are blockers. How many players are blockers?",
+        "answer": "4.0",
+        "difficulty": 1
+    },
+    {
+        "key": 62,
+        "prompt": "1000 cars are in a parking lot. 200 of the cars are Hondas, 300 of the cars are Toyotas, and the rest are Nissans. How many of the cars are Nissans?",
+        "answer": "500.0",
+        "difficulty": 1
+    },
+    {
+        "key": 63,
+        "prompt": "LeBron James has 30,000 points, 9,000 rebounds, and 9,000 assists. \nHow many more points does he have than rebounds and assists combined?",
+        "answer": "12000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 64,
+        "prompt": "Captain Marvel has 1000 followers. 200 of her followers are from the United States, 150 are from Brazil, and the rest are from other countries. How many of her followers are not from the United States or Brazil?",
+        "answer": "650.0",
+        "difficulty": 1
+    },
+    {
+        "key": 65,
+        "prompt": "The volleyball team has 12 players. 5 of them are setters, 4 are hitters, and the rest are blockers. How many blockers are there?",
+        "answer": "3.0",
+        "difficulty": 1
+    },
+    {
+        "key": 66,
+        "prompt": "2000 planes are at an airport. 400 of them are private planes, 700 of them are commercial airliners, and the rest are military planes. How many military planes are there?",
+        "answer": "900.0",
+        "difficulty": 1
+    },
+    {
+        "key": 67,
+        "prompt": "Patrick Mahomes has 400 passing yards. He has 200 more passing yards than rushing yards. How many rushing yards does he have?",
+        "answer": "200.0",
+        "difficulty": 1
+    },
+    {
+        "key": 68,
+        "prompt": "A dog barks 10 times per minute. \n\nIf 500 dogs bark for 10 minutes, how many barks are there in total?",
+        "answer": "50000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 69,
+        "prompt": "100 unicorns were at a unicorn convention. 20 of the unicorns were pink, 30 were purple, and 10 were both pink and purple. How many unicorns were not pink or purple?",
+        "answer": "60.0",
+        "difficulty": 1
+    },
+    {
+        "key": 70,
+        "prompt": "Captain America can punch 100 times per minute. \nIf he punches 100 times per minute for 10 minutes, \nhow many punches has he thrown?",
+        "answer": "1000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 71,
+        "prompt": "A volleyball team has 12 players. \n\nEach player has 4 kneepads. \n\nHow many kneepads does the team have in total?",
+        "answer": "48.0",
+        "difficulty": 1
+    },
+    {
+        "key": 72,
+        "prompt": "Taylor Swift has 2000 followers on Twitter. She gains 200 new followers per day. How many followers will she have in 5 days?",
+        "answer": "3000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 73,
+        "prompt": "Superman can leap 1.5 miles in a single bound. How many miles can he leap in 12 bounds?",
+        "answer": "18.0",
+        "difficulty": 1
+    },
+    {
+        "key": 74,
+        "prompt": "Wonder Woman can lasso 12 bad guys at a time. \nShe can do this 3 times per day. \nHow many bad guys can she lasso in 5 days?",
+        "answer": "180.0",
+        "difficulty": 1
+    },
+    {
+        "key": 75,
+        "prompt": "Mario has 100 coins. \nHe spends 20 coins to buy a mushroom, \n10 coins to buy a flower, and \n20 coins to buy a star. \nHow many coins does he have left?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 76,
+        "prompt": "In the game, Super Mario can stomp on 30 Goombas, 20 Koopas, and 10 Piranha Plants. How many enemies does he stomp on total?",
+        "answer": "60.0",
+        "difficulty": 1
+    },
+    {
+        "key": 77,
+        "prompt": "Hello Kitty has 100 pencils. She lends 20 pencils to her friend. She then buys 30 more pencils. How many pencils does she have now?",
+        "answer": "110.0",
+        "difficulty": 1
+    },
+    {
+        "key": 78,
+        "prompt": "Serena Williams has 24 Grand Slam titles. 8 of them are from the Australian Open, 3 of them are from the French Open, 7 of them are from Wimbledon, and the rest are from the US Open. How many of her titles are from the US Open?",
+        "answer": "6.0",
+        "difficulty": 1
+    },
+    {
+        "key": 79,
+        "prompt": "A dog has 12 bones. \n\nIt chews 3 bones a day for 3 days. \n\nHow many bones does it have left?",
+        "answer": "3.0",
+        "difficulty": 1
+    },
+    {
+        "key": 80,
+        "prompt": "Taylor Swift has 2000 fans. 1000 of them are in the US, 500 of them are in the UK, and the rest are in Canada. How many fans does she have in Canada?",
+        "answer": "500.0",
+        "difficulty": 1
+    },
+    {
+        "key": 81,
+        "prompt": "Super Mario has 1000 coins. He spends 200 coins on a mushroom. He then spends 3/5 of the remaining coins on a fire flower. How many coins does he have left?",
+        "answer": "320.0",
+        "difficulty": 1
+    },
+    {
+        "key": 82,
+        "prompt": "Naruto has 1000 Ryo. He spends 200 Ryo on a new outfit and 300 Ryo on a new headband. How much Ryo does he have left?",
+        "answer": "500.0",
+        "difficulty": 1
+    },
+    {
+        "key": 83,
+        "prompt": "A pound has 15 dogs. 5 of the dogs are beagles, 4 are dachshunds, and the rest are pugs. How many pugs are there?",
+        "answer": "6.0",
+        "difficulty": 1
+    },
+    {
+        "key": 84,
+        "prompt": "Steph Curry is a basketball player who is known for his 3-point shooting. He has 2000 3-pointers in his career. 500 of them are from the left side of the court, 700 of them are from the right side of the court, and the rest are from the top of the key. How many 3-pointers has Steph Curry made from the top of the key?",
+        "answer": "800.0",
+        "difficulty": 1
+    },
+    {
+        "key": 85,
+        "prompt": "Hello Kitty has 200 pencils. She has 20 more pencils than erasers. She has 50 more erasers than notebooks. How many notebooks does Hello Kitty have?",
+        "answer": "130.0",
+        "difficulty": 1
+    },
+    {
+        "key": 86,
+        "prompt": "A field hockey team has 12 players. 4 of them are forwards, 6 of them are midfielders, and the rest are defenders. How many defenders are there?",
+        "answer": "2.0",
+        "difficulty": 1
+    },
+    {
+        "key": 87,
+        "prompt": "Captain Marvel has 5000 photon blasts. She uses 2000 of them to fight the Skrulls. She then uses 500 of them to fight the Kree. How many photon blasts does she have left?",
+        "answer": "2500.0",
+        "difficulty": 1
+    },
+    {
+        "key": 88,
+        "prompt": "Captain America has 100 vibranium shields. He uses 20 vibranium shields to fight the Red Skull. He uses 30 vibranium shields to fight the Winter Soldier. How many vibranium shields does he have left?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 89,
+        "prompt": "10000 dinosaurs lived on a prehistoric island. 2000 of them were herbivores. 3000 of them were carnivores. 5000 of them were omnivores. How many of them were herbivores and carnivores?",
+        "answer": "5000.0",
+        "difficulty": 1
+    },
+    {
+        "key": 90,
+        "prompt": "Super Mario has 1000 coins. He spends 200 coins on a mushroom, 300 coins on a fire flower, and 500 coins on a star. How many coins does he have left?",
+        "answer": "0.0",
+        "difficulty": 1
+    },
+    {
+        "key": 91,
+        "prompt": "Barbie has 200 pink dresses. 100 of them are short, 50 of them are medium, and the rest are long. How many long dresses does Barbie have?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 92,
+        "prompt": "Hello Kitty has 20 pink bows. 10 of them are 1-inch bows, 5 of them are 2-inch bows, and the rest are 3-inch bows. How many inches of bows does Hello Kitty have?",
+        "answer": "35.0",
+        "difficulty": 1
+    },
+    {
+        "key": 93,
+        "prompt": "A field hockey team has 12 players. 3 of the players are on the forward line, 4 are on the midfield line, and 5 are on the defensive line. How many players are not on the forward, midfield, or defensive lines?",
+        "answer": "0.0",
+        "difficulty": 1
+    },
+    {
+        "key": 94,
+        "prompt": "There are 200 unicorns in a forest. 100 of the unicorns are pink, 50 are blue, and the rest are purple. How many unicorns are purple?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 95,
+        "prompt": "Captain America can punch 20 times a minute. \n\nHow many punches can he throw in 10 minutes?",
+        "answer": "200.0",
+        "difficulty": 1
+    },
+    {
+        "key": 96,
+        "prompt": "Batman is a superhero who fights crime in the city of Gotham. He has a utility belt with 100 gadgets. He uses 20 gadgets to fight the Joker, 15 gadgets to fight the Riddler, and 15 gadgets to fight the Penguin. How many gadgets does he have left?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 97,
+        "prompt": "A Minecraft player has 1000 Minecoins. He spends 200 on a new skin, 300 on a new cape, and 100 on a new world. How many Minecoins does he have left?",
+        "answer": "400.0",
+        "difficulty": 1
+    },
+    {
+        "key": 98,
+        "prompt": "A soccer team has 11 players. 3 of the players are defenders, 5 of the players are midfielders, and 3 of the players are forwards. How many players are not defenders, midfielders, or forwards?",
+        "answer": "0.0",
+        "difficulty": 1
+    },
+    {
+        "key": 99,
+        "prompt": "Spiderman has 100 spider webs. He uses 20 of them to catch thieves, 30 of them to swing from building to building, and the rest to make a spider web cocoon. How many spider webs does he use to make a spider web cocoon?",
+        "answer": "50.0",
+        "difficulty": 1
+    },
+    {
+        "key": 100,
+        "prompt": "Wonder Woman can punch 20 times a second.  How many punches can she throw in 10 minutes?",
+        "answer": "12000.0",
+        "difficulty": 1
+    }
+]

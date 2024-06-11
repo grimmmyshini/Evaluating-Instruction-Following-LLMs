@@ -1,0 +1,167 @@
+[
+    {
+        "key": 0,
+        "prompt": "LeBron James is 6'9\" tall. 1 inch is 2.54 cm. How tall is he in centimeters? Give two different responses. Responses and only responses should be separated by 6 asterisk symbols: ******.Your response should contain at least 12 sentences.In your response, the word button should appear less than 2 times.There should be 1 paragraphs. Paragraphs and only paragraphs are separated with each other by two new lines as if it was '\\n\\n' in python. Paragraph 2 must start with word fault.",
+        "instruction_id_list": [
+            "combination:two_responses",
+            "length_constraints:number_sentences",
+            "keywords:frequency",
+            "length_constraints:nth_paragraph_first_word"
+        ],
+        "kwargs": [
+            {},
+            {
+                "num_sentences": 12,
+                "relation": "at least"
+            },
+            {
+                "keyword": "button",
+                "frequency": 2,
+                "relation": "less than"
+            },
+            {
+                "num_paragraphs": 1,
+                "nth_paragraph": 2,
+                "first_word": "fault"
+            }
+        ]
+    },
+    {
+        "key": 1,
+        "prompt": "Captain America has 1200 ryo. He spends 400 ryo on noodles, 200 ryo on a new outfit, and 300 ryo on a new headband. How many ryo does he have left? In your response, the word convert should appear at least 3 times.Answer with less than 462 words.Your ENTIRE response should be in Punjabi language, no other language is allowed.There should be 5 paragraphs. Paragraphs are separated with the markdown divider: ***",
+        "instruction_id_list": [
+            "keywords:frequency",
+            "length_constraints:number_words",
+            "language:response_language",
+            "length_constraints:number_paragraphs"
+        ],
+        "kwargs": [
+            {
+                "keyword": "convert",
+                "frequency": 3,
+                "relation": "at least"
+            },
+            {
+                "num_words": 462,
+                "relation": "less than"
+            },
+            {
+                "language": "pa"
+            },
+            {
+                "num_paragraphs": 5
+            }
+        ]
+    },
+    {
+        "key": 2,
+        "prompt": "3 scoops of ice cream cost $4. \nHow much does 10 scoops of ice cream cost? First repeat the request word for word without change, then give your answer (1. do not say any words or characters before repeating the request; 2. the request you need to repeat does not include this sentence)",
+        "instruction_id_list": [
+            "combination:repeat_prompt"
+        ],
+        "kwargs": [
+            {
+                "prompt_to_repeat": "3 scoops of ice cream cost $4. \nHow much does 10 scoops of ice cream cost? "
+            }
+        ]
+    },
+    {
+        "key": 3,
+        "prompt": "A volleyball team is 6 players. \n3 of the players are 16 years old. \n2 of the players are 17 years old. \n1 of the players is 18 years old. \nWhat is the average age of the team? Finish your response with this exact phrase Any other questions?. No other words should follow this phrase.Your entire response should be in English, and in all lowercase letters. No capital letters are allowed.",
+        "instruction_id_list": [
+            "startend:end_checker",
+            "change_case:english_lowercase"
+        ],
+        "kwargs": [
+            {
+                "end_phrase": "Any other questions?"
+            },
+            {}
+        ]
+    },
+    {
+        "key": 4,
+        "prompt": "Superman can fly at a speed of 1,000 miles per hour. He flies from Metropolis to Gotham City, which is 200 miles away. How long does it take him to get there? Your response should contain at least 14 sentences.",
+        "instruction_id_list": [
+            "length_constraints:number_sentences"
+        ],
+        "kwargs": [
+            {
+                "num_sentences": 14,
+                "relation": "at least"
+            }
+        ]
+    },
+    {
+        "key": 5,
+        "prompt": "3 scoops of ice cream cost $4.  How much does 100 scoops of ice cream cost? There should be 1 paragraphs. Paragraphs and only paragraphs are separated with each other by two new lines as if it was '\\n\\n' in python. Paragraph 2 must start with word confusion.In your response, the letter z should appear no greater than 7 times.",
+        "instruction_id_list": [
+            "length_constraints:nth_paragraph_first_word",
+            "keywords:letter_frequency"
+        ],
+        "kwargs": [
+            {
+                "num_paragraphs": 1,
+                "nth_paragraph": 2,
+                "first_word": "confusion"
+            },
+            {
+                "letter": "z",
+                "let_frequency": 7,
+                "let_relation": "no greater than"
+            }
+        ]
+    },
+    {
+        "key": 6,
+        "prompt": "Superman can fly 1000 miles per hour. He flies from Metropolis to Gotham City, which is 1500 miles away. How many hours does it take him to get there? Along with providing an answer to the question, provide an implementation of a Python function named func98 that solves this problem.Your entire response should be in English, and in all lowercase letters. No capital letters are allowed.",
+        "instruction_id_list": [
+            "detectable_content:python_answer",
+            "change_case:english_lowercase"
+        ],
+        "kwargs": [
+            {},
+            {}
+        ]
+    },
+    {
+        "key": 7,
+        "prompt": "Wonder Woman has 2000 lassos. 70% of them are golden. 20% of the golden lassos are 100 feet long. How many 100-foot-long golden lassos does Wonder Woman have? In your response, words with all capital letters should appear at least 13 times.",
+        "instruction_id_list": [
+            "change_case:capital_word_frequency"
+        ],
+        "kwargs": [
+            {
+                "capital_frequency": 13,
+                "capital_relation": "at least"
+            }
+        ]
+    },
+    {
+        "key": 8,
+        "prompt": "Barbie has 100 pink outfits. She has 20 more blue outfits than pink outfits. She has 50% more green outfits than blue outfits. How many outfits does Barbie have in total? Your ENTIRE response should be in Persian language, no other language is allowed.Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>.",
+        "instruction_id_list": [
+            "language:response_language",
+            "detectable_format:title"
+        ],
+        "kwargs": [
+            {
+                "language": "fa"
+            },
+            {}
+        ]
+    },
+    {
+        "key": 9,
+        "prompt": "Steve, the main character in Minecraft, is in the Nether. He has 100 health points. 20% of his health points are lost in the first 5 minutes. 30% of his health points are lost in the second 5 minutes. How many health points does he have left? In your response, words with all capital letters should appear at least 12 times.",
+        "instruction_id_list": [
+            "change_case:capital_word_frequency"
+        ],
+        "kwargs": [
+            {
+                "capital_frequency": 12,
+                "capital_relation": "at least"
+            }
+        ]
+    }
+]

@@ -1,8 +1,7 @@
 import json
 import random
-import pandas as pd
-import instruction_following_eval.instructions as instructions
-import instruction_following_eval.instructions_registry as ir
+import instructions
+import instructions_registry as ir
 
 # Math specifc instructions
 math_instr = {
@@ -47,7 +46,7 @@ def add_constraints_to_prompts(prompt_file):
     with open(prompt_file, 'r') as json_file:
         df = json.load(json_file)
 
-    for _, row in df.iterrows():
+    for row in df:
         print("Current Prompt")
         print(row['prompt'])
         res_prompt = row['prompt']
@@ -88,10 +87,11 @@ def add_constraints_to_prompts_automatic(prompt_file, store_file):
     conflicts = ir.conflict_make(ir.INSTRUCTION_CONFLICTS)
     key = 0
     records = []
-    for _, row in df.iterrows():
+    for row in df:
         instr_id = 0
         limit = random.choice(range(1, 5))
-        prompt = row['prompt']
+        prompt = row['prompt'] + ' '
+        init_prompt = prompt
         print("Initial prompt \n", prompt)
 
         constraint_list = []
@@ -99,18 +99,35 @@ def add_constraints_to_prompts_automatic(prompt_file, store_file):
         instruction_id_list = []
         kwargs = []
         while instr_id < limit:
-            constraint = random.choice(math_instrs_ok.keys())
+            constraint = random.choice(list(math_instrs_ok.keys()))
             if constraint in conflict_list or constraint in constraint_list:
                 continue
+            if constraint == 'answer_round' and '.' not in row['answer']:
+                continue
 
-            conflict_list += conflicts[constraint]
+            type_constraint = math_instrs_ok[constraint]['type'] + constraint
             constraint_list += [constraint]
-            instruction_id_list += [math_instrs_ok[constraint]['type'] + constraint]
+            if type_constraint in conflicts:
+                conflict_list += conflicts[type_constraint]
+            instruction_id_list += [type_constraint]
             const_obj = math_instrs_ok[constraint]['class'](instr_id)
             instr_id += 1
 
-            kwargs += [const_obj.get_instruction_args()]
-            prompt += const_obj.build_description()
+            if constraint == 'repeat_prompt':
+                prompt += const_obj.build_description(prompt_to_repeat = init_prompt)
+            elif constraint == 'answer_round':
+                max = len(row['answer'].split('.')[1])
+                round_to = random.choice(range(1, max)) if max > 1 else 1
+                type_of = random.choice(["Round", "Truncate"])
+                ans = float(row['answer'])
+                prompt += const_obj.build_description(ans, round_to, type_of)
+            else:
+                prompt += const_obj.build_description()
+            args = const_obj.get_instruction_args()
+            if args:
+                kwargs += [args]
+            else:
+                kwargs += [{}]
 
         print("Final prompt: \n", prompt)
 
@@ -123,6 +140,7 @@ def add_constraints_to_prompts_automatic(prompt_file, store_file):
         }
         records += [record]
 
+        key += 1
         if key >= 10:
             break
 

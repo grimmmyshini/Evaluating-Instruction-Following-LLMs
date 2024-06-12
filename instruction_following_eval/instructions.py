@@ -232,6 +232,8 @@ class NumberOfSentences(Instruction):
       return num_sentences < self._num_sentences_threshold
     elif self._comparison_relation == _COMPARISON_RELATION[1]:
       return num_sentences >= self._num_sentences_threshold
+    elif self._comparison_relation == _COMPARISON_RELATION[2]:
+      return num_sentences <= self._num_sentences_threshold
 
 
 class PlaceholderChecker(Instruction):
@@ -547,7 +549,7 @@ class ParagraphChecker(Instruction):
 
     self._description_pattern = (
         "There should be {num_paragraphs} paragraphs. " +
-        "Paragraphs are separated with the markdown divider: ***")
+        "Paragraphs are separated with the markdown divider: ***. ")
 
     return self._description_pattern.format(num_paragraphs=self._num_paragraphs)
 
@@ -810,6 +812,8 @@ class KeywordFrequencyChecker(Instruction):
       return actual_occurrences < self._frequency
     elif self._comparison_relation == _COMPARISON_RELATION[1]:
       return actual_occurrences >= self._frequency
+    elif self._comparison_relation == _COMPARISON_RELATION[2]:
+      return actual_occurrences <= self._frequency
 
 
 class NumberOfWords(Instruction):
@@ -866,7 +870,7 @@ class NumberOfWords(Instruction):
   def check_following(self, value):
     """Checks if the response contains the expected number of words."""
     num_words = instructions_util.count_words(value)
-
+    print(num_words, self._num_words)
     if self._comparison_relation == _COMPARISON_RELATION[0]:
       return num_words < self._num_words
     elif self._comparison_relation == _COMPARISON_RELATION[1]:
@@ -1234,7 +1238,7 @@ class RepeatPromptThenAnswer(Instruction):
         "First repeat the request word for word without change,"
         " then give your answer (1. do not say any words or characters"
         " before repeating the request; 2. the request you need to repeat"
-        " does not include this sentence)"
+        " does not include this sentence or any sentence after this.)."
     )
     return self._description_pattern
 
@@ -1269,7 +1273,7 @@ class EndChecker(Instruction):
     if self._end_phrase is None:
       self._end_phrase = random.choice(_ENDING_OPTIONS)
     self._description_pattern = (
-        "Finish your response with this exact phrase {ender}. "
+        "Finish your response with this exact phrase \"{ender}\". "
         "No other words should follow this phrase.")
     return self._description_pattern.format(ender=self._end_phrase)
 
@@ -1391,8 +1395,10 @@ class LetterFrequencyChecker(Instruction):
 
     if self._comparison_relation == _COMPARISON_RELATION[0]:
       return letters[self._letter] < self._frequency
-    else:
+    elif self._comparison_relation == _COMPARISON_RELATION[1]:
       return letters[self._letter] >= self._frequency
+    elif self._comparison_relation == _COMPARISON_RELATION[2]:
+      return letters[self._letter] <= self._frequency
 
 
 class CapitalLettersEnglishChecker(Instruction):
@@ -1542,8 +1548,10 @@ class CapitalWordFrequencyChecker(Instruction):
 
     if self._comparison_relation == _COMPARISON_RELATION[0]:
       return capital_words < self._frequency
-    else:
+    elif self._comparison_relation == _COMPARISON_RELATION[1]:
       return capital_words >= self._frequency
+    elif self._comparison_relation == _COMPARISON_RELATION[2]:
+      return capital_words <= self._frequency
 
 
 class QuotationChecker(Instruction):
@@ -1623,8 +1631,8 @@ class StepsChecker(Instruction):
     Returns:
       True if the response follows the instruction; otherwise False.
     """
-    highlights = re.findall(r'\*\*Step \d+:\*\*', value)
-    steps = re.findall(r'Step \d+:', value)
+    highlights = re.findall(r'\*\*step \d+:\*\*', value, flags=re.IGNORECASE)
+    steps = re.findall(r'step \d+:', value, flags=re.IGNORECASE)
     max_cnstr = True
     if self.max_steps is not None:
       max_cnstr = len(highlights) <= self.max_steps
@@ -1661,7 +1669,7 @@ class AnswerHighlightChecker(Instruction):
       True if the response follows the instruction; otherwise False.
     """
     ans = re.findall(r'\*\*(.*?)\*\*', value)
-    return len(ans) == 1
+    return len(set(ans)) == 1
 
 
 class EquationAnswerChecker(Instruction):
@@ -1753,33 +1761,31 @@ class AnswerRoundChecker(Instruction):
     else:
       res = AnswerRoundChecker.truncate(self.correct_answer, self.decimal_places)
       res = res.split('.')[0] + '\.' + res.split('.')[1]
-    print(res)
     ans = re.findall(r'(?<![0-9])' + res + r'(?![0-9])', value)
-    print(len(ans))
     return len(ans) != 0
 
 
 class PythonFunctionChecker(Instruction):
   """Checks existence of a python function with a specifc name."""
 
-  def build_description(self):
+  def build_description(self, name = None):
     """Build the instruction description.
 
     Returns:
       A string representing the instruction description.
     """
-    self.name = "func" + str(random.choice(range(1, 100)))
+    self.name = "func" + str(random.choice(range(1, 100))) if name is None else name
     self._description_pattern = (
         "Along with providing an answer to the question, provide an implementation of a Python function named {name} that solves this problem.")
     return self._description_pattern.format(name=self.name)
 
   def get_instruction_args(self):
     """Returns the keyward args of `build_description`."""
-    return None
+    return {'name': self.name}
 
   def get_instruction_args_keys(self):
     """Returns the args keys of `build_description`."""
-    return []
+    return ['name']
 
   def check_following(self, value):
     """Checks if the response contains the python function.

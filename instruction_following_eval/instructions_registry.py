@@ -74,6 +74,11 @@ INSTRUCTION_DICT = {
     + "english_lowercase": instructions.LowercaseLettersEnglishChecker,
     _PUNCTUATION + "no_comma": instructions.CommaChecker,
     _STARTEND + "quotation": instructions.QuotationChecker,
+    _FORMAT + 'highlight_steps': instructions.StepsChecker,
+    _FORMAT + 'highlight_answer':  instructions.AnswerHighlightChecker,
+    _CONTENT + 'equation_answer': instructions.EquationAnswerChecker,
+    _CONTENT + 'answer_round': instructions.AnswerRoundChecker,
+    _CONTENT + 'python_answer': instructions.PythonFunctionChecker,
 }
 
 INSTRUCTION_CONFLICTS = {
@@ -139,8 +144,7 @@ INSTRUCTION_CONFLICTS = {
     }),
     _COMBINATION + "repeat_prompt": set(INSTRUCTION_DICT.keys()).difference({
         _KEYWORD + "existence",
-        _FORMAT + "title",
-        _PUNCTUATION + "no_comma"
+        _FORMAT + "title"
     }),
     _STARTEND + "end_checker": {_STARTEND + "end_checker"},
     _CHANGE_CASES + "capital_word_frequency": {
@@ -148,13 +152,17 @@ INSTRUCTION_CONFLICTS = {
         _CHANGE_CASES + "english_lowercase",
         _CHANGE_CASES + "english_capital",
     },
-    _CHANGE_CASES + "english_capital": {_CHANGE_CASES + "english_capital"},
+    _CHANGE_CASES + "english_capital": {_CHANGE_CASES + "english_capital", _FORMAT + 'highlight_steps', _CONTENT + 'python_answer'},
     _CHANGE_CASES + "english_lowercase": {
         _CHANGE_CASES + "english_lowercase",
         _CHANGE_CASES + "english_capital",
+        _FORMAT + 'highlight_steps',
+        _CONTENT + 'python_answer'
     },
     _PUNCTUATION + "no_comma": {_PUNCTUATION + "no_comma"},
     _STARTEND + "quotation": {_STARTEND + "quotation", _FORMAT + "title"},
+    _FORMAT + 'highlight_steps': {_FORMAT + 'highlight_answer'},
+    _FORMAT + 'highlight_answer': {_FORMAT + 'highlight_steps'},
 }
 
 
@@ -169,8 +177,15 @@ def conflict_make(conflicts):
     Revised version of the dictionary. All instructions conflict with
     themselves. If A conflicts with B, B will conflict with A.
   """
+  conflicts_updated = conflicts.copy()
   for key in conflicts:
     for k in conflicts[key]:
-      conflicts[k].add(key)
-    conflicts[key].add(key)
-  return conflicts
+      if k in conflicts_updated:
+        conflicts_updated[k].add(key)
+      else:
+        conflicts_updated[k] = {key}
+    if key in conflicts_updated:
+        conflicts_updated[key].add(key)
+    else:
+        conflicts_updated[key] = {key}
+  return conflicts_updated

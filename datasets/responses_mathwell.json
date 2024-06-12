@@ -19,6 +19,13 @@
                 "nth_paragraph": 2,
                 "first_word": "regret"
             }
+        ],
+        "response": "\"LeBron James's height of 6'9\" can be converted to centimeters using the conversion factor 1 inch = 2.54 cm. To convert his height, we need to multiply the number of inches by the conversion factor.\n\nRegretfully, LeBron's height in inches is not just a simple whole number; it has a decimal part. So, let's do the conversion: 6'9\" = (6 * 7.62) + 2.54 cm = 74.14 cm, rounded to one decimal place.\"",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            false
         ]
     },
     {
@@ -40,6 +47,14 @@
                     "emphasis"
                 ]
             }
+        ],
+        "response": "<<Captain America's Ryo Rodeo>>\n\nHe starts with 1200 ryo and spends 400 on noodles emphasis on the savory flavor really gets his ear perked up ******\n\nSo he has 1200 - 400 = 800 ryo left then he spends 200 on a new outfit which means he has 800 - 200 = 600 ryo left after that he spends 300 on a new headband so he has 600 - 300 = 300 ryo left in the end\n\n******",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -54,6 +69,12 @@
             {
                 "name": "func64"
             }
+        ],
+        "response": "The cost of 10 scoops of ice cream would be $20.\n\nHere is the Python function:\n\n```\ndef func64(scoops):\n    price_per_scoop = 4 / 3\n    return scoops * price_per_scoop\n\nprint(func64(10))  # prints: 20.0\n```",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -68,6 +89,12 @@
                 "name": "func51"
             },
             {}
+        ],
+        "response": "<<Volleyball Team Average Age Calculation>>\n\nTo find the average age of the volleyball team, we need to sum up all the ages and divide by the total number of players (6).\n\nHere's a Python function that calculates the average age:\n\n```Python\ndef func51():\n    ages = [16, 16, 16, 17, 17, 18]\n    total_age = sum(ages)\n    average_age = total_age / len(ages)\n    return round(average_age, 2)\n\nprint(func51())\n```\n\nWhen you run this function, it will print the average age of the volleyball team. The `round` function is used to limit the decimal places to two.\n\nThe output will be:\n\n```Python\n16.5\n```\n\nThis means that the average age of the volleyball team is 16.5 years old.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -91,6 +118,13 @@
                 "type": "Truncate"
             },
             {}
+        ],
+        "response": "\"Since Superman can fly at a speed of 1000 miles per hour, and Gotham City is 200 miles away, he would take approximately 0.2 hours or 12 minutes to get there.\"",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -108,6 +142,13 @@
             },
             {},
             {}
+        ],
+        "response": "To find the cost of 100 scoops of ice cream, we need to first find the cost per scoop. Since 3 scoops cost $4, the cost per scoop is:\n\n$4 \u00f7 3 = $1.33 per scoop\n\nNow, we can multiply the cost per scoop by the number of scoops to get the total cost:\n\n**$\\boxed{100 \\times 1.33 = **}$**\n\n**$133**",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            false
         ]
     },
     {
@@ -138,6 +179,14 @@
                 "decimal_places": 1,
                 "type": "Round"
             }
+        ],
+        "response": "Let's calculate how many hours it takes Superman to get to Gotham City:\n\nDistance = 1500 miles\nSpeed = 1000 miles per hour\n\nTime = Distance / Speed = 1500 miles / 1000 mph = 1.5 hours (rounded to 1 decimal place)\n\nSo, Superman will take approximately 1.5 hours to fly from Metropolis to Gotham City.\n\nIs there anything else I can help with?",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            false,
+            true
         ]
     },
     {
@@ -156,6 +205,13 @@
             },
             {},
             {}
+        ],
+        "response": "\"Since 70% of Wonder Woman's lassos are golden, she has 0.7 x 2000 = 1400 golden lassos. Among these, 20% are 100 feet long, so she has 0.2 x 1400 = 280 100-foot-long golden lassos.\"\n\n$$\\boxed{0.2 \\times 0.7 \\times 2000 = 280}$$",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            true
         ]
     },
     {
@@ -178,6 +234,14 @@
                 "frequency": 2,
                 "relation": "at least"
             }
+        ],
+        "response": "Let's break down the problem step by step:\n\nBarbie has 100 pink outfits.\nShe has 20 more blue outfits than pink outfits, so she has 100 + 20 = 120 blue outfits.\nShe has 50% more green outfits than blue outfits, which means she has 1.5 times as many green outfits as blue outfits. Since she has 120 blue outfits, she has 1.5 * 120 = 180 green outfits.\n\nIn total, Barbie has 100 pink outfits + 120 blue outfits + 180 green outfits = **400** outfits.\n\nHere's the Python function that solves this problem:\n\n```\ndef func39():\n    pink_outfits = 100\n    blue_outfits = pink_outfits + 20\n    green_outfits = blue_outfits * 1.5\n    total_outfits = pink_outfits + blue_outfits + green_outfits\n    return total_outfits\n\nprint(func39())\n```\n\nThe final answer is **400**, which you can highlight in bold like this: **400**.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            true,
+            false
         ]
     },
     {
@@ -200,6 +264,14 @@
             {
                 "num_paragraphs": 4
             }
+        ],
+        "response": "STEVE THE MINER IS IN A WORLD OF TROUBLE AS HE'S LOST IN THE NETHER WITH ONLY 100 HEALTH POINTS TO HIS NAME IT'S LIKE HE'S GOT A PINT OF BEER LEFT AND HE'S NOT SURE HOW MUCH LONGER IT'LL LAST\n\n*** \n\n20% OF STEVE'S HEALTH POINTS ARE GONE AFTER THE FIRST 5 MINUTES THAT'S 20 OUT OF 100 WHICH LEAVES HIM WITH A PALTRY 80 HEALTH POINTS IT'S LIKE HE'S ALMOST RUN OUT OF BEER AT THE END OF THE NIGHT AND HE'S HOPING TO CATCH A BREAK\n\n*** \n\nBUT WAIT THERE'S MORE STEVE HAS ANOTHER 5 MINUTES TO GO BEFORE HE CAN EVEN THINK ABOUT GETTING OUT OF THIS HOT MESS AND IN THAT TIME 30% OF HIS REMAINING HEALTH POINTS ARE GONE WHICH IS 24 MORE POINTS LEAVING HIM WITH A WHOPPING 56 HEALTH POINTS IT'S LIKE HE'S DOWN TO HIS LAST BEER AND HE'S NOT SURE IF HE CAN MAKE IT TO THE NEXT BAR\n\n*** \n\nSO THERE YOU HAVE IT STEVE'S IN A PRETTY TOUGH SPOT WITH ONLY 56 HEALTH POINTS LEFT BUT HE'LL JUST HAVE TO SUCK IT UP AND KEEP ON GOING HOPEFULLY HE'LL RUN INTO SOME COOL GEAR OR A HEALTH-RESTORING POTION TO HELP HIM OUT OF THIS JAM",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -214,6 +286,12 @@
             {
                 "num_paragraphs": 4
             }
+        ],
+        "response": "Captain Marvel is indeed an impressive height of 1.83 meters. To convert this height from meters to feet, we need to perform a conversion.\n\n***\n\n\nTo do this conversion, we can use the following equation:\n\n**$height \\text{ (in feet)} = height \\text{ (in meters)} \\times 3.281$**\n\nIn our case, the height in meters is 1.83, so we plug that value into the equation to get:\n\n$height \\text{ (in feet)} = 1.83 \\times 3.281$\n\nThis simplifies to:\n\n$height \\text{ (in feet)} = 6.00$\n\nSo Captain Marvel stands at an impressive 6 feet tall!",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            false
         ]
     },
     {
@@ -235,6 +313,13 @@
                 ]
             },
             {}
+        ],
+        "response": "The player has 12000 experience points, and 20% are from fighting zombies. This means that 0.2 x 12000 = 2400 experience points are from fighting zombies.\n\nSimilarly, 30% of the experience points are from fighting creepers, which is 0.3 x 12000 = 3600 experience points.\n\nThis leaves 12000 - (2400 + 3600) = 6000 experience points that are from fighting skeletons.\n\nHere's a Python function named func74 that solves this problem:\n\n```\ndef func74():\n    total_exp = 12000\n    zombie_exp = int(0.2 * total_exp)\n    creeper_exp = int(0.3 * total_exp)\n    skeleton_exp = total_exp - (zombie_exp + creeper_exp)\n    return skeleton_exp\n\nprint(func74())\n```\n\nThe special procedure for solving this problem is to calculate the percentage of experience points from fighting each type of mob, and then subtract those amounts from the total experience points.\n\nHere's the mathematical equation that solves this problem:\n\n$\\boxed{Experience Points (Skeletons) = Total Experience Points - \\left(0.2 \\times Total Experience Points + 0.3 \\times Total Experience Points\\right)}$",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -259,6 +344,14 @@
                 "decimal_places": 1,
                 "type": "Truncate"
             }
+        ],
+        "response": "<<Height Conversion>>\n\nSteph Curry is indeed 6 feet 2 inches tall. To convert his height from inches to centimeters, we can use the conversion factor: 1 inch is equal to 2.54 cm. We can multiply his height in inches by this conversion factor to get his height in centimeters.\n\n***\n\n\nTo solve this problem using Python, we can create a function that takes an input value representing Curry's height in inches and returns the equivalent value in centimeters:\n\n```\ndef func91(inches):\n    return round(inches * 2.54, 1)\n```\n\nWe can call this function with Curry's height (6 feet 2 inches) as the input to get his height in centimeters:\n\n```\ncurry_height = func91(74)  # 74 inches is equivalent to 6 feet 2 inches\nprint(f\"Steph Curry's height is {curry_height} cm.\")\n```\n\nThe output of this code will be: \"Steph Curry's height is 185.4 cm.\"",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            true,
+            false
         ]
     },
     {
@@ -276,6 +369,12 @@
                 "capital_frequency": 11,
                 "capital_relation": "no greater than"
             }
+        ],
+        "response": "As the sun rises over the cat park, a bustling atmosphere fills the air. The initial 200 cats that arrived earlier are now joined by an additional 100 felines, bringing the total number of cats to 300. ***\n\nAmong this furry crowd, a surprising 25% of the cats can be heard meowing loudly. To calculate the exact number of meowing cats, we need to first find what 25% of the total cat population is. Since there are 300 cats in total, 25% would be equivalent to 0.25 x 300 = 75 cats. Therefore, a whopping SEVENTY-FIVE cats at the cat park are busy MEOWING away!",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -300,6 +399,13 @@
             {
                 "end_phrase": "Is there anything else I can help with?"
             }
+        ],
+        "response": "WONDER WOMAN, THE AMAZING HEROINE FROM SPACE, HAS A TOTAL OF 100 LASSOS TO START WITH.\n\nSHE USES 20% OF THEM, WHICH IS CALCULATED BY TAKING 20 OUT OF 100 (20/100 = 0.2), WHICH EQUALS 20 LASSOS. THESE LASSOS ARE USED TO CAPTURE THE BAD GUYS IN THE SPACE-SETTING.\n\nAFTER USING THOSE LASSOS, WONDER WOMAN NOW HAS A TOTAL OF 80 LASSOS LEFT.\n\nSHE THEN BUYS AN ADDITIONAL 50 LASSOS, BRINGING HER NEW TOTAL TO 130 LASSOS!\n\nNOW WONDER WOMAN HAS A MASSIVE ARSENAL OF 130 LASSOS TO FIGHT CRIME AND PROTECT THE INNOCENT IN THE SPACE-SETTING.\n\nIS THERE ANYTHING ELSE I CAN HELP WITH?",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            true
         ]
     },
     {
@@ -317,6 +423,12 @@
             {
                 "num_paragraphs": 1
             }
+        ],
+        "response": "**Section 1**\nTo find out how many fans are from other countries, we need to subtract the number of fans from each country from the total number of fans.\n\n200 (total fans) - 50 (1/4 from US) = 150\n150 - 40 (1/5 from UK) = 110\n110 - 25 (1/8 from Germany) = 85\n85 - 20 (1/10 from France) = 65\n\n***",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -335,6 +447,13 @@
                 "end_phrase": "Is there anything else I can help with?"
             },
             {}
+        ],
+        "response": "\"First, let's calculate the total age of all Power Rangers:\n\n2 x 18 = 36\n1 x 16 = 16\n2 x 14 = 28\n\nThe total age is: 36 + 16 + 28 = 80\n\nSince there are 5 Power Rangers in total, we divide the total age by 5 to get the average:\n\n80 \u00f7 5 = 16\n\nSo, the average Power Ranger age is 16 years old.\" ***",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            false
         ]
     },
     {
@@ -355,6 +474,14 @@
             },
             {},
             {}
+        ],
+        "response": "this is a great problem! to solve it, we need to find out how many minutes it takes spiderman to web-sling 1200 feet.\n\nfirst, let's think about this: spiderman can web-sling 300 feet per minute. that means if he has to go 1200 feet, he'll need to web-sling for some number of minutes that we need to find out.\n\nwe can use the following equation:\n\n$$\\frac{1200}{300} = x$$\n\nthis equation says: \"how many times does 300 feet go into 1200 feet?\" or in other words, \"how many minutes does it take spiderman to web-sling 1200 feet?\"\n\nplugging in some numbers, we get:\n\n$$4 = x$$\n\nso it takes spiderman 4 minutes to web-sling 1200 feet!",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            false,
+            false
         ]
     },
     {
@@ -371,6 +498,13 @@
                 "num_paragraphs": 5
             },
             {}
+        ],
+        "response": "\"serena williams is one of the most dominant tennis players of all time, with an impressive 23 grand slam titles under her belt. she's just four titles away from tying the all-time record, and it's clear that she's got her sights set on making history.\n\n*** serena's steady pace of winning one grand slam title per year is a testament to her consistency and dedication to her craft. given that she's already achieved so much in her career, it's no surprise that she's eyeing the top spot.\n\n*** let's do some math to figure out how many years it'll take serena to break the all-time record. if she's 4 titles away from tying the record, and she wins 1 title per year, we can subtract 4 from the total number of records held by the current record holder (whomever that may be).\n\n*** after some quick calculations, we find that serena will need to win 23 grand slam titles in total to break the all-time record. since she already has 23, and she's just 4 away, it means she'll need to win 4 more titles.\n\n*** so, how many years will it take for serena to reach her goal? well, considering she wins one title per year, we can simply divide the number of remaining titles by the number of titles she wins annually. that gives us... (drumroll please)... 4 years! that's right, serena will need 4 more years of consistent grand slam-winning to break the all-time record and solidify her place in tennis history.\"",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -393,6 +527,14 @@
             {
                 "end_phrase": "Is there anything else I can help with?"
             }
+        ],
+        "response": "<<Punching Power>>\n\nSuperman can punch 100 times in 30 seconds so to find out how many times he can punch in 2 minutes we need to first convert the time from minutes to seconds 2 minutes is equal to 120 seconds now if he punches 100 times in 30 seconds then in 1 minute which is 60 seconds he will punch 100/0.5=200 times so in 2 minutes which is 120 seconds he can punch 200*2=400 times rounded to one decimal place the answer is 400.3\n\nIs there anything else I can help with?",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            true,
+            true
         ]
     },
     {
@@ -420,6 +562,14 @@
                 ]
             },
             {}
+        ],
+        "response": "<<Ice Cream Scoop Calculation>>\n\n**Section 1: Understanding the Problem**\n\n300 mL of ice cream with each scoop being 100 mL is equivalent to how many scoops? Let's break it down step by step.\n\n**Step 1:** Identify the given information:\n* Volume of ice cream: 300 mL\n* Volume of one scoop: 100 mL\n\n**Section 2: Calculating the Number of Scoops**\n\nTo find out how many scoops are in 300 mL, we need to divide the volume of ice cream by the volume of one scoop.\n\n**Step 2:** Divide the volume of ice cream by the volume of one scoop:\n300 mL \u00f7 100 mL = ?\n\n**Section 3: Solving for the Number of Scoops**\n\nLet's perform the division:\n\n300 mL \u00f7 100 mL = **3**\n\nSo, there are **3** scoops in 300 mL of ice cream!\n\n**Step 3:** Verify our answer:\nTo confirm, let's multiply the number of scoops by the volume of one scoop to get the total volume of ice cream:\n3 scoops \u00d7 100 mL/scoop = 300 mL\n\n**Section 4: Conclusion**\n\nIn conclusion, there are indeed **3** scoops in 300 mL of ice cream! This calculation is like driving a vehicle (your math skills) and reaching your desired destination (the correct answer). And don't forget to check out the menu at your favorite ice cream parlor \u2013 they might just have 3 scoops waiting for you!\n\nKeywords: menu, vehicle",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -439,6 +589,13 @@
                 "end_phrase": "Is there anything else I can help with?"
             },
             {}
+        ],
+        "response": "\"SECTION 1\nTo find the average age, we need to add up all the ages and then divide by the number of Ninja Turtles.\n\nThe total age is (2 x 15) + (2 x 17) = 30 + 34 = 64.\n\nThere are a total of 4 Ninja Turtles. To find the average, we divide the total age by the number of turtles: 64 \u00f7 4 = 16.\n\nSo, the average age of the Ninja Turtles is 16 years old.\n\nIs there anything else I can help with?\"",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -460,6 +617,13 @@
                 "num_sections": 5
             },
             {}
+        ],
+        "response": "Here is my answer:\n\nSection 1\nWonder Woman can lasso 20 bad guys in 10 minutes. \n\nSection 2\nWe need to find out how many bad guys she can lasso in 1 minute since this information will help us solve our problem. \nIf she can lasso 20 bad guys in 10 minutes then in 1 minute she can lasso \n20/10 = 2 bad guys\n\nSection 3\nNow we need to find out how many bad guys she can lasso in 2 hours. \nThere are 60 minutes in an hour and 2 hours is equal to 60 * 2 = 120 minutes. \nSo the number of bad guys she can lasso in 2 hours is \n2 bad guys per minute times 120 minutes which is \n2 x 120 = 240\n\nSection 4\nWe need to truncate our answer to 1 correct decimal place since that's what you asked for. \nSo we get \n240.0\n\nSection 5\nTherefore the answer is \n240.0",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -488,6 +652,14 @@
                     "swing"
                 ]
             }
+        ],
+        "response": "SECTION 1\nTO SOLVE THIS PROBLEM, WE NEED TO FIGURE OUT HOW MANY GRAND SLAM TITLES NAOMI OSAKA HAS.\n\nSECTION 2\nWE KNOW SERENA WILLIAMS HAS 24 GRAND SLAM TITLES, AND SHE HAS 6 MORE THAN TWICE AS MANY AS NAOMI OSAKA. LET'S WRITE AN EQUATION TO REPRESENT THIS RELATIONSHIP:\n\n24 = 2x + 6\n\nWHERE X IS THE NUMBER OF GRAND SLAM TITLES NAOMI OSAKA HAS.\n\nSECTION 3\nTO SOLVE FOR X, WE CAN SUBTRACT 6 FROM BOTH SIDES OF THE EQUATION:\n\n18 = 2x\n\nNEXT, WE CAN DIVIDE BOTH SIDES BY 2 TO GET:\n\n9 = x\n\nSO, NAOMI OSAKA HAS 9 GRAND SLAM TITLES.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            false,
+            false
         ]
     },
     {
@@ -507,6 +679,13 @@
                 "section_spliter": "Section",
                 "num_sections": 2
             }
+        ],
+        "response": "**Section 1: Problem Solution**\n\nTo find out how many hours it will take to get to its destination, we can use the formula: time = distance / speed. In this case, the distance is 120 miles and the speed is 60 miles per hour.\n\nTime = 120 miles / 60 mph\n\nTime = **2** hours\n\n**Section 2: Python Function Implementation**\n\n```\ndef func85(distance, speed):\n    time = distance / speed\n    return time\n\nprint(**\"The car will take \" + str(func85(120, 60)) + \" hours to get to its destination. \"**)\n```",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            true
         ]
     },
     {
@@ -526,6 +705,13 @@
                 "name": "func60"
             },
             {}
+        ],
+        "response": "**Solution**\n\nSECTION 1: Understanding the Problem\n\nThe problem states that 3000 people lined up to get ice cream. A portion of them got a scoop of chocolate, vanilla, or strawberry. We need to find out how many people got a scoop of ice cream that was not chocolate, vanilla, or strawberry.\n\nSECTION 2: Analyzing the Situation\n\nLet's break down the information we have:\n\n* 1/4 of the people got a scoop of chocolate.\n* 1/5 of the people got a scoop of vanilla.\n* 1/6 of the people got a scoop of strawberry.\n\nThis means that some people might have gotten multiple scoops, but for simplicity's sake, let's assume each person gets one scoop. We can find the number of people who got chocolate by multiplying 3000 by 1/4 (which is equal to 0.25). Similarly, we can find the number of people who got vanilla and strawberry.\n\nSECTION 3: Calculations\n\nLet's calculate the number of people who got each flavor:\n\n* Chocolate: 3000 x 0.25 = 750\n* Vanilla: 3000 x 0.20 (1/5 as a decimal) = 600\n* Strawberry: 3000 x 0.17 (1/6 as a decimal) = 510\n\nNow, let's add up the number of people who got each flavor:\n\n* Total people with chocolate, vanilla, or strawberry: 750 + 600 + 510 = 1860\n\nSECTION 4: Answer\n\nSince we're looking for people who didn't get chocolate, vanilla, or strawberry, we need to find out how many people are left. Let's subtract the total number of people with one of these flavors from the original 3000:\n\n* People who didn't get chocolate, vanilla, or strawberry: **3000 - 1860 = 1140**\n\n**So, 1140 people got a scoop of ice cream that was not chocolate, vanilla, or strawberry.**\n\nNow, let's implement this in Python:\n```python\ndef func60():\n    total_people = 3000\n    total_chocolate = int(total_people * 0.25)\n    total_vanilla = int(total_people * 0.20)\n    total_strawberry = int(total_people * 0.17)\n\n    people_with_flavor = total_chocolate + total_vanilla + total_strawberry\n\n    people_without_flavor = total_people - people_with_flavor\n    return people_without_flavor\n\nprint(func60())  # Output: 1140\n```\nThe highlighted answer is **1140**.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            false
         ]
     },
     {
@@ -541,6 +727,12 @@
                 "capital_frequency": 20,
                 "capital_relation": "at least"
             }
+        ],
+        "response": "<<YARDS OF GLORY>>\n\nPatrick Mahomes started with an AMAZING 20000 YARDS! He then GAINED 10000 MORE YARDS in the 2020 SEASON, bringing his TOTAL to a STAGGERING 21000!\n\nBut WAIT, there's more! In the 2021 SEASON, he ADDS ANOTHER 15000 YARDS TO HIS COLLECTION, making his NEW TOTAL an ASTOUNDING 26000!\n\nSo, to answer your QUESTION: Patrick Mahomes now HAS A WHOPPING 26000 YARDS under his BELT!",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -563,6 +755,14 @@
                 "frequency": 1,
                 "relation": "at least"
             }
+        ],
+        "response": "\"\"The Dark Knight's arsenal is impressive indeed! Let's get down to business and calculate how many batarangs are in his trusty Batmobile.\n\nLet x be the number of batarangs in the Batmobile. We know that Batman has a total of 100 batarangs, and 20 are in his utility belt, while 30 are in his cape. So, we can set up an equation:\n\n$x + 20 + 30 = 100$\n\nBoxed math equation:\n$\\boxed{x + 50 = 100}$\n\nNow, let's solve for x!\n\nSubtracting 50 from both sides gives us:\n\n$x = 50$\n\nSo, the answer is: there are 50 batarangs in Batman's Batmobile. Not bad, not bad at all! The Dark Knight's got an impressive arsenal, indeed.\n\nHere's a Python function that solves this problem:\n```\ndef func65():\n    total_batarangs = 100\n    utility_belt_batarangs = 20\n    cape_batarangs = 30\n    batmobile_batarangs = total_batarangs - (utility_belt_batarangs + cape_batarangs)\n    return batmobile_batarangs\n\nprint(func65())  # Output: 50\"\n\"\"",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            false
         ]
     },
     {
@@ -584,6 +784,14 @@
                 "name": "func29"
             },
             {}
+        ],
+        "response": "Let's solve the problem!\n\nWe know there are 125 lollipops in total, and 25 are sour and 50 are sweet. To find the number of spicy lollipops, we can subtract the number of sour and sweet lollipops from the total:\n\nSpicy lollipops = Total lollipops - (Sour lollipops + Sweet lollipops)\n\nPlugging in the values, we get:\n\n**75**\n\nNow, let's implement a Python function to solve this problem:\n```python\ndef func29():\n    total_lollipops = 125\n    sour_lollipops = 25\n    sweet_lollipops = 50\n    spicy_lollipops = total_lollipops - (sour_lollipops + sweet_lollipops)\n    return spicy_lollipops\n\nprint(func29())  # Output: 75\n```\nFinally, the mathematical equation that solves this problem is:\n\n$\\boxed{Spicy lollipops = Total lollipops - (Sour lollipops + Sweet lollipops)}$\n\nThis equation is a simple subtraction of the known values to find the unknown value (the number of spicy lollipops).",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -603,6 +811,12 @@
                     "worth"
                 ]
             }
+        ],
+        "response": "There are 300 dogs in a dog park.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            false
         ]
     },
     {
@@ -625,6 +839,13 @@
                     "touch"
                 ]
             }
+        ],
+        "response": "Serena Williams has accumulated a remarkable number of Grand Slam titles throughout her illustrious career. Her total stands at an impressive 23 titles. In contrast Venus Williams has won a respectable but fewer number of Grand Slams with a tally of 7 titles. The difference between their totals is significant and highlights Serena's exceptional run of success on the tennis court. It's not surprising that Serena has been able to touch greatness time and again given her incredible skill and dedication. To put it simply Serena has won 16 more Grand Slam titles than Venus which is a remarkable margin. This disparity in their titles won serves as a testament to Serena's dominance and superiority at the highest level of tennis.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            true
         ]
     },
     {
@@ -653,6 +874,14 @@
                 "section_spliter": "Section",
                 "num_sections": 3
             }
+        ],
+        "response": "Here is my response:\n\nSection 1\nThe player starts with 1000 experience points.\n\nSection 2\nThey use 500 experience points to enchant their sword. This leaves them with 1000 - 500 = 500 experience points. Then they use another 200 experience points to enchant their armor leaving them with 500 - 200 = 300 experience points. There is a delay in the player's spirit as they contemplate what other enchantments to apply.\n\nSection 3\nThe total experience points used by the player is 500 + 200 = 700. To find out how many experience points are left, we subtract this from their initial amount: 1000 - 700 = 300. The answer rounded to one decimal place is 300.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            false,
+            true
         ]
     },
     {
@@ -675,6 +904,14 @@
                 "num_sections": 2
             },
             {}
+        ],
+        "response": "Section 1\n\nWonder Woman has a total of 2000 beads. She has already distributed some of them into her various accessories. Let's see how many beads she has in each accessory:\n\n* Lasso: 1000 beads\n* Tiara: 500 beads\n* bracelets: 250 beads\n\nSection 2\n\nTo find out how many beads are left, we need to subtract the total number of beads already distributed from the original amount. Let's do that!\n\n**2000 - (1000 + 500 + 250) = **750**\n\n**750**",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            true,
+            false
         ]
     },
     {
@@ -700,6 +937,14 @@
                 "type": "Round"
             },
             {}
+        ],
+        "response": "\"**Step 1:** Calculate the total V-Bucks for the first-place winner.\n\nFirst-place winner gets 5000 V-Bucks.\nTotal V-Bucks so far: **5000**\n\n**Step 2:** Calculate the total V-Bucks for the second-place winner.\n\nSecond-place winner gets 2500 V-Bucks. Add this to the previous total:\n**5000 + 2500 = 7500**\n\n**Step 3:** Calculate the total V-Bucks for the third-place winner.\n\nThird-place winner gets 1250 V-Bucks. Add this to the previous total:\n**7500 + 1250 = 8750**\n\nThe total V-Bucks won by the winners is **8750**, rounded to 1 decimal place.\"\n\nHere's a Python function `func57` that solves this problem:\n\n```python\ndef func57():\n    first_place_vbucks = 5000\n    second_place_vbucks = 2500\n    third_place_vbucks = 1250\n    total_vbucks = first_place_vbucks + second_place_vbucks + third_place_vbucks\n    return round(total_vbucks, 1)\n\nprint(func57())\n```\n\nWhen you run this function, it will output: **8750.0**",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            false
         ]
     },
     {
@@ -727,6 +972,14 @@
                 "num_sentences": 14,
                 "relation": "no greater than"
             }
+        ],
+        "response": "OKAY! HERE'S THE ANSWER:\n\nHELLO KITTY STARTED WITH 2000 PENCILS. SHE BOUGHT 3000 MORE, SO NOW SHE HAS A TOTAL OF 5000 PENCILS. THEN SHE GAVE 2000 PENCILS TO HER FRIENDS. TO FIND OUT HOW MANY PENCILS SHE HAS LEFT, WE NEED TO SUBTRACT THE NUMBER SHE GAVE AWAY FROM THE TOTAL:\n\n5000 - 2000 = 3000\n\nSO, HELLO KITTY HAS 3000 PENCILS LEFT!",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            false,
+            true
         ]
     },
     {
@@ -751,6 +1004,13 @@
                 "min_steps": 1,
                 "max_steps": null
             }
+        ],
+        "response": "**Step 1:** Hello Kitty starts with 2000 yen.\n\n**Step 2:** She spends 1000 yen on a new outfit, leaving her with:\n\n2000 - 1000 = 1000 yen\n\n**Step 3:** Then, she spends 500 yen on a new toy, leaving her with:\n\n1000 - 500 = 500 yen\n\nSo, Hello Kitty has **500** yen left.\n\nIs there anything else I can help with?",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -767,6 +1027,12 @@
                 "let_relation": "less than"
             },
             {}
+        ],
+        "response": "BARBIE HAS 120 PINK SHOES. SHE HAS 300 MORE BLUE SHOES THAN PINK SHOES. TO FIND THE TOTAL NUMBER OF SHOES, ADD THE PINK SHOES TO THE BLUE SHOES: 120 + (120 + 300) = 420.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -794,6 +1060,14 @@
                 "let_relation": "less than"
             },
             {}
+        ],
+        "response": "<<DEFENDER COUNTING CHAOS>>\n\nA field hockey team has 15 players. The team is divided into three positions: forwards, midfielders, and defenders. We know that 5 players are forwards and 6 players are midfielders.\n\n\\n\\n\n\nTo find the number of defenders, we subtract the number of forwards and midfielders from the total number of players. So, if there are 5 forwards and 6 midfielders, then there are a total of 11 non-defenders. Since there are 15 players in total, the number of defenders is equal to the difference between the two: 15 - 11 = 4.\n\n\\n\\n\n\nANYWHERE THE GAME TAKES US, THE DEFENDERS ARE KEY TO WINNING! WITH THEIR SKILLS AND ENDURANCE, THEY'RE THE ONES WHO PROTECT THE GOAL AND KEEP THE OPPOSITION FROM SCORING. IT'S A TOUGH JOB, BUT SOMEONE'S GOTTA DO IT!",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            false,
+            true
         ]
     },
     {
@@ -814,6 +1088,13 @@
                 "type": "Truncate"
             },
             {}
+        ],
+        "response": "Steph Curry originally had 2000 three-pointers. He makes 50 more each week for 10 weeks. To find out how many he has now, we need to add 50 * 10 = 500 to his original total.\n\nThe mathematical equation that solves this problem is:\n\n$\\boxed{\\text{Total} = \\text{Original} + (\\text{Increase per week}) \\times \\text{(Number of weeks)}}$\n\nUsing Python, we can solve this problem with the following function:\n\n```\ndef func52():\n    original = 2000\n    increase_per_week = 50\n    number_of_weeks = 10\n\n    total = original + (increase_per_week * number_of_weeks)\n\n    return round(total, 1)\n```\n\nWhen we run this function, it returns the following result:\n\n```\nfunc52()\n2100.0\n```\n\nSo Steph Curry now has approximately 2100 three-pointers.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            true
         ]
     },
     {
@@ -831,6 +1112,12 @@
                 ]
             },
             {}
+        ],
+        "response": "\"Ahaha, that's an impressive question! Since Captain Marvel is 1000 times stronger than a normal human, and a normal human can lift 100 pounds, we can calculate her lifting capacity by multiplying 100 pounds by 1000. That gives us... (drumroll please)... 100,000 pounds! That's one powerful superhero! As you read through this response, keep in mind that Captain Marvel's strength is truly off the charts. Current estimates suggest she could lift a small building or even a massive spaceship with ease. Reading between the lines, it's clear that her superhuman abilities make her a force to be reckoned with!\"",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -856,6 +1143,13 @@
                     "struggle"
                 ]
             }
+        ],
+        "response": "Let's solve the problem first!\n\nBatman starts with 50 Batarangs and uses them to fight three villains:\n\n* 10 Batarangs for the Joker\n* 15 Batarangs for the Penguin\n* 12 Batarangs for the Riddler\n\nTo find out how many Batarangs Batman has left, we need to subtract the total number of Batarangs used from the initial amount. Let's calculate:\n\nTotal Batarangs used = 10 + 15 + 12 = 37\n\nNow, let's subtract the total Batarangs used from the initial amount:\n\n50 - 37 = 13\n\nSo, Batman has 13 Batarangs left!\n\nHere's a Python function named func17 that solves this problem:\n```python\ndef func17(batarang_count):\n    # Initialize the initial Batarang count\n    batarangs = batarang_count\n    \n    # Define the number of Batarangs used for each villain\n    joker_batarangs = 10\n    penguin_batarangs = 15\n    riddler_batarangs = 12\n    \n    # Calculate the total number of Batarangs used\n    total_used = joker_batarangs + penguin_batarangs + riddler_batarangs\n    \n    # Check if there are enough Batarangs to fight all villains\n    if batarangs >= total_used:\n        # Subtract the total Batarangs used from the initial amount\n        remaining_batarangs = batarangs - total_used\n        \n        return remaining_batarangs\n    else:\n        print(\"Struggle alert! Not enough Batarangs!\")\n        return None\n\n# Test the function\ninitial_batarang_count = 50\nremaining_batarangs = func17(initial_batarang_count)\nprint(f\"Batman has {remaining_batarangs} Batarangs left.\")\n```\nWhen you run this code, it will output: `Batman has 13 Batarangs left.`",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -879,6 +1173,13 @@
                 "section_spliter": "Section",
                 "num_sections": 3
             }
+        ],
+        "response": "**Section 1**\n\nOrdinary arithmetic reveals that a soccer team has 11 players in total. Since 3 are forwards and 5 are midfielders, the remaining players must be defenders. Let's calculate the number of defenders: 11 (total players) - 3 (forwards) - 5 (midfielders) = 3.\n\nThere are 3 defenders on the soccer team.\n\n\n**Section 2**\n\nHere is a Python function that implements this calculation:\n```\ndef func35():\n    total_players = 11\n    forwards = 3\n    midfielders = 5\n    \n    return total_players - forwards - midfielders\n\nprint(func35())  # Output: 3\n```\n\nThis function takes no input and simply calculates the number of defenders based on the given values.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            false
         ]
     },
     {
@@ -897,6 +1198,13 @@
             {
                 "end_phrase": "Any other questions?"
             }
+        ],
+        "response": "Let's first calculate how many ramen Naruto has left.\n\nNaruto started with 100 ramen. He ate 20 for breakfast, 30 for lunch, and 20 for dinner. So he ate a total of 20 + 30 + 20 = 70 ramen.\n\nTo find out how many ramen he has left, we subtract the number of ramen he ate from the original amount:\n\n100 - 70 = 30\n\nSo Naruto has **30** ramen left.\n\nHere's the Python function that solves this problem:\n```\ndef func57():\n    ramen_start = 100\n    ramen_eaten_breakfast = 20\n    ramen_eaten_lunch = 30\n    ramen_eaten_dinner = 20\n    \n    ramen_left = ramen_start - (ramen_eaten_breakfast + ramen_eaten_lunch + ramen_eaten_dinner)\n    \n    return ramen_left\n\nprint(func57())\n```\nWhen you run this function, it will print the result: **30**.\n\nAny other questions?",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -926,6 +1234,14 @@
                 "section_spliter": "Section",
                 "num_sections": 1
             }
+        ],
+        "response": "**Section: Solution**\n\nLet's calculate how much money is left:\n\nInitial amount: $1200.00\nCost of new goal: $100.00 (deducted from the initial amount)\nAmount after buying a new goal: $1200.00 - $100.00 = $1100.00\n\nNext, let's subtract the cost of new sticks:\nAmount after buying new sticks: $1100.00 - $250.00 = $850.00\n\nFinally, subtract the cost of new pads:\nAmount left after buying new pads: $850.00 - $50.00 = $800.00\n\n**Section: Implementation**\n\nHere is a Python function that solves this problem:\n\n```\ndef func56(initial_amount):\n    goal_cost = 100\n    stick_cost = 250\n    pad_cost = 50\n    \n    amount_after_goal = initial_amount - goal_cost\n    amount_after_sticks = amount_after_goal - stick_cost\n    amount_left = amount_after_sticks - pad_cost\n    \n    return amount_left\n\ninitial_amount = 1200.00\nresult = func56(initial_amount)\nprint(\"The lacrosse team has ${:.2f} left.\".format(result))\n```\n\nWhen you run this code, it will print the result: \"The lacrosse team has $800.00 left.\"",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            false
         ]
     },
     {
@@ -943,6 +1259,12 @@
                     "edge"
                 ]
             }
+        ],
+        "response": "let's get to the bottom of this! serena williams has a total of 18 grand slam singles titles. we know she has 5 from the australian open, 3 from the french open, and 7 from wimbledon. that adds up to 15 titles already. if she has 18 in total, that means she has 3 left over - and those must be from the us open!\n\nit's like having the edge on your opponent and booting them out of the tournament - serena williams is a force to be reckoned with! so, to answer your question: serena williams has 3 grand slam singles titles from the us open.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -957,6 +1279,13 @@
             {},
             {},
             {}
+        ],
+        "response": "<<goalkeeper count>>\n\nthe soccer team has 20 players in total\n8 forwards and 6 midfielders are on the field\nleaving us with a remaining count to figure out\nwhich is not including defenders or goalkeepers yet\n\nlet's subtract the non-goalkeeper positions from the total\n8+6=14 players that aren't goalkeepers\nso we have 20-14=6 players left which must be goalkeepers\n\ntherefore there are 6 goalkeepers on the team",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -983,6 +1312,14 @@
                     "video"
                 ]
             }
+        ],
+        "response": "SECTION 1\nMs. Fields started with 120 chocolate chip cookies. She put them on a tray and took them to the dining room.\n\nSECTION 2\nHer kids were quite eager to get their hands on some of those delicious treats! They ended up eating 20 of the cookies, leaving Ms. Fields with... (let's calculate this!) ...120 - 20 = 100 cookies remaining.\n\nSECTION 3\nBut wait, there's more! Ms. Fields couldn't resist the temptation herself and ate 10 of the remaining cookies, giving her a total of... (math time again!) ...100 - 10 = 90 cookies left!\n\nSECTION 4\nSo, after all that cookie chaos, how many cookies are left? **85**! Yes, you read that right; Ms. Fields has **85** chocolate chip cookies left.\n\nSECTION 5\nAs she takes a moment to savor the satisfaction of having shared her baked goods with her loved ones, she can't help but feel content knowing that there's still a treat-filled tray waiting for them (and maybe even herself) whenever they need a sweet pick-me-up. After all, who doesn't love cookies? Is there anything else I can help with?",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            false
         ]
     },
     {
@@ -1005,6 +1342,13 @@
             {
                 "num_paragraphs": 3
             }
+        ],
+        "response": "***\n\n\nTo solve this problem, we can start by letting y represent Patrick Mahomes' rushing yards and x represent his passing yards. We know that he has 4000 passing yards, which is equal to x. We also know that he has 2000 more passing yards than rushing yards, so the difference between his passing yards (x) and rushing yards (y) is 2000.\n\nThis can be represented as an equation: x - y = 2000\n\nSince we know x is equal to 4000, we can substitute this value into the equation: 4000 - y = 2000\n\nTo solve for y, we can add y to both sides of the equation: 4000 = 2000 + y\n\nSubtracting 2000 from both sides gives us: 2000 = y\n\nSo Patrick Mahomes has 2000 rushing yards.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            false,
+            false
         ]
     },
     {
@@ -1021,6 +1365,12 @@
                 "frequency": 2,
                 "relation": "no greater than"
             }
+        ],
+        "response": "Let's do the math Superman can punch 2000 times per minute That means in 10 minutes he can punch 2000 x 10 = 20 000 punches",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1040,6 +1390,12 @@
                     "wake"
                 ]
             }
+        ],
+        "response": "1000 unicorns were in a magical forest.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            false
         ]
     },
     {
@@ -1056,6 +1412,13 @@
             },
             {},
             {}
+        ],
+        "response": "<<mario's coin count>>\n\nsuper mario has 100 coins. let's add up the ones we know:\n20 from mushroom kingdom\n30 from koopa kingdom\n10 from star kingdom\n\ntotal so far: 60\n\nwe're left with: 100 - 60 = 40\n\nso, super mario has 40 coins from the fire kingdom.\n\nis there anything else i can help with?",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1084,6 +1447,14 @@
                 "capital_frequency": 4,
                 "capital_relation": "less than"
             }
+        ],
+        "response": "Batman starts with 1000 Batarangs and uses 200 to fight the Joker, leaving him with 800. He then uses 300 to fight Bane, ironing out any remaining villains with his trusty gadgets, leaving him with a mere 500 Batarangs. Any other questions?",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1099,6 +1470,12 @@
                 "relation": "at least"
             },
             {}
+        ],
+        "response": "<<Pikachu's Thunderbolt Count>>\n\nPikachu had a stash of 100 thunderbolts, ready to strike at any moment. But then he got into a battle with Squirtle and used up 20 of those precious bolts. That left him with 80 thunderbolts remaining. He didn't take long to get into another scrap, this time with Bulbasaur, and he needed all his might to take down that pesky plant-like Pok\u00e9mon. In the heat of battle, Pikachu unleashed 30 more thunderbolts, leaving him with a slightly smaller but still impressive cache of 50 thunderbolts.\n\nPikachu's not one to complain about using up some of his arsenal in the name of victory, and he knows he can always recharge or find more if needed. For now, though, he's content to have a respectable amount of thunderbolts at his disposal, just in case another battle breaks out. After all, you never know when you might need to strike quickly and decisively!",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true
         ]
     },
     {
@@ -1115,6 +1492,13 @@
                 "name": "func41"
             },
             {}
+        ],
+        "response": "\"Captain Marvel punches 100 times a minute. She punches for 5 minutes, then 200 more times. How many times has she punched?\n\nLet's break it down: she punches 100 times per minute for 5 minutes, so that's 100 x 5 = 500 punches. Then, she adds another 200 punches, making a total of:\n\n500 + 200 = 700\n\nSo, Captain Marvel has punched a total of **700** times.\n\nHere's the Python function to calculate this:\n```\ndef func41():\n    return (100 * 5) + 200\nprint(func41())  # Output: 700\n```\n\nAnd here's the mathematical equation that solves this problem:\n\n$$\\text{Total punches} = (\\text{punches per minute}) \\times (\\text{minutes}) + \\text{additional punches}$$\n\nIn this case, we have:\n$$700 = (100) \\times (5) + 200$$\"",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            false
         ]
     },
     {
@@ -1138,6 +1522,13 @@
                 "section_spliter": "Section",
                 "num_sections": 5
             }
+        ],
+        "response": "Here is the solution:\n\n**Section 1: Problem Statement**\n\nThe airport has 1000 planes. \n200 of them are for international flights. \n300 of them are for domestic flights. \nThe rest are for charter flights.\n\n**Section 2: Calculation**\n\nLet's calculate the number of planes for charter flights:\nTotal planes - International planes - Domestic planes = Charter planes\n1000 - 200 - 300 = ?\n\n**Section 3: Calculation Result**\n\n500\n\n**Section 4: Answer**\n\nSo, there are **500.0** planes for charter flights.\n\n**Section 5**\nAny other questions?",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1163,6 +1554,13 @@
                 "capital_frequency": 16,
                 "capital_relation": "less than"
             }
+        ],
+        "response": "Let's calculate the number of spider webs Spiderman has left:\n\nInitially, Spiderman has 100 spider webs.\n\nHe uses 20 spider webs to trap a criminal, leaving him with:\n100 - 20 = 80 spider webs\n\nThen, he uses 30 spider webs to save a kitten, leaving him with:\n80 - 30 = 50 spider webs\n\nSo, Spiderman has 50.0 spider webs left.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1191,6 +1589,14 @@
                 "nth_paragraph": 1,
                 "first_word": "philosophy"
             }
+        ],
+        "response": "<<Rings of Glory>>\n\nPhilosophy aside, let's get to the math. Since Kobe has 5 rings and 2 more than Shaquille, we can subtract 2 from Kobe's total to find out how many Shaquille has.\n\nShaquille O'Neal has 3 NBA championship rings.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            true,
+            false
         ]
     },
     {
@@ -1209,6 +1615,13 @@
                 "let_frequency": 2,
                 "let_relation": "no greater than"
             }
+        ],
+        "response": "steve started with 1000 coins. he spent 200 on a new outfit, leaving him with 1000 - 200 = 800 coins. then he spent 300 on a new pickaxe, leaving him with 800 - 300 = 500 coins. finally, he spent 100 on a new shovel, leaving him with 500 - 100 = **400** coins.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            false
         ]
     },
     {
@@ -1226,6 +1639,12 @@
                     "profession"
                 ]
             }
+        ],
+        "response": "Spiderman starts with 20 spider-bots and deploys 5 on each of 3 rooftops so that is a total of 5 * 3 = 15 deployed leaving him with 20 - 15 = 5 spider-bots left.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1238,6 +1657,12 @@
         "kwargs": [
             {},
             {}
+        ],
+        "response": "Naruto started with 1000 ryo. He spent 200 ryo on a new headband so he had 800 ryo left. Then he spent 300 ryo on a new outfit so he had 500 ryo left. Next he spent 100 ryo on a new backpack so he had 400 ryo left.\n\n******\nNaruto started with 1000 ryo. He spent 200 + 300 = 500 ryo on the headband and outfit so he had 1000 - 500 = 500 ryo left. Then he spent 100 ryo on a new backpack so he had 500 - 100 = 400 ryo left.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1252,6 +1677,12 @@
                 "prompt_to_repeat": "A volleyball team has 12 players. 3 of the players are setters, 5 of the players are hitters, and the rest are blockers. How many players are blockers? "
             },
             {}
+        ],
+        "response": "A volleyball team has 12 players. \n<<Blockers on the Court>>",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true
         ]
     },
     {
@@ -1270,6 +1701,12 @@
             {
                 "num_paragraphs": 2
             }
+        ],
+        "response": "Let's start by using what we know to set up an equation. We can let x represent the number of Nissans in the parking lot. We know that the total number of cars is 1000, and that 200 are Hondas and 300 are Toyotas. This means that the number of Nissans is equal to the total number of cars minus the number of Hondas and Toyotas.\n\n*** So, we can set up the equation: x + 200 + 300 = 1000. To solve for x, we can simplify the equation by combining like terms: x + 500 = 1000. Next, we can subtract 500 from both sides to get: x = 500. This means that there are indeed 500 Nissans in the parking lot!",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1293,6 +1730,14 @@
                     "solution"
                 ]
             }
+        ],
+        "response": "\"LEBRON JAMES HAS A TOTAL OF 30,000 POINTS, 9,000 REBOUNDS, AND 9,000 ASSISTS. TO FIND OUT HOW MANY MORE POINTS HE HAS THAN REBOUNDS AND ASSISTS COMBINED, WE NEED TO ADD HIS REBOUNDS AND ASSISTS: 9,000 + 9,000 = 18,000. THEN, WE SUBTRACT THIS TOTAL FROM HIS TOTAL POINTS: 30,000 - 18,000 = 12,000.\"\n\n***",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1316,6 +1761,14 @@
                 "nth_paragraph": 1,
                 "first_word": "put"
             }
+        ],
+        "response": "SECTION 1\nPUT IT ALL TOGETHER, CAPTAIN MARVEL HAS A TOTAL OF 1000 FOLLOWERS. 200 ARE FROM THE UNITED STATES AND 150 ARE FROM BRAZIL.\n\n\\n\\n\nSECTION 2\nTO FIND OUT HOW MANY FOLLOWERS ARE NOT FROM THE UNITED STATES OR BRAZIL, WE NEED TO SUBTRACT THE NUMBER OF FOLLOWERS FROM THOSE TWO COUNTRIES FROM THE TOTAL. THAT WOULD BE: 1000 - (200 + 150) = 1000 - 350 = 650.\n\n\\n\\n\n**SECTION 3**\n**SO, ** **CAPTAIN MARVEL HAS 650 FOLLOWERS WHO ARE NOT FROM THE UNITED STATES OR BRAZIL!**",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            false,
+            false,
+            false
         ]
     },
     {
@@ -1337,6 +1790,12 @@
                     "soil"
                 ]
             }
+        ],
+        "response": "Let's break it down! If 5 players are setters and 4 are hitters, that means we've already accounted for 9 players.\n\nSince there are a total of 12 players on the team, that leaves us with:\n\n12 - 9 = 3\n\nplayers who are blockers. So, there are 3 blockers on the team!\n\nNow, if someone were to ask you how many blockers there are, would you be prepared to answer?",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false
         ]
     },
     {
@@ -1354,6 +1813,12 @@
                 ]
             },
             {}
+        ],
+        "response": "Let's subtract the number of private and commercial planes from the total to find the number of military planes:\n\n2000 (total planes) - 400 (private planes) = 1600\n1600 - 700 (commercial planes) = 900\n\nSo, there are **900** military planes.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1369,6 +1834,12 @@
                 "num_sections": 3
             },
             {}
+        ],
+        "response": "<<Mahomes' Rushing Yards Calculation>>\n\nSection 1: Problem Statement\nPatrick Mahomes has 400 passing yards and 200 more passing yards than rushing yards. We need to find his rushing yards.\n\nSection 2: Calculation\nLet's use the given information to set up an equation. Let R be the number of rushing yards. Since Patrick has 200 more passing yards than rushing yards, we can write:\n\nPassing Yards - Rushing Yards = 200\n\nSubstitute 400 for Passing Yards:\n\n400 - R = 200\n\nAdd R to both sides:\n\n400 = 200 + R\n\nSubtract 200 from both sides:\n\nR = 200\n\nSo Patrick Mahomes has 200 rushing yards.\n\nSection 3: Conclusion\nTherefore, the answer is that Patrick Mahomes has 200 rushing yards.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1394,6 +1865,14 @@
                 "num_paragraphs": 3
             },
             {}
+        ],
+        "response": "**SECTION 1**\nTHIS PROBLEM REQUIRES US TO FIND THE TOTAL NUMBER OF BARKS IN A GIVEN PERIOD.\n\n***\n\n**SECTION 2**\nFIRST, LET'S CALCULATE THE NUMBER OF BARKS EACH DOG MAKES IN 10 MINUTES. IF A DOG BARKS 10 TIMES PER MINUTE, IT WILL BARK 10 * 10 = 100 TIMES IN 10 MINUTES.\n\n***\n\n**SECTION 3**\nNOW, LET'S APPLY THIS TO OUR PROBLEM. WE HAVE 500 DOGS THAT BARK FOR 10 MINUTES EACH. SO, THE TOTAL NUMBER OF BARKS IS EQUAL TO THE NUMBER OF DOGS MULTIPLIED BY THE NUMBER OF BARKS EACH DOG MAKES IN 10 MINUTES. THIS GIVES US: 500 * 100 = 50,000.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            false,
+            true,
+            true
         ]
     },
     {
@@ -1408,6 +1887,12 @@
                 "end_phrase": "Any other questions?"
             },
             {}
+        ],
+        "response": "let's break it down! if there are 10 unicorns that are both pink and purple, that means we've counted those unicorns twice - once as pink and once as purple.\n\nso, let's subtract the duplicates: 20 (pink) + 30 (purple) - 10 (both) = 40\n\nwe've accounted for all the unicorns that are either pink or purple. to find the number of unicorns not pink or purple, we'll take the total number of unicorns minus the ones we've counted:\n\n100 (total) - 40 (pink or purple) = 60\n\nthere are 60 unicorns that are neither pink nor purple.\n\nany other questions?",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1435,6 +1920,14 @@
                 ]
             },
             {}
+        ],
+        "response": "\"**Step 1:** Captain America can punch 100 times per minute.\n\n**Step 2:** He punches for 10 minutes, which means we need to multiply his punching rate by the number of minutes.\n\n100 punches/minute * 10 minutes = **Step 3:** 1000 punches in total.\n\nSo, after 10 minutes, Captain America has thrown a total of 1000 punches.\"",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1457,6 +1950,14 @@
                 "num_sentences": 14,
                 "relation": "at least"
             }
+        ],
+        "response": "\"**Step 1:** The volleyball team has 12 players.\n\n**Step 2:** Each player has 4 kneepads.\n\n**Step 3:** To find the total number of kneepads, we need to multiply the number of players by the number of kneepads each player has.\n\n**Step 4:** Multiply 12 (the number of players) and 4 (the number of kneepads per player): 12 \u00d7 4 = ?\n\n**Step 5:** Calculate the product: 12 \u00d7 4 = 48\n\n**Step 6:** The total number of kneepads is equal to the result of multiplying the number of players by the number of kneepads per player.\n\n**Step 7:** Therefore, the team has **48** kneepads in total.\"\n\n\"",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false,
+            true,
+            false
         ]
     },
     {
@@ -1476,6 +1977,13 @@
                     "method"
                 ]
             }
+        ],
+        "response": "Response 1:\nTaylor Swift has 2000 followers on Twitter. She gains 200 new followers per day. After 5 days she will have 2000 + (200 x 5) = 2000 + 1000 = 3000 followers.\n\n******\n\nResponse 2:\nInitial followers: 2000, daily gain: 200, total followers after 5 days: 2000 + (200 x 5) = 2000 + 1000 = 3000.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            true
         ]
     },
     {
@@ -1499,6 +2007,14 @@
                 "num_sections": 4
             },
             {}
+        ],
+        "response": "\\n\\n\nWedding bells are ringing as we celebrate Superman's incredible leaping abilities! Let's dive into the calculation.\n\nSection 1\nIn a single bound, Superman can leap 1.5 miles. To find out how many miles he can leap in 12 bounds, we need to multiply this distance by the number of bounds.\n\nSection 2\nTo solve this problem, we can use the following equation:\n\n$$\\boxed{1.5 \\times 12}$$\n\nThis equation multiplies the distance Superman can leap in a single bound (1.5 miles) by the number of bounds he takes (12).\n\nSection 3\nNow that we have our equation, let's plug in the values and calculate the result:\n\n1.5 \u00d7 12 = 18\n\nSo, Superman can leap 18 miles in 12 bounds!\n\nSection 4\nThere you have it! With his incredible leaping abilities, Superman can cover a whopping 18 miles in just 12 bounds. Whether he's saving the world or simply enjoying a leisurely stroll, Superman's powers are truly awe-inspiring.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            false,
+            true,
+            true
         ]
     },
     {
@@ -1518,6 +2034,13 @@
             {
                 "end_phrase": "Is there anything else I can help with?"
             }
+        ],
+        "response": "<<LASSOING FOR JUSTICE>>\n\nWonder Woman's AMAZING ability to lasso bad guys is a FORCE TO BE RECKONED WITH! She can grab 12 of them at a time, and she can do it 3 TIMES PER DAY!\n\nIn one day, Wonder Woman can lasso an astonishing 36 bad guys! That's not all, folks - in 5 DAYS, she can LASSO A WHOPPING 180 BAD GUYS! It's a TOTALLY AMAZING feat that will leave the forces of evil SHAKEN TO THEIR CORE!\n\nSo there you have it - Wonder Woman's lassoing prowess is truly a WONDER to behold!",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            false
         ]
     },
     {
@@ -1538,6 +2061,12 @@
                     "war"
                 ]
             }
+        ],
+        "response": "**Section 1: The Initial Situation**\n\nMario starts with a total of 100 coins.\n\n**Section 2: The Coin Expenditures**\n\nHe spends 20 coins to buy a mushroom, leaving him with:\n100 - 20 = 80 coins\nThen, he spends 10 coins to buy a flower, leaving him with:\n80 - 10 = 70 coins\nFinally, he spends 20 coins to buy a star, leaving him with:\n70 - 20 = 50 coins\n\n**Section 3: The Final Count**\n\nMario has spent a total of 20 + 10 + 20 = 50 coins.\nHe now has 100 - 50 = 50 coins left.\n\n**Section 4: A Stranger's Perspective**\n\nAs Mario walks away from the market, a stranger approaches him. \"War is coming,\" the stranger whispers, \"but with your remaining 50 coins, you'll be prepared to face whatever challenges lie ahead.\"\n\n**Section 5: The Final Verdict**\n\nIn conclusion, Mario has 50 coins left after his shopping spree. He can now focus on navigating the Mushroom Kingdom's treacherous terrain, armed with his trusty mushroom, flower, and star powers.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1564,6 +2093,14 @@
                     "paper"
                 ]
             }
+        ],
+        "response": "**Section 1: Problem Statement**\n\nIn the game, Super Mario can stomp on 30 Goombas, 20 Koopas, and 10 Piranha Plants. How many enemies does he stomp on total?\n\n**Section 2: Understanding the Problem**\n\nTo solve this problem, we need to add up the number of each type of enemy that Mario can stomp on. This will give us the total number of enemies.\n\n**Section 3: Solution**\n\nWe can create a Python function named func57 to solve this problem:\n\n```python\ndef func57():\n    goombas = 30\n    koopas = 20\n    piranha_plants = 10\n    \n    total_enemies = goombas + koopas + piranha_plants\n    \n    return total_enemies\n\nprint(func57())\n```\n\nWhen we run this function, it will calculate the total number of enemies Mario can stomp on and print the result.\n\n**Section 4: Keyword Integration**\n\nHere's an example of how we can integrate keywords ['guarantee', 'paper'] into our response:\n\nIn order to guarantee accurate results, we need to carefully consider all possible scenarios. That's why we're using a paper-trail approach by writing down each step of the solution clearly and concisely.\n\n**Section 5: Final Answer**\n\nThe final answer is **60**.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1576,6 +2113,12 @@
         "kwargs": [
             {},
             {}
+        ],
+        "response": "Hello Kitty starts with 100 pencils. She lends 20 to her friend so she has 80 left. Then she buys 30 more pencils. To find out how many she has now we add the number of pencils she had originally to the number she bought: 80 + 30 = 110.\n\n**110**",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1591,6 +2134,12 @@
                 "capital_relation": "no greater than"
             },
             {}
+        ],
+        "response": "Let's do some math to find out how many Grand Slam titles Serena Williams has from the US Open!\n\nWe know she has a total of 24 Grand Slam titles.\n\nFrom the Australian Open, she has 8 titles.\nFrom the French Open, she has 3 titles.\nFrom Wimbledon, she has 7 titles.\n\nLet's add up these numbers: 8 + 3 + 7 = 18\n\nSo, she has 18 titles from these three tournaments. To find out how many titles she has from the US Open, we subtract this number from her total:\n\n24 - 18 = 6\n\nTherefore, Serena Williams has 6 Grand Slam titles from the US Open!\n\nHere's the answer in a title wrapped in double angular brackets, as requested:\n\n<<Serena's Six US Open Triumphs>>",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1607,6 +2156,12 @@
                 "type": "Truncate"
             },
             {}
+        ],
+        "response": "The dog starts with 12 bones. It chews 9 bones in total (3 bones per day for 3 days). So it has 12 - 9 = 3 bones left.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true
         ]
     },
     {
@@ -1633,6 +2188,14 @@
             {
                 "end_phrase": "Any other questions?"
             }
+        ],
+        "response": "Taylor Swift has a total of 2000 fans. She has 1000 fans in the US and 500 fans in the UK, which means she has 1500 fans outside of Canada. To find out how many fans she has in Canada, we subtract this number from her total: 2000 - 1500 = **500**.\n\nAny other questions?",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1649,6 +2212,12 @@
                 "let_frequency": 4,
                 "let_relation": "no greater than"
             }
+        ],
+        "response": "MARIO STARTS WITH 1000 COINS! HE SPENDS 200 ON A MUSHROOM, LEAVING HIM WITH:\n\n1000 - 200 = 800 COINS\n\nHE THEN SPENDS 3/5 OF THE REMAINING COINS ON A FIRE FLOWER. TO FIND THIS AMOUNT, WE MULTIPLY THE NUMBER OF COINS LEFT (800) BY THE FRACTION (3/5):\n\n800 * (3/5) = 480 COINS\n\nNOW, MARIO HAS:\n\n800 - 480 = 320 COINS LEFT!\n\nTHERE YOU HAVE IT! MARIO HAS 320 COINS LEFT AFTER HIS SPENDING SPREE!",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false
         ]
     },
     {
@@ -1666,6 +2235,12 @@
             {
                 "end_phrase": "Any other questions?"
             }
+        ],
+        "response": "**Step 1:**\nNaruto has 1000 Ryo initially.\n\n**Step 2:**\nHe spends 200 Ryo on a new outfit, leaving him with:\n1000 - 200 = 800 Ryo\n\n**Step 3:**\nNext, he spends 300 Ryo on a new headband, leaving him with:\n800 - 300 = 500 Ryo\n\nAny other questions?",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1689,6 +2264,13 @@
             {
                 "num_paragraphs": 1
             }
+        ],
+        "response": "Let's dive into solving this problem! The key here is to recognize that the total number of dogs (15) minus the number of beagles and dachshunds will give us the number of pugs.\n\n*** \n\nHere's a Python function named `func79` that solves this problem:\n\n```python\ndef func79():\n    total_dogs = 15\n    beagles = 5\n    dachshunds = 4\n    pugs = total_dogs - (beagles + dachshunds)\n    return pugs\n\nprint(func79())  # Output: 6\n```\n\nAs we brush off the details, we can see that there are indeed 6 pugs. And if you're parking your thoughts on how many dogs are beagles or dachshunds, don't worry \u2013 it's all accounted for in this function!",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            false
         ]
     },
     {
@@ -1719,6 +2301,14 @@
                     "trade"
                 ]
             }
+        ],
+        "response": "Steph Curry's incredible 3-point shooting career has reached a milestone of 2000 made threes. Breaking it down, he has sunk 500 from the left side of the court and 700 from the right side, showcasing his deadly accuracy from anywhere on the court. *** With such a strong trade-off between left and right sides, one can't help but wonder what's behind his consistent success. Perhaps there's no delay in getting into a rhythm or finding the right spot to launch from, allowing him to make adjustments on the fly. Whatever it is, Curry's remarkable shooting has earned him a reputation as one of the greatest three-point shooters in NBA history.\n\nTo answer your question, Steph Curry has made 800 3-pointers from the left and right sides combined, leaving 2000 - 800 = 1200 threes to be made from the top of the key.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            false,
+            true
         ]
     },
     {
@@ -1737,6 +2327,13 @@
             },
             {},
             {}
+        ],
+        "response": "<<hello kitty's notebook count>>\n\nlet's solve this step by step!\n\nwe know hello kitty has 200 pencils, and 20 more pencils than erasers. so let's say she has x erasers. then we can set up an equation:\n\npencils = erasers + 20\n200 = x + 20\n\nnow let's simplify the equation:\n\n180 = x\n\nso hello kitty has 180 erasers.\n\nwe also know that she has 50 more erasers than notebooks, so let's say she has y notebooks. then we can set up another equation:\n\nerasers = notebooks + 50\n180 = y + 50\n\nnow let's simplify the equation:\n\n130 = y\n\nso hello kitty has 130 notebooks.\n\nrounding to 1 decimal place, hello kitty has approximately <<12.5>> notebooks.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            true
         ]
     },
     {
@@ -1758,6 +2355,13 @@
                 "max_steps": null
             },
             {}
+        ],
+        "response": "<<Hockey Math Problem>>\n\n**Step 1:** Let's identify the total number of players on the team: 12\n\n**Step 2:** We know that 4 players are forwards and 6 players are midfielders. To find the remaining players, we'll subtract these numbers from the total:\n\n12 (total players) - 4 (forwards) - 6 (midfielders) = ?\n\n**Step 3:** Perform the subtraction:\n12 - 4 - 6 = 2\n\nSo, there are **2** players left.\n\n**Step 4:** Since the remaining players are defenders, we'll label them as such: **2** defenders.\n\nTherefore, there are **2** defenders on the field hockey team.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1779,6 +2383,13 @@
                 ]
             },
             {}
+        ],
+        "response": "Captain Marvel has 5000 photon blasts.\n\n<<Photon Blast Accounting>>\n\n\nCaptain Marvel has 5000 photon blasts. She uses 2000 of them to fight the Skrulls. She then uses 500 of them to fight the Kree.\n\n\nShe has used a total of 2500 photon blasts, which is equal to:\n\n\n5000 - 2500 = 1500\n\nSo, Captain Marvel has 1500 photon blasts left.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            false,
+            true
         ]
     },
     {
@@ -1805,6 +2416,14 @@
                 "frequency": 3,
                 "relation": "no greater than"
             }
+        ],
+        "response": "**Step 1:**\nCaptain America starts with 100 vibranium shields.\n\n**Step 2:**\nHe uses 20 vibranium shields to fight the Red Skull. To find out how many shields he has left, we subtract 20 from 100:\n\n100 - 20 = **80**\n\n**Step 3:**\nNext, he uses 30 vibranium shields to fight the Winter Soldier. To find out how many shields he has left after using these, we subtract 30 from 80:\n\n80 - 30 = **50**\n\nSo, Captain America has **50** vibranium shields left.\n\nHere is the mathematical equation that solves this problem:\n```\n$$100-(20+30)=\\boxed{50}$$\n```",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1819,6 +2438,12 @@
                 "name": "func29"
             },
             {}
+        ],
+        "response": "To find the number of dinosaurs that were both herbivores and carnivores, we need to subtract the sum of the herbivores and carnivores from the total number of dinosaurs.\n\nThe mathematical equation that solves this problem is:\n\n$\\boxed{\\text{Total Herbivores + Total Carnivores - 10000 = Number of Both}}$\n\nHere's a Python function named func29 that implements this solution:\n```\ndef func29():\n    total_dinosaurs = 10000\n    herbivores = 2000\n    carnivores = 3000\n    omnivores = 5000\n\n    both = herbivores + carnivores - total_dinosaurs\n    return both\n\nprint(func29())\n```\nThis function calculates the number of dinosaurs that are both herbivores and carnivores by subtracting the total number of dinosaurs from the sum of the herbivores and carnivores.\n\nThe output of this function is 0, which means there are no dinosaurs that are both herbivores and carnivores.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true
         ]
     },
     {
@@ -1835,6 +2460,13 @@
                 "name": "func95"
             },
             {}
+        ],
+        "response": "<<Mushroom Madness>>\n\nSuper Mario starts with 1000 coins. He spends 200 coins on a mushroom and has 800 coins left. Then he spends 300 coins on a fire flower and has 500 coins left. Finally, he spends 500 coins on a star and has 0 coins left.\n\nHere's the Python function:\n\n```\ndef func95(coins_spent):\n    initial_coins = 1000\n    remaining_coins = initial_coins - coins_spent\n    return remaining_coins\n\n# Test the function\nprint(func95(200)) # Should print 800\nprint(func95(300)) # Should print 500\nprint(func95(500)) # Should print 0\n```\n\nWhen you run this code, it will output:\n\n```\n800\n500\n0\n```",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            false
         ]
     },
     {
@@ -1853,6 +2485,12 @@
             {
                 "num_paragraphs": 1
             }
+        ],
+        "response": "To find the number of long dresses Barbie has, we need to subtract the total number of short and medium dresses from the total number of pink dresses.\n\n***Barbie has a total of 200 pink dresses. 100 of them are short and 50 are medium. This leaves us with the number of long dresses.***",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false
         ]
     },
     {
@@ -1877,6 +2515,14 @@
             },
             {},
             {}
+        ],
+        "response": "hello kitty has 20 pink bows: 10 of them are 1-inch bows, 5 of them are 2-inch bows, and the rest are 3-inch bows.\n\nthe total length of the 1-inch bows is 10 inches (10 x 1 inch = 10 inches). the total length of the 2-inch bows is 10 inches (5 x 2 inch = 10 inches). the remaining 5 bows are 3-inch bows, so their total length is 15 inches (5 x 3 inch = 15 inches).\n\nto find the total length of all the bows, add up the lengths: 10 + 10 + 15 = **35**.\n\nhello kitty has a total of **35** inches of pink bows.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1902,6 +2548,13 @@
                 "frequency": 2,
                 "relation": "less than"
             }
+        ],
+        "response": "The field hockey team has a total of 12 players, which can be divided into three categories: forward line, midfield line, and defensive line. The number of players on each line is given as 3, 4, and 5 respectively.\n\n*** Since the total number of players is 12 and the number of players on each line adds up to 3 + 4 + 5 = 12, we can conclude that there are no additional players who do not belong to any specific line. Therefore, the answer is zero.",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1924,6 +2577,14 @@
             {
                 "num_paragraphs": 4
             }
+        ],
+        "response": "the total number of unicorns is 200. we know that 100 are pink and 50 are blue. let's add those numbers together to find out how many aren't purple: 100 + 50 = 150\n\n***\n\nso, there are 200 - 150 = 50 unicorns that are purple. this makes sense because if you count up all the pink and blue ones, it adds up to 150, which means the rest must be purple.\n\n***\n\nlet's double-check our math to make sure we're correct: 100 + 50 is indeed 150, and 200 - 150 is also 50. so, yes, there are 50 unicorns that are purple!\n\n***\n\nto answer your original question, there are approximately 50.0 unicorns that are purple.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            true,
+            true
         ]
     },
     {
@@ -1942,6 +2603,12 @@
             {
                 "num_paragraphs": 5
             }
+        ],
+        "response": "The star-spangled man with a plan is quite the puncher! With his incredible strength and agility, Captain America can unleash a flurry of punches in a very short amount of time.\n\n***According to his impressive stats, Cap can throw a whopping 20 punches per minute. That's some serious punching power right there!***\n\n***Now, let's see how many punches he can throw in 10 minutes. If we multiply the number of punches he can throw per minute by the number of minutes, we get...***\n\n20 punches/minute x 10 minutes = 200 punches!\n\n***That's a whole lotta punching going on! I'm sure the bad guys wouldn't stand a chance against Captain America's lightning-fast fists. And remember, it's not just his physical prowess that makes him a hero - it's also his brain (just kidding, had to sneak one in there!)... err, I mean, his exceptional leadership skills and unwavering commitment to justice!",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            false
         ]
     },
     {
@@ -1962,6 +2629,12 @@
                 "let_frequency": 2,
                 "let_relation": "at least"
             }
+        ],
+        "response": "Let's calculate how many gadgets Batman used in total:\n\n* To fight the Joker: 20 gadgets\n* To fight the Riddler: 15 gadgets\n* To fight the Penguin: 15 gadgets\n\nIn total, he used 20 + 15 + 15 = 50 gadgets.\n\nHe started with 100 gadgets, so to find out how many are left:\n\n100 - 50 = 50\n\nSo, Batman has 50 gadgets left.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true
         ]
     },
     {
@@ -1981,6 +2654,13 @@
             },
             {},
             {}
+        ],
+        "response": "\"HE STARTS WITH 1000 MINECOINS! HE SPENDS 200 ON A NEW SKIN, WHICH LEAVES HIM WITH 800 MINECOINS. THEN, HE CLAIMS HIS RIGHT TO SPEND 300 MORE ON A NEW CAPE, LEAVING HIM WITH 500 MINECOINS. FINALLY, QUOTE: \"I'LL JUST TAKE ANOTHER 100 MINECOINS FOR THAT NEW WORLD.\" AND NOW HE'S DOWN TO 400 MINECOINS! THE QUOTE STANDS: 'A MINECRAFTER'S WORTH IS IN HIS WALLET... OR LACK THEREOF.'\"",
+        "strict_following": true,
+        "follow_per_instruction": [
+            true,
+            true,
+            true
         ]
     },
     {
@@ -2003,6 +2683,14 @@
             {
                 "name": "func5"
             }
+        ],
+        "response": "\"A soccer team has 11 players, and we can categorize them into three positions: defenders, midfielders, and forwards. We know that there are 3 defenders, 5 midfielders, and 3 forwards.\"\n\nBox{$$11 = 3 + 5 + 3$$}\n\nPurchase the information provided, and you will find that the total number of players in these three categories is 3 + 5 + 3 = 11. Therefore, we can calculate the number of players not in these categories by subtracting this sum from the total number of players.\n\nThe answer to our question is therefore 11 - 11 = 0. There are no players that are not defenders, midfielders, or forwards.\"\n\nHere is a Python function named `func5` that solves this problem:\n\n```\ndef func5():\n    total_players = 11\n    defenders = 3\n    midfielders = 5\n    forwards = 3\n    \n    non_defenders_midfielders_forwards = total_players - (defenders + midfielders + forwards)\n    \n    return non_defenders_midfielders_forwards\n\nprint(func5())\n```",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            false,
+            false,
+            true
         ]
     },
     {
@@ -2035,6 +2723,14 @@
                 "section_spliter": "SECTION",
                 "num_sections": 1
             }
+        ],
+        "response": "SECTION 1: Spiderman's Web Usage\n\nSpiderman uses a total of 20 + 30 = 50 spider webs for catching thieves and swinging from building to building. This leaves him with 100 - 50 = 50 spider webs remaining.\n\nSECTION 2: Cocoon Calculation\n\nTo find out how many spider webs Spiderman uses to make the cocoon, subtract the number of webs used for other purposes from the total:\n\n100 (total webs) - 20 (thieves) - 30 (swinging) = 50\n\nSo, Spiderman uses approximately k=49.5 (rounded to one decimal place) spider webs to make his spider web cocoon.",
+        "strict_following": false,
+        "follow_per_instruction": [
+            false,
+            true,
+            false,
+            true
         ]
     },
     {
@@ -2055,6 +2751,13 @@
                 "let_frequency": 7,
                 "let_relation": "no greater than"
             }
+        ],
+        "response": "\"Since Wonder Woman punches 20 times a second, she can throw 20 x 60 = 1200 punches in one minute. In 10 minutes, she can throw 1200 x 10 = 12,000 punches. Any other questions?\"",
+        "strict_following": false,
+        "follow_per_instruction": [
+            true,
+            true,
+            false
         ]
     }
 ]

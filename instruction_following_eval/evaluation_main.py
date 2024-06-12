@@ -25,7 +25,7 @@ from absl import app
 from absl import flags
 from absl import logging
 
-import instructions_registry
+import instruction_following_eval.instructions_registry as instructions_registry
 
 
 _INPUT_DATA = flags.DEFINE_string(
@@ -106,6 +106,7 @@ def test_instruction_following_strict(
     instruction_cls = instructions_registry.INSTRUCTION_DICT[instruction_id]
     instruction = instruction_cls(instruction_id)
 
+    assert len(inp.kwargs) > index, f"{index} out of range: {inp.prompt}"
     instruction.build_description(**inp.kwargs[index])
     args = instruction.get_instruction_args()
     if args and "prompt" in args:

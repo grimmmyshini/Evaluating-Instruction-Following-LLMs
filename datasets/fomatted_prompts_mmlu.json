@@ -1046,13 +1046,13 @@
     {
         "key": 175,
         "prompt": "The appraised values of houses in a city have a mean of $125,000 with a standard deviation of $23,000. Because of a new teachers' contract, the school district needs an extra 10% in funds compared to the previous year. To raise this additional money, the city instructs the assessment office to raise all appraised house values by $5,000. What will be the new standard deviation of the appraised values of houses in the city?",
-        "answer": "$23,000",
+        "answer": "23,000",
         "difficulty": 2
     },
     {
         "key": 176,
         "prompt": "A large company has offices in two locations, one in New Jersey and one in Utah. The mean salary of office assistants in the New Jersey office is $28,500. The mean salary of office assistants in the Utah office is $22,500. The New Jersey office has 128 office assistants and the Utah office has 32 office assistants. What is the mean salary paid to the office assistants in this company?",
-        "answer": "$27,300 ",
+        "answer": "27,300 ",
         "difficulty": 2
     },
     {
@@ -1202,7 +1202,7 @@
     {
         "key": 201,
         "prompt": "Colton and his dad bought a gallon of paint that cost $13. They also bought 2 brushes that cost $9 each. What was the total cost, not including tax, of the brushes and the paint they bought?",
-        "answer": "$31 ",
+        "answer": "31 ",
         "difficulty": 1
     },
     {
@@ -1286,7 +1286,7 @@
     {
         "key": 215,
         "prompt": "The ticket prices to a play are $5.00 for teachers and $3.00 for students. How much will it cost for a group of 71 students and 5 teachers to see the play?",
-        "answer": "$238.00 ",
+        "answer": "238.00 ",
         "difficulty": 1
     },
     {
@@ -1424,7 +1424,7 @@
     {
         "key": 238,
         "prompt": "Dawn needs to fix windows in her house. She must buy 3 feet of wood, which costs $7 per foot. She also needs to buy 4 pieces of glass. Each piece of glass costs $23. What will be the total cost for fixing the windows?",
-        "answer": "$113 ",
+        "answer": "113 ",
         "difficulty": 1
     },
     {

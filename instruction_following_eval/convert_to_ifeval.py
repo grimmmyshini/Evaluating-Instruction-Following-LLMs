@@ -101,19 +101,24 @@ def add_constraints_to_prompts_automatic(prompt_file, store_file):
         instruction_id_list = []
         kwargs = []
         while instr_id < limit:
-            choices = set(math_instrs_ok.keys()).difference(conflict_list)
+            choices = set(math_instrs_ok.keys()).difference([conflict.split(':')[1] for conflict in conflict_list])
             if len(choices) == 0:
                 break
             constraint = random.choice(list(choices))
             type_constraint = math_instrs_ok[constraint]['type'] + constraint
-
+            if constraint == 'answer_round':
+                try:
+                    ans = float(row['answer'])
+                except:
+                    conflict_list += [type_constraint]
+                    continue
+                if '.' not in row['answer']:
+                    continue
             if type_constraint in conflict_list or constraint in constraint_list:
                 continue
-            if constraint == 'answer_round' and '.' not in row['answer']:
-                continue
-
             constraint_list += [constraint]
             conflict_list += conflicts[type_constraint]
+            conflict_list += [type_constraint]
             instruction_id_list += [type_constraint]
             const_obj = math_instrs_ok[constraint]['class'](instr_id)
             instr_id += 1
@@ -122,6 +127,7 @@ def add_constraints_to_prompts_automatic(prompt_file, store_file):
                 prompt += ' ' + const_obj.build_description(
                     prompt_to_repeat=prompt)
             elif constraint == 'answer_round':
+                print(row['answer'], row['answer'].split('.'))
                 max = len(row['answer'].split('.')[1])
                 round_to = random.choice(range(1, max)) if max > 1 else 1
                 type_of = random.choice(["Round", "Truncate"])
@@ -142,7 +148,8 @@ def add_constraints_to_prompts_automatic(prompt_file, store_file):
             'key': key,
             'prompt': prompt,
             'instruction_id_list': instruction_id_list,
-            'kwargs': kwargs
+            'kwargs': kwargs,
+            'difficulty': row['difficulty']
         }
         records += [record]
         key += 1
@@ -210,10 +217,38 @@ def evaluate_prompts(prompt_file, store_file, model, redo = False):
 
         print("Accuracy: ", cnt/(i + 1))
 
+# 1) what makes prompts difficult? Complexity of question or complexity of added instructions.
+# mmlu 1, 2, 4, 8
+#    1 90
+#    2 30
+#    3 20
+#    4
+#
+# 2) Does the instruction ordering matter for accuracy?
+#
+# 3) (not sure how to show this) how does blind re-prompting vs guided re-prompting help? My initial idea is to show the average best accuracy between reprompts. Here blind reprompts are just "try again." And guided reprompts are "No, you need to follow the instruction <instruction not followed> and any others described by the original prompt."
+#
+# 4) could be step by step prompting? Like instead of giving instructions altogether, we prompt the model step by step and see if that increases accuracy.
+#
+# 5) Look into roles in llm apis? Can roles help llms follow instructions better?
+
+# Models                    [llama3, mistral, gemma, chatGPT4, chatGPT4o]
+# Datasets
+# Info dataset with ifeval      1       1       1       0          0
+# ifeval dataset with info      1       0       0       0          0
+# mathwell with info            0       0       0       0          0
+# mathwell with ifeval          1       0       0       0          0
+# mmlu with ifeval             0       0       0       0          0
+# mmlu with info               0       0       0       0          0
 
 init_prompts = '/home/grimmyshini/CS4NLP-Project/datasets/fomatted_prompts_mathwell.json'
+init_prompts_mmlu = '/home/grimmyshini/CS4NLP-Project/datasets/fomatted_prompts_mmlu.json'
+
 store_prompts = '/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mathwell.json'
+store_prompts_mmlu = '/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mmlu.json'
+
 store_responses = '/home/grimmyshini/CS4NLP-Project/datasets/responses_mathwell_llama3.json'
 # add_constraints_to_prompts_automatic(init_prompts, store_prompts)
+# add_constraints_to_prompts_automatic(init_prompts_mmlu, store_prompts_mmlu)
 
 # evaluate_prompts(store_prompts, store_responses, "llama3")

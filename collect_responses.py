@@ -34,8 +34,8 @@ def save_responses(responses, output_file):
 def main():
     # Path to the JSON file
     input_file_path = 'InfoBench/extracted_instructions.jsonl'
-    output_file_path = 'InfoBench/responses.json'
-    model = 'llama3'
+    output_file_path = 'InfoBench/responses_gemma.json'
+    model = "gemma"
     # Load prompts
     prompts = load_prompts(input_file_path)
     

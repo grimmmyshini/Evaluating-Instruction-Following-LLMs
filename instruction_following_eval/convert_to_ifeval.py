@@ -348,8 +348,8 @@ def evaluate_prompts(prompt_file, store_file, model, redo = False):
 # ifeval dataset with info      1       0       0       0          0
 # mathwell with info            0       0       0       0          0
 # mathwell with ifeval          1       0       0       0          0
-# mmlu with ifeval             0       0       0       0          0
-# mmlu with info               0       0       0       0          0
+# mmlu with ifeval              0       0       0       0          0
+# mmlu with info                0       0       0       0          0
 
 init_prompts = '../datasets/fomatted_prompts_mathwell.json'
 init_prompts_mmlu = '../datasets/fomatted_prompts_mmlu.json'

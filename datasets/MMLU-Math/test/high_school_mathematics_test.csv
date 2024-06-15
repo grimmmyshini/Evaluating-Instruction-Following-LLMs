@@ -1,3 +1,4 @@
+prompt,op1,op2,op3,op4,ans
 "If a pentagon P with vertices at (– 2, – 4), (– 4, 1), (–1, 4), (2, 4), and (3, 0) is reflected across the line y = x to get a new pentagon, P’, then one of the vertices of P’ is","(0, – 3)","(4, 1)","(2, 2)","(– 4, –2)",D
 "The length of a rectangle is twice its width. Given the length of the diagonal is $5\sqrt{5}$, find the area of the rectangle.",2500,2,50,25,C
 "A positive integer n is called “powerful” if, for every prime factor p of n, p^2 is also a factor of n. An example of a powerful number is",392,336,300,297,A

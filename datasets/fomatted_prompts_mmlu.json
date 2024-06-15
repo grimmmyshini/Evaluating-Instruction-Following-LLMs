@@ -198,12 +198,6 @@
         "difficulty": 4
     },
     {
-        "key": 34,
-        "prompt": "Some group (G, 0) is known to be abelian. Then which one of the following is TRUE for G?",
-        "answer": "(g o h)^2 = g^2 o h^2 for every g,h in G",
-        "difficulty": 4
-    },
-    {
         "key": 35,
         "prompt": "Statement 1 | If T: V -> W is a linear transformation and dim(V ) < dim(W) < 1, then T must be injective. Statement 2 | Let dim(V) = n and suppose that T: V -> V is linear. If T is injective, then it is a bijection.",
         "answer": "True, True",
@@ -300,12 +294,6 @@
         "difficulty": 4
     },
     {
-        "key": 51,
-        "prompt": "Let k be the number of real solutions of the equation e^x + x - 2 = 0 in the interval [0, 1], and let n be the number of real solutions that are not in [0, 1]. Which of the following is true?",
-        "answer": "k = 1 and n = 0",
-        "difficulty": 3
-    },
-    {
         "key": 52,
         "prompt": "Up to isomorphism, how many additive abelian groups G of order 16 have the property that x + x + x + x = 0 for each x in G ?",
         "answer": "3",
@@ -330,12 +318,6 @@
         "difficulty": 3
     },
     {
-        "key": 56,
-        "prompt": "Let (Z_{10} , +, x) be the ring of integers modulo 10, and let S be the subset of Z_{10} represented by {0, 2, 4, 6, 8}. Which of the following statements is FALSE?",
-        "answer": "(S, +, x) has no identity under multiplication modulo 10.",
-        "difficulty": 3
-    },
-    {
         "key": 57,
         "prompt": "A ladder 9 meters in length is leaning against a vertical wall on level ground. As the bottom end of the ladder is moved away from the wall at a constant rate of 2 meters per second, the top end slides downward along the wall. How fast, in meters per second, will the top end of the ladder be sliding downward at the moment the top end is 3 meters above the ground?",
         "answer": "4*sqrt(2)",
@@ -354,12 +336,6 @@
         "difficulty": 3
     },
     {
-        "key": 60,
-        "prompt": "Which of the following is true?",
-        "answer": "Every compact space is complete",
-        "difficulty": 3
-    },
-    {
         "key": 61,
         "prompt": "A discrete graph is complete if there is an edge connecting any pair of vertices. How many edges does a complete graph with 10 vertices have?",
         "answer": "45",
@@ -369,12 +345,6 @@
         "key": 62,
         "prompt": "Suppose X is a discrete random variable on the set of positive integers such that for each positive integer n, the probability that X = n is 1/2^n. If Y is a random variable with the same probability distribution and X and Y are independent, what is the probability that the value of at least one of the variables X and Y is greater than 3 ?",
         "answer": "15/64",
-        "difficulty": 3
-    },
-    {
-        "key": 63,
-        "prompt": "Let V and W be 4-dimensional subspaces of a 7-dimensional vector space X. Which of the following CANNOT be the dimension of the subspace V intersect W?",
-        "answer": "0",
         "difficulty": 3
     },
     {
@@ -468,21 +438,9 @@
         "difficulty": 3
     },
     {
-        "key": 79,
-        "prompt": "Let f(x,y) = x^2 - 2xy + y^3 for all real x and y. Which of the following is true?",
-        "answer": "f has all of its relative extrema on the line x = y.",
-        "difficulty": 3
-    },
-    {
         "key": 80,
         "prompt": "What is the largest order of an element in the group of permutations of 5 objects?",
         "answer": "6",
-        "difficulty": 3
-    },
-    {
-        "key": 81,
-        "prompt": "S(n) is a statement about positive integers n such that whenever S(k) is true, S(k + 1) must also be true. Furthermore, there exists some positive integer n0 such that S(n0) is not true. Of the following, which is the strongest conclusion that can be drawn?",
-        "answer": "S(n) is not true for any n <= n0",
         "difficulty": 3
     },
     {
@@ -513,12 +471,6 @@
         "key": 86,
         "prompt": "Let C be the circle in the yz-plane whose equation is (y - 3)^2 + z^2 = 1. If C is revolved around the z-axis, the surface generated is a torus. What is the equation of this torus?",
         "answer": "(x^2 + y^2 + z^2 + 8)^2 = 36(x^2 + y^2)",
-        "difficulty": 3
-    },
-    {
-        "key": 87,
-        "prompt": "Which of the following is an equation of the line tangent to the graph of y = x + e^x at x = 0 ?",
-        "answer": "y = 2x + 1",
         "difficulty": 3
     },
     {
@@ -591,12 +543,6 @@
         "key": 99,
         "prompt": "Which of the following are valid intervals of convergence for a power series?\n(I) [\u22121, 3)\n(II) (\u2212\u221e, 0]\n(III) [2, 2] \u222a [3, 3]\n(IV) (\u2212\u221e,\u221e)",
         "answer": "(I) and (IV )",
-        "difficulty": 3
-    },
-    {
-        "key": 100,
-        "prompt": "If f: R -> R is a bounded function that is Lebesgue integrable, then which of the following must be true?",
-        "answer": "None of the above.",
         "difficulty": 3
     },
     {
@@ -846,12 +792,6 @@
         "difficulty": 2
     },
     {
-        "key": 142,
-        "prompt": "A number\u2019s prime factors are 2, 5, 7, 13, and 31. Which of the following must be a factor of the number?",
-        "answer": "10",
-        "difficulty": 2
-    },
-    {
         "key": 143,
         "prompt": "A group of people have the number 12345.6789 written on a piece of paper. Then the group decides to play a game. The winner of the game is the person who can round the given number and get a number higher than any other person. Alice rounds to the nearest ten-thousand, Bob to the nearest thousand, Carol to the nearest hundred, Devon to the nearest ten, and Eugene to the nearest whole number. In addition, Felicity rounds the number to the nearest tenth, Gerald to the nearest hundredth, Harry to the nearest thousandth, and Irene rounds to the nearest ten-thousandth. Who wins the game?",
         "answer": "Devon",
@@ -900,45 +840,9 @@
         "difficulty": 2
     },
     {
-        "key": 151,
-        "prompt": "The weight of an aspirin tablet is 300 milligrams according to the bottle label. An FDA investigator weighs a simple random sample of seven tablets, obtains weights of 299, 300, 305, 302, 299, 301, and 303, and runs a hypothesis test of the manufacturer's claim. Which of the following gives the P-value of this test?",
-        "answer": "2P(t > 1.54) with df = 6",
-        "difficulty": 2
-    },
-    {
-        "key": 152,
-        "prompt": "The waiting times for a new roller coaster ride are normally distributed with a mean of 35 minutes and a standard deviation of 10 minutes. If there are 150,000 riders the first summer, which of the following is the shortest time interval associated with 100,000 riders?",
-        "answer": "25.3 to 44.7 minutes",
-        "difficulty": 2
-    },
-    {
-        "key": 153,
-        "prompt": "All of the following statements are true for all discrete random variables except for which one?",
-        "answer": "Approximately 95% of the outcomes will be within two standard deviations of the mean.",
-        "difficulty": 2
-    },
-    {
-        "key": 154,
-        "prompt": "Which of the following is a true statement about hypothesis testing?",
-        "answer": "The power of a test concerns its ability to detect an alternative hypothesis.",
-        "difficulty": 2
-    },
-    {
         "key": 155,
         "prompt": "An outlier is an observation that",
         "answer": "is significantly different from the other observations in the data set",
-        "difficulty": 2
-    },
-    {
-        "key": 156,
-        "prompt": "The principal of a school is interested in estimating the average income per family of her students. She selects a random sample of students and collects information about their family income. A 95 percent confidence interval computed from this data for the mean income per family is ($35,095, $45,005). Which of the following provides the best interpretation of this confidence interval?",
-        "answer": "There is a 95% probability that the mean income per family in the school is between $35,095 and $45,005.",
-        "difficulty": 2
-    },
-    {
-        "key": 157,
-        "prompt": "Researchers are conducting an experiment using a significance level of 0.05. The null hypothesis is, in fact, false. If they modify their experiment to use twice as many experimental units for each treatment, which of the following would be true?",
-        "answer": "The probability of a Type I error would stay the same and the power would increase.",
         "difficulty": 2
     },
     {
@@ -948,27 +852,9 @@
         "difficulty": 2
     },
     {
-        "key": 159,
-        "prompt": "Which of the following is not true about t-distributions?",
-        "answer": "t-distributions always have mean 0 and standard deviation 1.",
-        "difficulty": 2
-    },
-    {
-        "key": 160,
-        "prompt": "To study the effect of alcohol on reaction time, subjects were randomly selected and given three beers to consume. Their reaction time to a simple stimulus was measured before and after drinking the alcohol. Which of the following is a correct statement?",
-        "answer": "This study was an experiment in which the subjects were used as their own controls.",
-        "difficulty": 2
-    },
-    {
         "key": 161,
         "prompt": "Which of these statements correctly explains bias?",
         "answer": "It describes a process that creates estimates that are too high on average or too low on average.",
-        "difficulty": 2
-    },
-    {
-        "key": 162,
-        "prompt": "A company that produces facial tissues continually monitors tissue strength. If the mean strength from sample data drops below a specified level, the production process is halted and the machinery inspected. Which of the following would result from a Type I error?",
-        "answer": "Halting the production process when the tissue strength is within specifications.",
         "difficulty": 2
     },
     {
@@ -984,12 +870,6 @@
         "difficulty": 2
     },
     {
-        "key": 165,
-        "prompt": "Which of the following is a binomial random variable?",
-        "answer": "The number of motorists not wearing seat belts in a random sample of five drivers.",
-        "difficulty": 2
-    },
-    {
         "key": 166,
         "prompt": "If all the other variables remain constant, which of the following will increase the power of a hypothesis test? I.Increasing the sample size. II.Increasing the significance level. III.Increasing the probability of a Type II error.",
         "answer": "I and II",
@@ -1002,21 +882,9 @@
         "difficulty": 2
     },
     {
-        "key": 168,
-        "prompt": "Suppose two events, E and F, have nonzero probabilities p and q, respectively. Which of the following is impossible?",
-        "answer": "E and F are both independent and mutually exclusive.",
-        "difficulty": 2
-    },
-    {
         "key": 169,
         "prompt": "The probability that there will be an accident on Highway 48 each day depends on the weather. If the weather is dry that day, there is a 0.2% chance of an accident on Highway 48; if the weather is wet that day, there is a 1.0% chance of an accident. Today, the weather station announced that there is a 20% chance of the weather being wet. What is the probability that there will be an accident on Highway 48 today?",
         "answer": "0.0036",
-        "difficulty": 2
-    },
-    {
-        "key": 170,
-        "prompt": "The binomial distribution is an appropriate model for which of the following?",
-        "answer": "None of the above.",
         "difficulty": 2
     },
     {
@@ -1029,12 +897,6 @@
         "key": 172,
         "prompt": "Which of these explains why t should be used instead of z for inference procedures for means.",
         "answer": "When using the sample standard deviation to estimate the population standard deviation, more variability is introduced into the sampling distribution of the statistic.",
-        "difficulty": 2
-    },
-    {
-        "key": 173,
-        "prompt": "Which of the following is least likely to reduce bias in a sample survey?",
-        "answer": "Using stratified random sampling rather than simple random sampling",
         "difficulty": 2
     },
     {
@@ -1056,33 +918,9 @@
         "difficulty": 2
     },
     {
-        "key": 177,
-        "prompt": "Which of the following is a false statement about simple random samples?",
-        "answer": "A sample must be reasonably large to be properly considered a simple random sample.",
-        "difficulty": 2
-    },
-    {
-        "key": 178,
-        "prompt": "A telephone executive instructs an associate to contact 104 customers using their service to obtain their opinions in regard to an idea for a new pricing package. The associate notes the number of customers whose names begin with A and uses a random number table to pick four of these names. She then proceeds to use the same procedure for each letter of the alphabet and combines the 4 \u00d7 26 = 104 results into a group to be contacted. Which of the following is a correct conclusion?",
-        "answer": "Her procedure makes use of chance.",
-        "difficulty": 2
-    },
-    {
         "key": 179,
         "prompt": "A company has a choice of three investment schemes. Option I gives a sure $25,000 return on investment. Option II gives a 50% chance of returning $50,000 and a 50% chance of returning $10,000. Option III gives a 5% chance of returning $100,000 and a 95% chance of returning nothing. Which option should the company choose?",
         "answer": "All of the above answers are correct.",
-        "difficulty": 2
-    },
-    {
-        "key": 180,
-        "prompt": "A one-sided test of a hypothesis about a population mean, based on a sample of size 14, yields a P-value of 0.075. Which of the following best describes the range of tvalues that would have given this P-value?",
-        "answer": "1.350 < t< 1.771",
-        "difficulty": 2
-    },
-    {
-        "key": 181,
-        "prompt": "The president of an online music streaming service whose customers pay a fee wants to gather additional information about customers who have joined in the past 12 months. The company plans to send out an e-mail survey to a sample of current customers with a link that gives participants a month of streaming service for free once the survey has been completed. They know that musical tastes vary by geographical region. Which of the following sample plans would produce the most representative sample of its customers?",
-        "answer": "From the list of all customers who joined in the last 12 months, classify customers by the state in which they live, then choose 3% of the customers from each state.",
         "difficulty": 2
     },
     {
@@ -1092,69 +930,15 @@
         "difficulty": 2
     },
     {
-        "key": 183,
-        "prompt": "A local school has seven math teachers and seven English teachers. When comparing their mean salaries, which of the following is most appropriate?",
-        "answer": "None of the above are appropriate.",
-        "difficulty": 2
-    },
-    {
-        "key": 184,
-        "prompt": "A small kiosk at the Atlanta airport carries souvenirs in the price range of $3.99 to $29.99, with a mean price of $14.75. The airport authorities decide to increase the rent charged for a kiosk by 5 percent. To make up for the increased rent, the kiosk owner decides to increase the prices of all items by 50 cents. As a result, which of the following will happen?",
-        "answer": "The mean price will increase by 50 cents, but the standard deviation of prices will remain the same.",
-        "difficulty": 2
-    },
-    {
-        "key": 185,
-        "prompt": "The director of a local food bank asks for data on all donations given during the month of November. Of the 100 checks received, the average donation is $155 with a standard deviation of $32. Which of the following is the most appropriate statement?",
-        "answer": "This November, the average donation is $155.",
-        "difficulty": 2
-    },
-    {
         "key": 186,
         "prompt": "Which of the following describe/s the central limit theorem? I. The mean of the sampling distribution of x-is the same as the mean of the population. II. The standard deviation of the sampling distribution of x-is the same as the standard deviation of x- divided by the square root of the sample size. III. If the sample size is large, the shape of the sampling distribution of x- is approximately normal.",
         "answer": "III only",
         "difficulty": 2
     },
     {
-        "key": 187,
-        "prompt": "A large city was interested in annexing part of the surrounding county. In a survey conducted by the local newspaper, 58 percent of respondents said they were against the annexation. During the actual vote, not all eligible voters voted, but 56 percent of the respondents voted against the annexation. Which of the following best describes the difference in the percentages obtained from the newspaper poll and the vote itself?",
-        "answer": "It is the difference between the same statistics computed from two different samples.",
-        "difficulty": 2
-    },
-    {
-        "key": 188,
-        "prompt": "After receiving several complaints from his customers about the store being closed on Sundays, a storekeeper decided to conduct a survey. He randomly selected 100 female customers and 120 male customers, and asked them, \"Are you interested in shopping at this store on Sundays?\" He counted the number of customers answering \"yes\" and constructed a 95 percent confidence interval for the difference by subtracting the proportions of female from the proportion of male customers in favor of shopping on Sundays. The resulting interval was (\u20130.23, \u20130.18). Which of the following is a correct interpretation of the interval?",
-        "answer": "We are 95 percent confident that the proportion of women interested in shopping on Sundays exceeds the proportion of men interested in shopping on Sundays.",
-        "difficulty": 2
-    },
-    {
-        "key": 189,
-        "prompt": "Which of the following is the primary difference between an experiment and an observational study?",
-        "answer": "Experiments are only conducted on human subjects; observational studies can be conducted on nonhuman subjects.",
-        "difficulty": 2
-    },
-    {
-        "key": 190,
-        "prompt": "Random variable X is normally distributed, with a mean of 25 and a standard deviation of 4. Which of the following is the approximate interquartile range for this distribution?",
-        "answer": "27.70 \u2013 22.30 = 5.40",
-        "difficulty": 2
-    },
-    {
-        "key": 191,
-        "prompt": "Which of the following statements about any two events A and B is true?",
-        "answer": "P(A \u2229 B) = 0 implies events A and B are mutually exclusive.",
-        "difficulty": 2
-    },
-    {
         "key": 192,
         "prompt": "A company has 400 employees. Their mean income is $20,500, and the standard deviation of their incomes is $3,750. The distribution of incomes is normally distributed. How many of the 400 employees do you expect to have an income of between $13,000 and $28,000?",
         "answer": "390",
-        "difficulty": 2
-    },
-    {
-        "key": 193,
-        "prompt": "As reported on CNN, in a May 1999 national poll 43% of high school students expressed fear about going to school. Which of the following best describes what is meant by the poll having a margin of error of 5%?",
-        "answer": "It is likely that the true proportion of high school students afraid to go to school is between 38% and 48%.",
         "difficulty": 2
     },
     {
@@ -1188,12 +972,6 @@
         "difficulty": 2
     },
     {
-        "key": 199,
-        "prompt": "In a clinic, 50 patients with sleep disorders are randomly assigned to one of two different groups. Patients in one group are given medication before bedtime. Patients in the other group are given blindfolds and played soft music at bedtime. Each patient is attached to a machine that records breathing patterns. From the patterns, it is possible to determine if the patient is awake or asleep. The data will be used to decide which method is more effective in helping patients with sleep disorders. Which of the following statements is correct in the context of this experiment?",
-        "answer": "This is only a single-blind experiment because patients will know which treatment they are receiving, although the examining doctor might not.",
-        "difficulty": 2
-    },
-    {
         "key": 200,
         "prompt": "A study was conducted to test a new style of keyboard in preventing repetitive stress disorders. Volunteers who have had problems with such injuries were randomly assigned to use either a traditional keyboard or the new design. A significance test was conducted with the alternative hypothesis that a smaller proportion of those using the new keyboard will suffer injuries than those using the traditional keyboard. The resulting P-value was 0.07. Which is a correct interpretation of this P-value?",
         "answer": "There is a 7% chance of getting a difference between the two groups at least as large as the observed difference if the new keyboard is really no better at preventing injuries.",
@@ -1218,12 +996,6 @@
         "difficulty": 1
     },
     {
-        "key": 204,
-        "prompt": "Wendy wants to take a survey to determine which flavor of ice cream is the most popular at her school. Which of the following methods is the best way for her to choose a random sample of the students at her school?",
-        "answer": "selecting ten students from each homeroom",
-        "difficulty": 1
-    },
-    {
         "key": 205,
         "prompt": "Write 5.875 as a mixed number or fraction in simplest form.",
         "answer": "5 and 7 over 8",
@@ -1239,12 +1011,6 @@
         "key": 207,
         "prompt": "Zelma buys p pounds of bananas for 40 cents per pound. She pays the clerk with a twenty-dollar bill. The clerk subtracts the total cost of the bananas from the twenty-dollar bill to determine the amount of change to give Zelma. Which expression represents the amount of change Zelma should receive?",
         "answer": "20 - 0.40p",
-        "difficulty": 1
-    },
-    {
-        "key": 208,
-        "prompt": "Celia has a large container in which four different kinds of coins are thoroughly mixed. She wants to take a sample of her coins to estimate which kind of coin she has the most. Which of the following methods is the best way for her to select a sample?",
-        "answer": "taking thirty coins out of the container without looking",
         "difficulty": 1
     },
     {
@@ -1359,12 +1125,6 @@
         "key": 227,
         "prompt": "Carmen saved 592 pennies. Her sister saved 128 pennies. Together, they put 250 pennies in wrappers and took them to the bank. Whatis the total number of pennies, rounded to the nearest hundred, Carmen and her sister have left?",
         "answer": "500",
-        "difficulty": 1
-    },
-    {
-        "key": 228,
-        "prompt": "The expression \u2013105 + (\u201314) + 34 simplifies to which of the following?",
-        "answer": "\u201385",
         "difficulty": 1
     },
     {

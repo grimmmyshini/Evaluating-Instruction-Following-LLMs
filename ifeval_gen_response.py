@@ -40,14 +40,15 @@ def process_data(input_file_path, output_file_path, model):
                 processed_prompts.add(prompt)
 
 # Example usage
-input_file_path = Path('datasets/InfoBench/infoToIfeval.jsonl')
-output_path = Path('datasets/InfoBench/response')
+input_file_path = Path('datasets/InfoToIfeval/infoToIfeval.jsonl')
+output_path = Path('datasets/InfoToIfeval/response')
 
 with open("config.json", 'r') as file:
     data = json.load(file)
 
     output_path.mkdir(exist_ok=True)
     for model in data["models"]:
+        print(f"Running model {model}")
         output_dir_path = output_path / model
         output_file_path = output_dir_path / (input_file_path.stem + f"_{model}" + ".jsonl")
         process_data(input_file_path, output_file_path, model)

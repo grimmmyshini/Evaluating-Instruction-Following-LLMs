@@ -1,10 +1,12 @@
 from langchain_community.llms import Ollama
+from pathlib import Path
 from subprocess import run
 import json
 import random
 import instructions
 import instructions_registry as ir
 from tqdm import tqdm
+import numpy as np
 
 # Math specifc instructions
 math_instr = {
@@ -158,6 +160,114 @@ def add_constraints_to_prompts_automatic(prompt_file, store_file):
         json.dump(records, json_file, indent=4)
 
 
+def add_constraints_to_prompts_by_number(prompt_file, store_file):
+    with open(prompt_file, 'r') as json_file:
+        df = json.load(json_file)
+
+    conflicts = ir.conflict_make(ir.INSTRUCTION_CONFLICTS)
+    key = 0
+    records = []
+
+    diff_freq = {}
+
+    for row in tqdm(df):
+        try:
+            diff_freq[row["difficulty"]] += 1
+        except KeyError:
+            diff_freq[row["difficulty"]] = 0
+    
+    min_all = np.min(list(diff_freq.values()))
+    print(f"Using {min_all} data points from each of these difficulties: {list(diff_freq.keys())}")
+
+    lim_range = range(6, 0, -1)
+
+    for key in diff_freq:
+        diff_freq[key] = min_all
+        for limit in lim_range:
+            file_path = Path(store_file).with_stem(f"mat_d{key}_c{limit}")
+            if file_path.exists():
+                file_path.unlink()
+
+    for row in tqdm(df):
+        if diff_freq[row["difficulty"]] <= 0:
+            continue
+
+        limit = list(lim_range)[0]
+        instr_id = 0
+        prompt = row['prompt'] + ' '
+        constraint_list = []
+        conflict_list = []
+        instruction_id_list = []
+        kwargs = []
+        var_instr_records = []
+        while instr_id < limit:
+            choices = set(math_instrs_ok.keys()).difference([conflict.split(':')[1] for conflict in conflict_list])
+            if len(choices) == 0:
+                break
+            
+            constraint = random.choice(list(choices))
+            type_constraint = math_instrs_ok[constraint]['type'] + constraint
+            if constraint == 'answer_round':
+                try:
+                    ans = float(row['answer'])
+                except:
+                    conflict_list += [type_constraint]
+                    continue
+                if '.' not in row['answer']:
+                    continue
+            if type_constraint in conflict_list or constraint in constraint_list:
+                continue
+            constraint_list += [constraint]
+            conflict_list += conflicts[type_constraint]
+            conflict_list += [type_constraint]
+            instruction_id_list += [type_constraint]
+            const_obj = math_instrs_ok[constraint]['class'](instr_id)
+            instr_id += 1
+
+            if constraint == 'repeat_prompt':
+                prompt += ' ' + const_obj.build_description(
+                    prompt_to_repeat=prompt)
+            elif constraint == 'answer_round':
+                print(row['answer'], row['answer'].split('.'))
+                max = len(row['answer'].split('.')[1])
+                round_to = random.choice(range(1, max)) if max > 1 else 1
+                type_of = random.choice(["Round", "Truncate"])
+                ans = float(row['answer'])
+                prompt += ' ' + const_obj.build_description(ans, round_to, type_of)
+            else:
+                prompt += ' ' + const_obj.build_description()
+            args = const_obj.get_instruction_args()
+            if args:
+                kwargs += [args]
+            else:
+                kwargs += [{}]
+
+            record = {
+                'key': key,
+                'prompt': prompt,
+                'instruction_id_list': instruction_id_list.copy(),
+                'kwargs': kwargs.copy(),
+                'difficulty': row['difficulty']
+            }
+
+            var_instr_records.append(record)
+            
+
+        if len(var_instr_records) != limit:
+            continue
+
+        # Can also add logic to generate responses with gpt
+
+        # {"key":, "prompt":, "instruction_id_list": ["type:instr_name"], "kwargs": [{"arg1": "val1"}]}
+        
+        for i in lim_range:
+            file_path = Path(store_file).with_stem(f"mat_d{row['difficulty']}_c{i}")
+            with open(file_path, 'a') as json_file:
+                json_file.write(json.dumps(var_instr_records[i - 1]) + '\n')
+        
+        key += 1
+        diff_freq[row["difficulty"]] -= 1
+
 def get_response(model, prompt):
     try:
         llm = Ollama(model=model)
@@ -241,14 +351,17 @@ def evaluate_prompts(prompt_file, store_file, model, redo = False):
 # mmlu with ifeval             0       0       0       0          0
 # mmlu with info               0       0       0       0          0
 
-init_prompts = '/home/grimmyshini/CS4NLP-Project/datasets/fomatted_prompts_mathwell.json'
-init_prompts_mmlu = '/home/grimmyshini/CS4NLP-Project/datasets/fomatted_prompts_mmlu.json'
+init_prompts = '../datasets/fomatted_prompts_mathwell.json'
+init_prompts_mmlu = '../datasets/fomatted_prompts_mmlu.json'
 
-store_prompts = '/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mathwell.json'
-store_prompts_mmlu = '/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mmlu.json'
+store_prompts = '../datasets/constrained_prompts_mathwell.json'
+store_prompts_mmlu = '../datasets/constrained_prompts_mmlu.json'
 
-store_responses = '/home/grimmyshini/CS4NLP-Project/datasets/responses_mathwell_llama3.json'
+store_complex_prompts_mmlu = '../datasets/MMLU_complexity_grid/mat.jsonl'
+
+store_responses = '../datasets/responses_mathwell_llama3.json'
 # add_constraints_to_prompts_automatic(init_prompts, store_prompts)
 # add_constraints_to_prompts_automatic(init_prompts_mmlu, store_prompts_mmlu)
 
 # evaluate_prompts(store_prompts, store_responses, "llama3")
+add_constraints_to_prompts_by_number(init_prompts_mmlu, store_complex_prompts_mmlu)

@@ -1,4 +1,4 @@
-from langchain_community.llms import Ollama
+from langchain_community.llms import Ollama # type: ignore
 from pathlib import Path
 from subprocess import run
 import json
@@ -175,7 +175,7 @@ def add_constraints_to_prompts_by_number(prompt_file, store_file):
             diff_freq[row["difficulty"]] += 1
         except KeyError:
             diff_freq[row["difficulty"]] = 0
-    
+
     min_all = np.min(list(diff_freq.values()))
     print(f"Using {min_all} data points from each of these difficulties: {list(diff_freq.keys())}")
 
@@ -204,7 +204,7 @@ def add_constraints_to_prompts_by_number(prompt_file, store_file):
             choices = set(math_instrs_ok.keys()).difference([conflict.split(':')[1] for conflict in conflict_list])
             if len(choices) == 0:
                 break
-            
+
             constraint = random.choice(list(choices))
             type_constraint = math_instrs_ok[constraint]['type'] + constraint
             if constraint == 'answer_round':
@@ -251,7 +251,7 @@ def add_constraints_to_prompts_by_number(prompt_file, store_file):
             }
 
             var_instr_records.append(record)
-            
+
 
         if len(var_instr_records) != limit:
             continue
@@ -259,12 +259,12 @@ def add_constraints_to_prompts_by_number(prompt_file, store_file):
         # Can also add logic to generate responses with gpt
 
         # {"key":, "prompt":, "instruction_id_list": ["type:instr_name"], "kwargs": [{"arg1": "val1"}]}
-        
+
         for i in lim_range:
             file_path = Path(store_file).with_stem(f"mat_d{row['difficulty']}_c{i}")
             with open(file_path, 'a') as json_file:
                 json_file.write(json.dumps(var_instr_records[i - 1]) + '\n')
-        
+
         key += 1
         diff_freq[row["difficulty"]] -= 1
 
@@ -362,6 +362,7 @@ store_complex_prompts_mmlu = '../datasets/MMLU_complexity_grid/mat.jsonl'
 store_responses = '../datasets/responses_mathwell_llama3.json'
 # add_constraints_to_prompts_automatic(init_prompts, store_prompts)
 # add_constraints_to_prompts_automatic(init_prompts_mmlu, store_prompts_mmlu)
+add_constraints_to_prompts_automatic('/home/grimmyshini/CS4NLP-Project/datasets/fomatted_prompts_mmlu.json', '/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mmlu_full.json')
 
 # evaluate_prompts(store_prompts, store_responses, "llama3")
-add_constraints_to_prompts_by_number(init_prompts_mmlu, store_complex_prompts_mmlu)
+# add_constraints_to_prompts_by_number(init_prompts_mmlu, store_complex_prompts_mmlu)

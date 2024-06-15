@@ -1,4 +1,4 @@
-
+[
     {
         "key": 34,
         "prompt": "Some group (G, 0) is known to be abelian. Then which one of the following is TRUE for G?",
@@ -238,4 +238,5 @@
         "prompt": "The expression \u2013105 + (\u201314) + 34 simplifies to which of the following?",
         "answer": "\u201385",
         "difficulty": 1
-    },
+    }
+]

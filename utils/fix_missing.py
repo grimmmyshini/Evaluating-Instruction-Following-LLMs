@@ -114,17 +114,33 @@ def extend_elementary(csv_file_path, json_file_path, difficulty):
     with open(json_file_path, 'w') as json_file:
         json.dump(existing_records, json_file, indent=4)
 
+def combine_constraints(incomplete_file, complete_file):
+    with open(incomplete_file, 'r') as json_file:
+        incomplete = json.load(json_file)
 
-json_file_mmlu = '/home/grimmyshini/CS4NLP-Project/datasets/fomatted_prompts_mmlu.json'
+    with open(complete_file, 'r') as json_file:
+        complete = json.load(json_file)
 
-base_path_mmlu = '/home/grimmyshini/CS4NLP-Project/datasets/MMLU-Math'
+    with open('/home/grimmyshini/CS4NLP-Project/datasets/incomplete_prompts.json', 'r') as json_file:
+        missing_prompts = json.load(json_file)
 
-# csv_to_json_mmlu(base_path_mmlu + '/test/abstract_algebra_test.csv', json_file_mmlu, 4)
-# csv_to_json_mmlu(base_path_mmlu + '/test/college_mathematics_test.csv', json_file_mmlu, 3)
-# csv_to_json_mmlu(base_path_mmlu + '/test/high_school_mathematics_test.csv', json_file_mmlu, 2)
-# csv_to_json_mmlu(base_path_mmlu + '/test/high_school_statistics_test.csv', json_file_mmlu, 2)
-# csv_to_json_mmlu(base_path_mmlu +
-#                  '/test/elementary_mathematics_test.csv', json_file_mmlu, 1)
+    missing_keys = []
+    for row in missing_prompts:
+        missing_keys += [row['key']]
 
-extend_elementary(base_path_mmlu +
-                 '/test/elementary_mathematics_test.csv', json_file_mmlu, 1)
+    final_records = []
+    index = 0
+    while index < len(complete):
+        if index >= len(incomplete):
+            final_records.append(complete[index])
+        else:
+            if (complete[index]['key'] + 1) not in missing_keys:
+                final_records.append(incomplete[index])
+            else:
+                final_records.append(complete[index])
+        index += 1
+
+    with open(incomplete_file, 'w') as json_file:
+        json.dump(final_records, json_file, indent=4)
+
+combine_constraints('/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mmlu.json', '/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mmlu_full.json')

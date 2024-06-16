@@ -1,6 +1,8 @@
 import json
 import os
 from pathlib import Path
+
+from tqdm import tqdm
 from utils.chat import chat
 
 
@@ -21,34 +23,46 @@ def process_data(input_file_path, output_file_path, model):
     else:
         processed_prompts = set()
 
+    input_data = []
     # Open input and output files
     with open(input_file_path, 'r') as infile:
         while True:
             item = read_single_line(infile)
+
             if not item:
                 break
+
+            input_data.append(item)
+
+    for item in tqdm(input_data):
+        prompt = item['prompt']
+        if prompt not in processed_prompts:
+            response = chat(model, message=prompt)
+            new_entry = {
+                "prompt": prompt,
+                "response": response
+            }
+            with open(output_file_path, 'a') as outfile:
+                outfile.write(json.dumps(new_entry) + '\n')
+            processed_prompts.add(prompt)
+
             
-            prompt = item['prompt']
-            if prompt not in processed_prompts:
-                response = chat(model, message=prompt)
-                new_entry = {
-                    "prompt": prompt,
-                    "response": response
-                }
-                with open(output_file_path, 'a') as outfile:
-                    outfile.write(json.dumps(new_entry) + '\n')
-                processed_prompts.add(prompt)
 
-# Example usage
-input_file_path = Path('datasets/InfoToIfeval/infoToIfeval.jsonl')
-output_path = Path('datasets/InfoToIfeval/response')
+def generate_response(input_file_path, output_path):
+    with open("config.json", 'r') as file:
+        data = json.load(file)
 
-with open("config.json", 'r') as file:
-    data = json.load(file)
+        output_path.mkdir(exist_ok=True)
+        for model in data["models"]:
+            if "gpt" in model: continue # FIXME: Remove line
+            print(f"Running model {model}")
+            output_dir_path = output_path / model
+            output_dir_path.mkdir(exist_ok=True)
+            output_file_path = output_dir_path / (input_file_path.stem + f"_{model}" + ".jsonl")
+            process_data(input_file_path, output_file_path, model)
 
-    output_path.mkdir(exist_ok=True)
-    for model in data["models"]:
-        print(f"Running model {model}")
-        output_dir_path = output_path / model
-        output_file_path = output_dir_path / (input_file_path.stem + f"_{model}" + ".jsonl")
-        process_data(input_file_path, output_file_path, model)
+input_path = Path('datasets/MMLU_Ifeval_Complex')
+output_path = Path('datasets/MMLU_Ifeval_Complex/response')
+
+for input_file_path in input_path.glob("*.jsonl"):
+    generate_response(input_file_path, output_path)

@@ -20,8 +20,8 @@
     "decomposed_questions": ["Does the response include two different answers separated by 6 asterisks?", "Does the response refrain from using any commas?", "Does the response contain a title wrapped in double angular brackets?", "Does the response include the keywords 'ear' and 'emphasis'?"], 
     "subset": "", 
     "question_label": [
-        ["combination"], 
-        ["punctuation"], 
+        ["Content"], 
+        ["Format"], 
         ["format"], 
         ["keywords"]
     ],
@@ -740,7 +740,7 @@
         ["Keywords"], 
         ["Length"], 
         ["Length"], 
-        ["Punctuation"]
+        ["Format"]
     ],
     "difficulty": 4
 }
@@ -792,7 +792,7 @@
     ], 
     "subset": "", 
     "question_label": [
-        ["Combination"], 
+        ["Content"], 
         ["Keywords"], 
         ["Format"]
     ],
@@ -845,7 +845,7 @@
     "subset": "", 
     "question_label": [
         ["Keywords"], 
-        ["Punctuation"], 
+        ["Format"], 
         ["Style"], 
         ["Format"]
     ],
@@ -883,9 +883,9 @@
     ], 
     "subset": "", 
     "question_label": [
-        ["Combination"], 
+        ["Content"], 
         ["Format"], 
-        ["Punctuation"]
+        ["Format"]
     ],
     "difficulty": 3
 }
@@ -939,7 +939,7 @@
     "question_label": [
         ["Length"], 
         ["Format"], 
-        ["Punctuation"], 
+        ["Format"], 
         ["Length"]
     ],
     "difficulty": 3
@@ -957,7 +957,7 @@
     ], 
     "subset": "", 
     "question_label": [
-        ["Combination"], 
+        ["Content"], 
         ["Format"], 
         ["Keywords"], 
         ["Keywords"]
@@ -1190,7 +1190,7 @@
     "question_label": [
         ["Keywords"],
         ["Style"],
-        ["Punctuation"],
+        ["Format"],
         ["Keywords"]
     ],
     "difficulty": 3
@@ -1335,7 +1335,7 @@
     "subset": "Easy_set",
     "question_label": [
         ["Keywords"],
-        ["Punctuation"],
+        ["Format"],
         ["Length"],
         ["Format"]
     ],
@@ -1491,7 +1491,7 @@
     "decomposed_questions": ["Does the response contain no commas?", "Does the word 'thought' appear no greater than once in the response?"], 
     "subset": "", 
     "question_label": [
-        ["Punctuation"], 
+        ["Format"], 
         ["Keywords"]
     ],
     "difficulty": 3
@@ -1512,13 +1512,13 @@
         ["Format"], 
         ["Format"], 
         ["Keywords"], 
-        ["Punctuation"]
+        ["Format"]
     ],
     "difficulty": 3
 }
 {
     "id": "", 
-    "input": "Statement 1 |  Suppose Σ|a_i| diverges and Σ a_i = 2. There is a rearrangement a_i_k of the terms such that Σ a_i_k = 4. Statement 2 | There exists metric spaces X and Y with X closed and bounded and a continuous mapping f : X → Y such that f(X) is NOT “closed and bounded”.  In your response, the word lab should appear no greater than 3 times.", 
+    "input": "Statement 1 | Suppose Σ|a_i| diverges and Σ a_i = 2. There is a rearrangement a_i_k of the terms such that Σ a_i_k = 4. Statement 2 | There exists metric spaces X and Y with X closed and bounded and a continuous mapping f : X → Y such that f(X) is NOT “closed and bounded”.  In your response, the word lab should appear no greater than 3 times.", 
     "category": "", 
     "instruction": "There should be 4 paragraphs. Paragraphs are separated with the markdown divider: ***.  Include keywords ['garbage', 'iron'] in the response.", 
     "decomposed_questions": [
@@ -1784,7 +1784,7 @@
     "decomposed_questions": ["Are there two different responses separated by 6 asterisk symbols?", "Does each answer contain a title wrapped in double angular brackets?", "Does the response refrain from the use of any commas?"],
     "subset": "",
     "question_label": [
-    ["Combination"],
+    ["Content"],
     ["Format"],
     ["Format"]
     ],
@@ -1827,7 +1827,7 @@
     "decomposed_questions": ["Does the response repeat the request word for word without change?", "Does the response contain a title wrapped in double angular brackets?"],
     "subset": "",
     "question_label": [
-    ["Combination"],
+    ["Content"],
     ["Format"]
     ],
     "difficulty": 2
@@ -1870,7 +1870,7 @@
     "question_label": [
     ["Content"],
     ["Format"],
-    ["Punctuation"],
+    ["Format"],
     ["Keywords"],
     ["Linguistic"]
     ],
@@ -1899,7 +1899,7 @@
     "decomposed_questions": ["Does the response contain two different responses?", "Are the responses separated by 6 asterisk symbols ()?", "Does the response contain a title wrapped in double angular brackets?"],
     "subset": "",
     "question_label": [
-    ["Combination"],
+    ["Content"],
     ["Format"],
     ["Format"]
     ],
@@ -1928,7 +1928,7 @@
     "subset": "",
     "question_label": [
     ["Format"],
-    ["Punctuation"],
+    ["Format"],
     ["Content"]
     ],
     "difficulty": 2
@@ -2024,9 +2024,9 @@
     "decomposed_questions": ["Are there two different responses separated by 6 asterisk symbols?", "Are the keywords 'candle' and 'drop' not included in the response?", "Is the response free from any commas?", "Does the answer contain a title wrapped in double angular brackets?"],
     "subset": "",
     "question_label": [
-    ["Combination"],
+    ["Content"],
     ["Keywords"],
-    ["Punctuation"],
+    ["Format"],
     ["Format"]
     ],
     "difficulty": 2
@@ -2039,7 +2039,7 @@
     "decomposed_questions": ["Is the response free from any commas?", "Is the entire response wrapped with double quotation marks?"],
     "subset": "",
     "question_label": [
-    ["Punctuation"],
+    ["Format"],
     ["Format"]
     ],
     "difficulty": 2
@@ -2266,7 +2266,7 @@
     "subset": "", 
     "question_label": [
         ["Keywords"], 
-        ["Punctuation"], 
+        ["Format"], 
         ["Format"]
     ],
     "difficulty": 2
@@ -2292,7 +2292,7 @@
     "decomposed_questions": ["Is the response free of any commas?", "Is the solution provided in a step-by-step manner with highlighted steps?", "Is the response finished with the exact phrase \"Is there anything else I can help with?\" with no following words?"], 
     "subset": "", 
     "question_label": [
-        ["Punctuation"], 
+        ["Format"], 
         ["Format"], 
         ["Format"]
     ],
@@ -2307,7 +2307,7 @@
     "subset": "", 
     "question_label": [
         ["Keywords"], 
-        ["Punctuation"], 
+        ["Format"], 
         ["Style"], 
         ["Length"]
     ],
@@ -2465,7 +2465,7 @@
     "subset": "", 
     "question_label": [
         ["Style"], 
-        ["Punctuation"], 
+        ["Format"], 
         ["Format"], 
         ["Format"]
     ],
@@ -2526,7 +2526,7 @@
         ["Length"], 
         ["Format"], 
         ["Length"], 
-        ["Punctuation"], 
+        ["Format"], 
         ["Style"]
     ],
     "difficulty": 2
@@ -2566,7 +2566,7 @@
     "decomposed_questions": ["Does the response contain no commas?", "Are there 5 paragraphs?", "Are the paragraphs separated by the markdown divider '***'?", "Does the response end with the exact phrase 'Any other questions?'"], 
     "subset": "", 
     "question_label": [
-        ["Punctuation"], 
+        ["Format"], 
         ["Length"], 
         ["Format"], 
         ["Format"]
@@ -2737,7 +2737,7 @@
         ["Format"], 
         ["Format"], 
         ["Linguistic"], 
-        ["Punctuation"]
+        ["Format"]
     ],
     "difficulty": 2
 }
@@ -2854,7 +2854,7 @@
     "question_label": [
         ["Format"], 
         ["Content"], 
-        ["Punctuation"]
+        ["Format"]
     ],
     "difficulty": 2
 }
@@ -2895,7 +2895,7 @@
     "decomposed_questions": ["Are there no commas in the entire response?", "Does the answer contain a title wrapped in double angular brackets?", "Are the keywords ['distance', 'valuable'] excluded from the response?", "Does the response have 2 paragraphs?", "Are paragraphs separated with the markdown divider: ***?"],
     "subset": "",
     "question_label": [
-        ["Punctuation"],
+        ["Format"],
         ["Format"],
         ["Keywords"],
         ["Format"],
@@ -3010,10 +3010,10 @@
     ], 
     "subset": "", 
     "question_label": [
-        ["Combination"], 
+        ["Content"], 
         ["Format"], 
         ["Keywords"], 
-        ["Punctuation"]
+        ["Format"]
     ],
     "difficulty": 2
 }
@@ -3175,7 +3175,7 @@
     "subset": "",
     "question_label": [
         ["Keywords"],
-        ["Punctuation"],
+        ["Format"],
         ["Format"],
         ["Format"]
     ],
@@ -3217,7 +3217,7 @@
         ["Linguistic"],
         ["Format"],
         ["Length"],
-        ["Punctuation"]
+        ["Format"]
     ],
     "difficulty": 1
 }
@@ -3270,7 +3270,7 @@
     ],
     "subset": "",
     "question_label": [
-        ["Combination"],
+        ["Content"],
         ["Format"]
     ],
     "difficulty": 1
@@ -3408,7 +3408,7 @@
     ],
     "subset": "",
     "question_label": [
-        ["Punctuation"],
+        ["Format"],
         ["Linguistic"],
         ["Format"],
         ["Keywords"]
@@ -3444,10 +3444,10 @@
     ],
     "subset": "",
     "question_label": [
-        ["Combination"],
+        ["Content"],
         ["Format"],
         ["Keywords"],
-        ["Punctuation"]
+        ["Format"]
     ],
     "difficulty": 1
 }
@@ -4054,7 +4054,7 @@
         ["Format"], 
         ["Content"], 
         ["Format"], 
-        ["Punctuation"]
+        ["Format"]
     ],
     "difficulty": 1
 }
@@ -4139,7 +4139,7 @@
     "question_label": [
         ["Style"], 
         ["Format"], 
-        ["Punctuation"], 
+        ["Format"], 
         ["Format"]
     ],
     "difficulty": 1

@@ -529,7 +529,7 @@
     },
     {
         "key": 89,
-        "prompt": "Statement 1 |  Suppose \u2211|a_i| diverges and \u2211 a_i = 2. There is a rearrangement a_i_k of the terms such that \u2211 a_i_k = 4. Statement 2 | There exists metric spaces X and Y with X closed and bounded and a continuous mapping f : X \u2192 Y such that f(X) is NOT \u201cclosed and bounded\u201d.",
+        "prompt": "Statement 1 | Suppose \u2211|a_i| diverges and \u2211 a_i = 2. There is a rearrangement a_i_k of the terms such that \u2211 a_i_k = 4. Statement 2 | There exists metric spaces X and Y with X closed and bounded and a continuous mapping f : X \u2192 Y such that f(X) is NOT \u201cclosed and bounded\u201d.",
         "answer": "True, True",
         "difficulty": 3
     },

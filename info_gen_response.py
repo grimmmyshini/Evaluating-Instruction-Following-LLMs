@@ -4,12 +4,11 @@ from pathlib import Path
 from utils.chat import chat
 from tqdm import tqdm
 
-def gen_infobench_response(input_file : str, output_dir : str, model : str):
-    output_path = Path(output_dir)
+def gen_infobench_response(input_file_path : Path, output_path : Path, model : str):
     output_path.mkdir(exist_ok=True)
     output_path /= model
     output_path.mkdir(exist_ok=True)
-    output_file = output_path / Path(input_file).name
+    output_file = output_path / "output.jsonl"
     # Helper function to read JSONL file into a list of dictionaries
     def read_jsonl(file_path):
         with open(file_path, 'r') as f:
@@ -21,7 +20,7 @@ def gen_infobench_response(input_file : str, output_dir : str, model : str):
             f.write(json.dumps(data) + '\n')
 
     # Read input and output files
-    input_data = read_jsonl(input_file)
+    input_data = read_jsonl(input_file_path)
     output_data = read_jsonl(output_file) if output_file.exists() else []
 
     # Extract existing IDs from the output file
@@ -45,12 +44,19 @@ def gen_infobench_response(input_file : str, output_dir : str, model : str):
         # Append the updated data point to the output file
         append_jsonl(output_file, data_point)
 
-input_file = 'datasets/MMLU_InfoBench/mmlu_info.jsonl'
-output_dir = 'datasets/MMLU_InfoBench/response'
+input_dirs = ['datasets/MMLU_InfoBench', 'datasets/MMLU_InfoBench_Complex']
 
-with open("config.json", 'r') as file:
-    data = json.load(file)
+for input_dir in input_dirs:
+    input_path = Path(input_dir)
+    response_path = input_path / 'response'
+    response_path.mkdir(exist_ok=True)
+    for input_file in input_path.glob("*.jsonl"):
+        print(f"+++++++     Generating response for {input_file}     +++++++")
+        output_path = response_path / input_file.stem
+        with open("config.json", 'r') as file:
+            data = json.load(file)
 
-    for model in data["models"]:
-        print(f"Running model {model}")
-        gen_infobench_response(input_file, output_dir, model)
+            for model in data["models"]:
+                if "gpt" in model: continue #FIXME: Remove line
+                print(f"Running model {model}")
+                gen_infobench_response(input_file, output_path, model)

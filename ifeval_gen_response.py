@@ -58,11 +58,19 @@ def generate_response(input_file_path, output_path):
             print(f"Running model {model}")
             output_dir_path = output_path / model
             output_dir_path.mkdir(exist_ok=True)
-            output_file_path = output_dir_path / (input_file_path.stem + f"_{model}" + ".jsonl")
+            output_file_path = output_dir_path / "output.jsonl"
             process_data(input_file_path, output_file_path, model)
 
-input_path = Path('datasets/MMLU_Ifeval_Complex')
-output_path = Path('datasets/MMLU_Ifeval_Complex/response')
+# input_path = Path('datasets/MMLU_Ifeval_Complex')
+# output_path = Path('datasets/MMLU_Ifeval_Complex/response')
 
-for input_file_path in input_path.glob("*.jsonl"):
-    generate_response(input_file_path, output_path)
+input_dirs = ['datasets/InfoToIfeval', 'datasets/MMLU_Ifeval_Complex']
+
+for input_dir in input_dirs:
+    print(f"Generating responses for jsonl files in {input_dir} directory")
+    input_path = Path(input_dir)
+    response_path = input_path / "response"
+    response_path.mkdir(exist_ok=True)
+    for input_file_path in input_path.glob("*.jsonl"):
+        output_path = response_path / input_file_path.stem
+        generate_response(input_file_path, output_path)

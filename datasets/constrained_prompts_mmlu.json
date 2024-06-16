@@ -3474,7 +3474,7 @@
     },
     {
         "key": 160,
-        "prompt": "Which of these statements correctly explains bias?  In your response, the word big should appear no greater than 1 times. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. Your entire response should be in English, and in all capital letters. In your response, the letter m should appear less than 3 times.",
+        "prompt": "When the point (15,2) is included, the slope of regression line (y= a+ bx) is b= -0.54. The correlation is r= -0.82. When the point is removed, the new slope is -1.04 and the new correlation coefficient is -0.95. What name is given to a point whose removal has this kind of effect on statistical calculations?  In your response, the word big should appear no greater than 1 times. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. Your entire response should be in English, and in all capital letters. In your response, the letter m should appear less than 3 times.",
         "instruction_id_list": [
             "keywords:frequency",
             "detectable_format:title",

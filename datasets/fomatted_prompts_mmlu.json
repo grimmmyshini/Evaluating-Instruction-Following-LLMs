@@ -961,8 +961,8 @@
     },
     {
         "key": 161,
-        "prompt": "Which of these statements correctly explains bias?",
-        "answer": "It describes a process that creates estimates that are too high on average or too low on average.",
+        "prompt": "When the point (15,2) is included, the slope of regression line (y= a+ bx) is b= -0.54. The correlation is r= -0.82. When the point is removed, the new slope is -1.04 and the new correlation coefficient is -0.95. What name is given to a point whose removal has this kind of effect on statistical calculations?",
+        "answer": "Influential point",
         "difficulty": 2
     },
     {

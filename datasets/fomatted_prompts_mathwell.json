@@ -31,7 +31,7 @@
     },
     {
         "key": 6,
-        "prompt": "3 scoops of ice cream cost $4.  How much does 100 scoops of ice cream cost?",
+        "prompt": "3 scoops of ice cream cost $4. How much does 100 scoops of ice cream cost?",
         "answer": "133.33333333333334",
         "difficulty": 1
     },
@@ -109,7 +109,7 @@
     },
     {
         "key": 19,
-        "prompt": "Serena Williams has 23 Grand Slam titles.  She is 4 Grand Slam titles away from the all-time record.  She wins 1 Grand Slam title a year.  How many years will it take for her to break the all-time record?",
+        "prompt": "Serena Williams has 23 Grand Slam titles. She is 4 Grand Slam titles away from the all-time record. She wins 1 Grand Slam title a year. How many years will it take for her to break the all-time record?",
         "answer": "4.0",
         "difficulty": 1
     },
@@ -595,7 +595,7 @@
     },
     {
         "key": 100,
-        "prompt": "Wonder Woman can punch 20 times a second.  How many punches can she throw in 10 minutes?",
+        "prompt": "Wonder Woman can punch 20 times a second. How many punches can she throw in 10 minutes?",
         "answer": "12000.0",
         "difficulty": 1
     }

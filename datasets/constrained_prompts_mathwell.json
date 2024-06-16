@@ -359,7 +359,7 @@
     },
     {
         "key": 18,
-        "prompt": "Serena Williams has 23 Grand Slam titles.  She is 4 Grand Slam titles away from the all-time record.  She wins 1 Grand Slam title a year.  How many years will it take for her to break the all-time record?  Your entire response should be in English, and in all lowercase letters. No capital letters are allowed. There should be 5 paragraphs. Paragraphs are separated with the markdown divider: ***.  Wrap your entire response with double quotation marks.",
+        "prompt": "Serena Williams has 23 Grand Slam titles. She is 4 Grand Slam titles away from the all-time record. She wins 1 Grand Slam title a year. How many years will it take for her to break the all-time record?  Your entire response should be in English, and in all lowercase letters. No capital letters are allowed. There should be 5 paragraphs. Paragraphs are separated with the markdown divider: ***.  Wrap your entire response with double quotation marks.",
         "instruction_id_list": [
             "change_case:english_lowercase",
             "length_constraints:number_paragraphs",
@@ -2039,7 +2039,7 @@
     },
     {
         "key": 99,
-        "prompt": "Wonder Woman can punch 20 times a second.  How many punches can she throw in 10 minutes?  Finish your response with this exact phrase \"Any other questions?\". No other words should follow this phrase. Wrap your entire response with double quotation marks. In your response, the letter s should appear no greater than 7 times.",
+        "prompt": "Wonder Woman can punch 20 times a second. How many punches can she throw in 10 minutes?  Finish your response with this exact phrase \"Any other questions?\". No other words should follow this phrase. Wrap your entire response with double quotation marks. In your response, the letter s should appear no greater than 7 times.",
         "instruction_id_list": [
             "startend:end_checker",
             "startend:quotation",

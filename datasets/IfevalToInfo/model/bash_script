@@ -1,1 +1,0 @@
-python InfoBench/evaluation.py --api_key "ollama" --model "llama3" --input InfoBench/model/output_gemma.jsonl --output_dir InfoBench/model/evaluation/llama3 --temperature 0

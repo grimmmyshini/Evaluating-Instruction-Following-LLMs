@@ -56,14 +56,13 @@ def run_evaluation(client, in_path, o_dir, eval_model="gpt-4-0314", temperature=
         temperature: float, default 0, temperature to be used for evaluation
     """
     _data = load_jsonl(in_path)
-    _model_name = in_path.split('/')[1].split('_')[0]
     
     # ceate output folder if not exists
-    _o_dir = join(o_dir, eval_model)
+    _o_dir = o_dir
     if not exists(_o_dir):
         os.mkdir(_o_dir)
                 
-    _opath = join(_o_dir, f"{_model_name}_DecomposeEval.json")
+    _opath = join(_o_dir, f"{eval_model}_DecomposeEval.json")
     
     # load_results if exists
     if os.path.exists(_opath):
@@ -166,7 +165,7 @@ def run_evaluation(client, in_path, o_dir, eval_model="gpt-4-0314", temperature=
     return _opath
 
 def main_run(args):
-    client = OpenAI(api_key=args.api_key)
+    client = OpenAI(api_key=args.api_key, base_url="http://localhost:11434/v1")
     results_file = args.input
     output_dir = args.output_dir
     eval_model = args.model

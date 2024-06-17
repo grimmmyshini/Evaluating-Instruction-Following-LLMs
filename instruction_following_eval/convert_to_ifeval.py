@@ -1,3 +1,4 @@
+import itertools
 from langchain_community.llms import Ollama # type: ignore
 from pathlib import Path
 from subprocess import run
@@ -87,7 +88,7 @@ def add_constraints_to_prompts(prompt_file):
             print(res_prompt)
 
 
-def add_constraints_to_prompts_automatic(prompt_file, store_file):
+def add_constraints_to_prompts_automatic(prompt_file, store_file, low = 2, high = 5):
     with open(prompt_file, 'r') as json_file:
         df = json.load(json_file)
 
@@ -96,7 +97,7 @@ def add_constraints_to_prompts_automatic(prompt_file, store_file):
     records = []
     for row in tqdm(df):
         instr_id = 0
-        limit = random.choice(range(2, 5))
+        limit = random.choice(range(low, high))
         prompt = row['prompt'] + ' '
         constraint_list = []
         conflict_list = []
@@ -327,6 +328,86 @@ def evaluate_prompts(prompt_file, store_file, model, redo = False):
 
         print("Accuracy: ", cnt/(i + 1))
 
+
+def add_constraints_to_prompts_separated(prompt_file, store_file, low = 2, high = 5):
+    with open(prompt_file, 'r') as json_file:
+        df = json.load(json_file)
+
+    conflicts = ir.conflict_make(ir.INSTRUCTION_CONFLICTS)
+    key = 0
+    records = []
+    for row in tqdm(df):
+        instr_id = 0
+        limit = random.choice(range(low, high))
+        prompt = row['prompt']
+        prompt_list = [prompt]
+        constraint_list = []
+        conflict_list = []
+        instruction_id_list = []
+        kwargs = []
+        while instr_id < limit:
+            choices = set(math_instrs_ok.keys()).difference([conflict.split(':')[1] for conflict in conflict_list])
+            if len(choices) == 0:
+                break
+            constraint = random.choice(list(choices))
+            type_constraint = math_instrs_ok[constraint]['type'] + constraint
+            if constraint == 'answer_round':
+                try:
+                    ans = float(row['answer'])
+                except:
+                    conflict_list += [type_constraint]
+                    continue
+                if '.' not in row['answer']:
+                    continue
+            if type_constraint in conflict_list or constraint in constraint_list:
+                continue
+            constraint_list += [constraint]
+            conflict_list += conflicts[type_constraint]
+            conflict_list += [type_constraint]
+            instruction_id_list += [type_constraint]
+            const_obj = math_instrs_ok[constraint]['class'](instr_id)
+            instr_id += 1
+
+            if constraint == 'repeat_prompt':
+                instr = ' ' + const_obj.build_description(
+                    prompt_to_repeat=prompt)
+                prompt += instr
+                prompt_list += [instr]
+            elif constraint == 'answer_round':
+                max = len(row['answer'].split('.')[1])
+                round_to = random.choice(range(1, max)) if max > 1 else 1
+                type_of = random.choice(["Round", "Truncate"])
+                ans = float(row['answer'])
+                instr = ' ' + const_obj.build_description(ans, round_to, type_of)
+                prompt += instr
+                prompt_list += [instr]
+            else:
+                instr = ' ' + const_obj.build_description()
+                prompt += instr
+                prompt_list += [instr]
+            args = const_obj.get_instruction_args()
+            if args:
+                kwargs += [args]
+            else:
+                kwargs += [{}]
+
+        # Can also add logic to generate responses with gpt
+
+        # {"key":, "prompt":, "instruction_id_list": ["type:instr_name"], "kwargs": [{"arg1": "val1"}]}
+        record = {
+            'key': key,
+            'prompt': prompt,
+            'prompt_list': prompt_list,
+            'instruction_id_list': instruction_id_list,
+            'kwargs': kwargs,
+            'difficulty': row['difficulty']
+        }
+        records += [record]
+        key += 1
+
+    with open(store_file, 'w') as json_file:
+        json.dump(records, json_file, indent=4)
+
 # 1) what makes prompts difficult? Complexity of question or complexity of added instructions.
 # mmlu 1, 2, 4, 8
 #    1 90
@@ -362,7 +443,42 @@ store_complex_prompts_mmlu = '../datasets/MMLU_complexity_grid/mat.jsonl'
 store_responses = '../datasets/responses_mathwell_llama3.json'
 # add_constraints_to_prompts_automatic(init_prompts, store_prompts)
 # add_constraints_to_prompts_automatic(init_prompts_mmlu, store_prompts_mmlu)
-add_constraints_to_prompts_automatic('/home/grimmyshini/CS4NLP-Project/datasets/fomatted_prompts_mmlu.json', '/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mmlu_full.json')
+# add_constraints_to_prompts_automatic('/home/grimmyshini/CS4NLP-Project/datasets/fomatted_prompts_mmlu.json', '/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mmlu_full.json')
 
 # evaluate_prompts(store_prompts, store_responses, "llama3")
 # add_constraints_to_prompts_by_number(init_prompts_mmlu, store_complex_prompts_mmlu)
+
+def analysis2(prompt_file, store_files):
+    with open(prompt_file, 'r') as json_file:
+        df = json.load(json_file)
+
+    records =  [[], [], [], [], []] # 5 x 100
+    for row in tqdm(df):
+        index_list = [0, 1, 2]
+        permutation_list = list(itertools.permutations(index_list, 3))[1:]
+        for i, perm in enumerate(permutation_list):
+            instruction_id_list = [row['instruction_id_list'][idx] for idx in perm]
+            kwargs = [row['kwargs'][idx] for idx in perm]
+            prompt_list = [row['prompt_list'][0]]
+            prompt_list += [row['prompt_list'][idx + 1] for idx in perm]
+            prompt = ""
+            for item in prompt_list:
+                prompt += item
+
+            records[i] += [{
+            'key': row['key'],
+            'prompt': prompt,
+            'prompt_list': prompt_list,
+            'instruction_id_list': instruction_id_list,
+            'kwargs': kwargs,
+            'difficulty': row['difficulty']
+            }]
+
+    for i, record in enumerate(records):
+        with open(store_files[i+1], 'w') as json_file:
+            json.dump(record, json_file, indent=4)
+
+# analysis_2_prompts_base = '/home/grimmyshini/CS4NLP-Project/datasets/ReorderingAnalysis'
+# analysis_2_prompts = [analysis_2_prompts_base + '/mathwell_combi_' + str(i) + '.json' for i in range(0, 6)]
+# add_constraints_to_prompts_separated(init_prompts, analysis_2_prompts[0], 3, 4)
+# analysis2(analysis_2_prompts[0], analysis_2_prompts)

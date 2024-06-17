@@ -53,7 +53,7 @@ def chat(model, messages=[], message="", choice=0):
         raise model["api_key"]
 
     client = OpenAI(
-        base_url = model["base_url"],
+        base_url = model["base_url"] if model["base_url"] != "" else None,
         api_key = model["api_key"],
     )
     

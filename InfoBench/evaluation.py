@@ -62,7 +62,7 @@ def run_evaluation(client, in_path, o_dir, eval_model="gpt-4-0314", temperature=
     if not exists(_o_dir):
         os.mkdir(_o_dir)
                 
-    _opath = join(_o_dir, f"{eval_model}_DecomposeEval.json")
+    _opath = join(_o_dir, f"{eval_model}_DecomposeEval.jsonl")
     
     # load_results if exists
     if os.path.exists(_opath):

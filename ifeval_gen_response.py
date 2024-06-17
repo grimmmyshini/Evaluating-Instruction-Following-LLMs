@@ -64,7 +64,7 @@ def generate_response(input_file_path, output_path):
 # input_path = Path('datasets/MMLU_Ifeval_Complex')
 # output_path = Path('datasets/MMLU_Ifeval_Complex/response')
 
-input_dirs = ['datasets/InfoToIfeval', 'datasets/MMLU_Ifeval_Complex']
+input_dirs = ['datasets/MATHWELL_Ifeval', 'datasets/MMLU_Ifeval', 'datasets/InfoToIfeval', 'datasets/MMLU_Ifeval_Complex', 'datasets/ReorderingAnalysis_Ifeval']
 
 for input_dir in input_dirs:
     print(f"Generating responses for jsonl files in {input_dir} directory")

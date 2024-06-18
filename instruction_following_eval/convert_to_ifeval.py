@@ -4,8 +4,8 @@ from pathlib import Path
 from subprocess import run
 import json
 import random
-import instructions
-import instructions_registry as ir
+import instruction_following_eval.instructions as instructions
+import instruction_following_eval.instructions_registry as ir
 from tqdm import tqdm
 import numpy as np
 
@@ -408,30 +408,6 @@ def add_constraints_to_prompts_separated(prompt_file, store_file, low = 2, high 
     with open(store_file, 'w') as json_file:
         json.dump(records, json_file, indent=4)
 
-# 1) what makes prompts difficult? Complexity of question or complexity of added instructions.
-# mmlu 1, 2, 4, 8
-#    1 90
-#    2 30
-#    3 20
-#    4
-#
-# 2) Does the instruction ordering matter for accuracy?
-#
-# 3) (not sure how to show this) how does blind re-prompting vs guided re-prompting help? My initial idea is to show the average best accuracy between reprompts. Here blind reprompts are just "try again." And guided reprompts are "No, you need to follow the instruction <instruction not followed> and any others described by the original prompt."
-#
-# 4) could be step by step prompting? Like instead of giving instructions altogether, we prompt the model step by step and see if that increases accuracy.
-#
-# 5) Look into roles in llm apis? Can roles help llms follow instructions better?
-
-# Models                    [llama3, mistral, gemma, chatGPT4, chatGPT4o]
-# Datasets
-# Info dataset with ifeval      1       1       1       0          0
-# ifeval dataset with info      1       0       0       0          0
-# mathwell with info            0       0       0       0          0
-# mathwell with ifeval          1       0       0       0          0
-# mmlu with ifeval              0       0       0       0          0
-# mmlu with info                0       0       0       0          0
-
 init_prompts = '../datasets/fomatted_prompts_mathwell.json'
 init_prompts_mmlu = '../datasets/fomatted_prompts_mmlu.json'
 
@@ -447,38 +423,3 @@ store_responses = '../datasets/responses_mathwell_llama3.json'
 
 # evaluate_prompts(store_prompts, store_responses, "llama3")
 # add_constraints_to_prompts_by_number(init_prompts_mmlu, store_complex_prompts_mmlu)
-
-def analysis2(prompt_file, store_files):
-    with open(prompt_file, 'r') as json_file:
-        df = json.load(json_file)
-
-    records =  [[], [], [], [], []] # 5 x 100
-    for row in tqdm(df):
-        index_list = [0, 1, 2]
-        permutation_list = list(itertools.permutations(index_list, 3))[1:]
-        for i, perm in enumerate(permutation_list):
-            instruction_id_list = [row['instruction_id_list'][idx] for idx in perm]
-            kwargs = [row['kwargs'][idx] for idx in perm]
-            prompt_list = [row['prompt_list'][0]]
-            prompt_list += [row['prompt_list'][idx + 1] for idx in perm]
-            prompt = ""
-            for item in prompt_list:
-                prompt += item
-
-            records[i] += [{
-            'key': row['key'],
-            'prompt': prompt,
-            'prompt_list': prompt_list,
-            'instruction_id_list': instruction_id_list,
-            'kwargs': kwargs,
-            'difficulty': row['difficulty']
-            }]
-
-    for i, record in enumerate(records):
-        with open(store_files[i+1], 'w') as json_file:
-            json.dump(record, json_file, indent=4)
-
-# analysis_2_prompts_base = '/home/grimmyshini/CS4NLP-Project/datasets/ReorderingAnalysis'
-# analysis_2_prompts = [analysis_2_prompts_base + '/mathwell_combi_' + str(i) + '.json' for i in range(0, 6)]
-# add_constraints_to_prompts_separated(init_prompts, analysis_2_prompts[0], 3, 4)
-# analysis2(analysis_2_prompts[0], analysis_2_prompts)

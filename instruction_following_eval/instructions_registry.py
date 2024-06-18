@@ -14,7 +14,7 @@
 # limitations under the License.
 
 """Registry of all instructions."""
-import instructions as instructions
+import instruction_following_eval.instructions as instructions
 
 _KEYWORD = "keywords:"
 

@@ -19,10 +19,10 @@ import json
 #     extract_instructions(input_file, output_file)
 
 # Path to the input JSONL file
-input_file_path = "instruction_following_eval/data/IFEvaltoInfo.jsonl"
+input_file_path = "datasets/MATHWELL_Info/mathwell_info.jsonl"
 
 # Path to the output JSONL file
-output_file_path = "instruction_following_eval/data/extracted_instructions.jsonl"
+output_file_path = "datasets/MATHWELL_Info/extracted_instructions.jsonl"
 
 # Read the input JSONL file
 instructions = []

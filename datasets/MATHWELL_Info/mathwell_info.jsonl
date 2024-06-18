@@ -1,0 +1,83 @@
+{
+    "id": "", 
+    "input": "LeBron James is 6'9\" tall. 1 inch is 2.54 cm. How tall is he in centimeters? Wrap your entire response with double quotation marks. Round your answer to 1 correct decimal places. There should be 1 paragraphs. Paragraphs and only paragraphs are separated with each other by two new lines as if it was '\\n\\n' in python. Paragraph 2 must start with word regret.", 
+    "category": "", 
+    "instruction": "LeBron James is 6'9\" tall. 1 inch is 2.54 cm. How tall is he in centimeters? Wrap your entire response with double quotation marks. Round your answer to 1 correct decimal places. There should be 1 paragraphs. Paragraphs and only paragraphs are separated with each other by two new lines as if it was '\\n\\n' in python. Paragraph 2 must start with word regret.", 
+    "decomposed_questions": ["Is the entire response wrapped with double quotation marks?", "Is the height conversion accurate and rounded to 1 decimal place?", "Does the response contain 1 paragraph?", "Does the second paragraph start with the word 'regret'?", "Are paragraphs separated by two new lines?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Format"], 
+        ["Content"], 
+        ["Length"], 
+        ["Length"], 
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Captain America has 1200 ryo. He spends 400 ryo on noodles, 200 ryo on a new outfit, and 300 ryo on a new headband. How many ryo does he have left? Give two different responses. Responses and only responses should be separated by 6 asterisk symbols: ******. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. In your entire response, refrain from the use of any commas. Include keywords ['ear', 'emphasis'] in the response.", 
+    "category": "", 
+    "instruction": "Captain America has 1200 ryo. He spends 400 ryo on noodles, 200 ryo on a new outfit, and 300 ryo on a new headband. How many ryo does he have left? Give two different responses. Responses and only responses should be separated by 6 asterisk symbols: ******. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>. In your entire response, refrain from the use of any commas. Include keywords ['ear', 'emphasis'] in the response.", 
+    "decomposed_questions": ["Are there two different responses?", "Are the responses separated by 6 asterisks?", "Does the response include a title wrapped in double angular brackets?", "Does the response refrain from the use of commas?", "Are the keywords 'ear' and 'emphasis' included in the response?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Format"], 
+        ["Format"], 
+        ["Punctuation"], 
+        ["Keywords"]
+    ]
+}
+{
+    "id": "", 
+    "input": "3 scoops of ice cream cost $4. \nHow much does 10 scoops of ice cream cost? In your entire response, refrain from the use of any commas. Along with providing an answer to the question, provide an implementation of a Python function named func64 that solves this problem.", 
+    "category": "", 
+    "instruction": "3 scoops of ice cream cost $4. \nHow much does 10 scoops of ice cream cost? In your entire response, refrain from the use of any commas. Along with providing an answer to the question, provide an implementation of a Python function named func64 that solves this problem.", 
+    "decomposed_questions": ["Does the response refrain from the use of commas?", "Does the response provide an answer to the question?", "Does the response include a Python function named 'func64' that solves the problem?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Punctuation"], 
+        ["Content"], 
+        ["Content"]
+    ]
+}
+{
+    "id": "", 
+    "input": "A volleyball team is 6 players. \n3 of the players are 16 years old. \n2 of the players are 17 years old. \n1 of the players is 18 years old. \nWhat is the average age of the team? Along with providing an answer to the question, provide an implementation of a Python function named func51 that solves this problem. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>.", 
+    "category": "", 
+    "instruction": "A volleyball team is 6 players. \n3 of the players are 16 years old. \n2 of the players are 17 years old. \n1 of the players is 18 years old. \nWhat is the average age of the team? Along with providing an answer to the question, provide an implementation of a Python function named func51 that solves this problem. Your answer must contain a title, wrapped in double angular brackets, such as <<poem of joy>>.", 
+    "decomposed_questions": ["Does the response provide an answer to the question?", "Does the response include a Python function named 'func51' that solves the problem?", "Does the response contain a title wrapped in double angular brackets?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Content"], 
+        ["Content"], 
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "Superman can fly at a speed of 1,000 miles per hour. He flies from Metropolis to Gotham City, which is 200 miles away. How long does it take him to get there? Do not include keywords ['hat', 'virus'] in the response. Truncate your answer to 1 correct decimal places. Wrap your entire response with double quotation marks.", 
+    "category": "", 
+    "instruction": "Superman can fly at a speed of 1,000 miles per hour. He flies from Metropolis to Gotham City, which is 200 miles away. How long does it take him to get there? Do not include keywords ['hat', 'virus'] in the response. Truncate your answer to 1 correct decimal places. Wrap your entire response with double quotation marks.", 
+    "decomposed_questions": ["Does the response refrain from including the keywords 'hat' and 'virus'?", "Is the answer truncated to 1 decimal place?", "Is the entire response wrapped with double quotation marks?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Keywords"], 
+        ["Content"], 
+        ["Format"]
+    ]
+}
+{
+    "id": "", 
+    "input": "3 scoops of ice cream cost $4. How much does 100 scoops of ice cream cost? Your response should contain no greater than 18 sentences. Along with providing an answer to the question, give the mathematical equation that solves this problem. Wrap this (and only this) equation in a box. Use Latex style formatting to format the math equation. Highlight the final answer (and the final answer only) in bold.", 
+    "category": "", 
+    "instruction": "3 scoops of ice cream cost $4. How much does 100 scoops of ice cream cost? Your response should contain no greater than 18 sentences. Along with providing an answer to the question, give the mathematical equation that solves this problem. Wrap this (and only this) equation in a box. Use Latex style formatting to format the math equation. Highlight the final answer (and the final answer only) in bold.", 
+    "decomposed_questions": ["Does the response contain no more than 18 sentences?", "Does the response provide an answer to the question?", "Does the response include the mathematical equation wrapped in a box using Latex style formatting?", "Is the final answer highlighted in bold?"], 
+    "subset": "Easy_set", 
+    "question_label": [
+        ["Length"], 
+        ["Content"], 
+        ["Format"], 
+        ["Format"]
+    ]
+}

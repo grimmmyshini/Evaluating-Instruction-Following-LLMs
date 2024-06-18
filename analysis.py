@@ -59,8 +59,12 @@ def analysis3(blind, prompt_file, store_file, model):
     with open(prompt_file, 'r') as json_file:
         df = json.load(json_file)
 
-    record = []
-    for row in tqdm(df):
+    with open(store_file, 'r') as json_file:
+        record = json.load(json_file)
+
+    for i, row in enumerate(tqdm(df)):
+        if i < len(record):
+            continue
         messages = []
         response = None
         response_list = []
@@ -68,6 +72,7 @@ def analysis3(blind, prompt_file, store_file, model):
         per_instr = []
         content = row['prompt']
         for i in range(0, 5):
+            print(i)
             messages.append({"role": "user", "content": content})
             response = chat(model, messages=messages)
             response_list.append(response)
@@ -83,7 +88,7 @@ def analysis3(blind, prompt_file, store_file, model):
                     not_followed = [i for i in range(len(row['instruction_id_list'])) if not per_instr[i]]
                     content = "You did not follow the following instructions: "
                     for i, idx in enumerate(not_followed):
-                        content += str(i + 1) + ") " + row['instruction_id_list'][idx] + " \n"
+                        content += str(i + 1) + ") " + row['prompt_list'][idx+1] + " \n"
                     content += "Regenerate a response that follows these instructions as well as the ones mentioned before."
         print(None if not strict else len(response_list))
         record += [{
@@ -99,8 +104,8 @@ def analysis3(blind, prompt_file, store_file, model):
             'difficulty': row['difficulty']
         }]
 
-    with open(store_file, 'w') as json_file:
-            json.dump(record, json_file, indent=4)
+        with open(store_file, 'w') as json_file:
+                json.dump(record, json_file, indent=4)
 
 analysis_3_prompts = '/home/grimmyshini/CS4NLP-Project/datasets/RepromptingAnalysis/mathwell_separated.json'
 analysis_3_response = '/home/grimmyshini/CS4NLP-Project/datasets/RepromptingAnalysis/response/'

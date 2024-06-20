@@ -18,6 +18,6 @@ def convert_pretty_jsonl_to_proper_jsonl(pretty_jsonl_file_path, proper_jsonl_fi
                     buffer = ""
 
 # Example usage
-pretty_jsonl_file_path = 'instruction_following_eval/data/IFEvaltoInfo.jsonl'
-proper_jsonl_file_path = 'instruction_following_eval/data/IFEvaltoInfo_proper.jsonl'
+pretty_jsonl_file_path = 'datasets/MATHWELL_Info/mathwell_info.jsonl'
+proper_jsonl_file_path = 'datasets/MATHWELL_Info/mathwell_info_proper.jsonl'
 convert_pretty_jsonl_to_proper_jsonl(pretty_jsonl_file_path, proper_jsonl_file_path)

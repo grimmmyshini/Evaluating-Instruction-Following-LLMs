@@ -1,1 +1,1 @@
-python InfoBench/evaluation.py --api_key "ollama" --model "mistral" --input datasets/IfevalToInfo/response/IFEvaltoInfo/gemma/output.jsonl --output_dir datasets/IfevalToInfo/response/IFEvaltoInfo/gemma --temperature 0
+python InfoBench/evaluation.py --api_key "ollama" --model "llama3" --input 'datasets/IfevalToInfo/response/IFEvaltoInfo/gpt4o/output.jsonl' --output_dir 'datasets/IfevalToInfo/response/IFEvaltoInfo/gpt4o' --temperature 0

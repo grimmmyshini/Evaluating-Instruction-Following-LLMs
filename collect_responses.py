@@ -33,9 +33,9 @@ def save_responses(responses, output_file):
 # Main function
 def main():
     # Path to the JSON file
-    input_file_path = 'InfoBench/extracted_instructions.jsonl'
-    output_file_path = 'datasets/IfevalToInfo/response/IFEvaltoInfo/gpt-4o'
-    model = "gpt-4o"
+    input_file_path = 'datasets/IfevalToInfo/IFEvaltoInfo.jsonl'
+    output_file_path = 'datasets/IfevalToInfo/response/IFEvaltoInfo/gpt4o/responses.jsonl'
+    model = "gpt4o"
     # Load prompts
     prompts = load_prompts(input_file_path)
     

@@ -1,2 +1,5 @@
 tqdm
 openai
+tiktoken
+langdetect
+colorama

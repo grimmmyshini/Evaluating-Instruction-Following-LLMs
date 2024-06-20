@@ -48,7 +48,7 @@ def evaluate_main(response_file: Path, model_name, infobench):
     print(f"{HEADER}{'Analysis Results':^40}{RESET}")
     print(f"{'='*40}")
     print(f"{HIGHLIGHT}Model: {model_name}{RESET}")
-    print(f"{HIGHLIGHT}Response File: {response_file.stem}{RESET}")
+    print(f"{HIGHLIGHT}Response File: {response_file}{RESET}")
     print(f"{'-'*40}")
 
     total_accuracy = followed / total_prompts
@@ -68,7 +68,7 @@ def evaluate_main(response_file: Path, model_name, infobench):
     print(f"{'='*40}\n")
 
 
-datasets = Path('/home/grimmyshini/CS4NLP-Project/datasets')
+datasets = Path('datasets')
 evaluate_files_info = datasets.rglob('*_DecomposeEval.jsonl')
 evaluate_files_ifeval = datasets.rglob('eval_results_strict.jsonl')
 

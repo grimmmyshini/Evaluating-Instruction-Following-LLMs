@@ -1,1 +1,1 @@
-python InfoBench/evaluation.py --api_key "ollama" --model "mistral" --input 'datasets/MMLU_InfoBench/response/mmlu_info/llama3/output.jsonl' --output_dir 'datasets/MMLU_InfoBench/response/mmlu_info/llama3' --temperature 0
+python InfoBench/evaluation.py --api_key "ollama" --model "mistral" --input 'datasets/MATHWELL_Info/response/mathwell_info/llama3/output.jsonl' --output_dir 'datasets/MATHWELL_Info/response/mathwell_info/llama3' --temperature 0

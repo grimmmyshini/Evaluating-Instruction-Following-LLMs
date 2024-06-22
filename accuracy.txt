@@ -1,18 +1,18 @@
             Analysis Results            
 ========================================
 Model: llama3
-Response File: datasets/MATHWELL_Info/response/mathwell_info/llama3/llama3_DecomposeEval.jsonl
+Response File: datasets/MATHWELL_Info/response/mathwell_info/llama3/mistral_DecomposeEval.jsonl
 ----------------------------------------
-Total Accuracy:                10.00%
-Total Instructions Followed:   131 out of 235
-Instructions Followed per Prompt: 54.17%
+Total Accuracy:                6.67%
+Total Instructions Followed:   89 out of 219
+Instructions Followed per Prompt: 40.89%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-Format                         60.82%
-Content                        55.75%
-Length                         33.33%
-Linguistic                     37.50%
+Format                         34.07%
+Content                        49.52%
+Length                         0.00%
+Linguistic                     40.00%
 ========================================
 
             Analysis Results            

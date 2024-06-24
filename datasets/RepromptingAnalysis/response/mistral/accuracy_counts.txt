@@ -1,2 +1,3 @@
 Count of 'tries_till_following' == 1: 30
-Count of 'tries_till_following' > 1 or null: 70
+Count of 'tries_till_following' is null: 56
+Count of 'tries_till_following' > 1: 14

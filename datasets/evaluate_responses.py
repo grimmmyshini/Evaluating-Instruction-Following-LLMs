@@ -68,12 +68,14 @@ def evaluate_main(response_file: Path, model_name, infobench):
     print(f"{'='*40}\n")
 
 
-datasets = Path('datasets')
+datasets = Path('datasets/MMLU_InfoBench_Complex')
 evaluate_files_info = datasets.rglob('*_DecomposeEval.jsonl')
-evaluate_files_ifeval = datasets.rglob('eval_results_strict.jsonl')
+# evaluate_files_ifeval = datasets.rglob('eval_results_strict.jsonl')
+allowed_models = {'gpt4', 'gpt4o'}
 
 for file in evaluate_files_info:
-    evaluate_main(file, file.parent.stem, True)
+    if file.parent.stem in allowed_models:
+        evaluate_main(file, file.parent.stem, True)
 
-for file in evaluate_files_ifeval:
-    evaluate_main(file, file.parent.stem, False)
+# for file in evaluate_files_ifeval:
+#     evaluate_main(file, file.parent.stem, False)

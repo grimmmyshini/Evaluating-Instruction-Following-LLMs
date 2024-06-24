@@ -1,0 +1,816 @@
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c6/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                0.00%
+Total Instructions Followed:   117 out of 180
+Instructions Followed per Prompt: 65.00%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        69.89%
+Format                         66.20%
+Length                         55.56%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c6/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                0.00%
+Total Instructions Followed:   114 out of 180
+Instructions Followed per Prompt: 63.33%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        63.44%
+Format                         69.01%
+Length                         66.67%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c1/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                78.72%
+Total Instructions Followed:   37 out of 47
+Instructions Followed per Prompt: 78.72%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        85.00%
+Linguistic                     0.00%
+Format                         81.82%
+Length                         100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c1/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                82.98%
+Total Instructions Followed:   39 out of 47
+Instructions Followed per Prompt: 82.98%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        85.00%
+Linguistic                     33.33%
+Format                         86.36%
+Length                         100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c1/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                63.04%
+Total Instructions Followed:   29 out of 46
+Instructions Followed per Prompt: 63.04%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         64.71%
+Content                        72.73%
+Linguistic                     16.67%
+Length                         100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c1/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                58.70%
+Total Instructions Followed:   27 out of 46
+Instructions Followed per Prompt: 58.70%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         47.06%
+Content                        77.27%
+Linguistic                     16.67%
+Length                         100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c6/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                0.00%
+Total Instructions Followed:   113 out of 180
+Instructions Followed per Prompt: 62.78%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         58.21%
+Content                        75.53%
+Length                         20.00%
+Linguistic                     11.11%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c6/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                0.00%
+Total Instructions Followed:   114 out of 180
+Instructions Followed per Prompt: 63.33%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         62.69%
+Content                        72.34%
+Length                         30.00%
+Linguistic                     11.11%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c4/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                0.00%
+Total Instructions Followed:   72 out of 120
+Instructions Followed per Prompt: 60.00%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        78.69%
+Format                         61.76%
+Length                         25.00%
+Linguistic                     5.88%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c4/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                0.00%
+Total Instructions Followed:   71 out of 120
+Instructions Followed per Prompt: 59.17%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        73.77%
+Format                         67.65%
+Length                         37.50%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c3/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                2.94%
+Total Instructions Followed:   57 out of 102
+Instructions Followed per Prompt: 55.88%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        74.47%
+Format                         61.29%
+Length                         28.57%
+Linguistic                     5.88%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c3/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                5.88%
+Total Instructions Followed:   56 out of 102
+Instructions Followed per Prompt: 54.90%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        72.34%
+Format                         67.74%
+Length                         0.00%
+Linguistic                     5.88%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c2/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                33.33%
+Total Instructions Followed:   50 out of 78
+Instructions Followed per Prompt: 64.10%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        86.67%
+Format                         80.00%
+Length                         16.67%
+Linguistic                     17.65%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c2/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                15.38%
+Total Instructions Followed:   40 out of 78
+Instructions Followed per Prompt: 51.28%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        70.00%
+Format                         68.00%
+Length                         16.67%
+Linguistic                     5.88%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c5/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                0.00%
+Total Instructions Followed:   72 out of 120
+Instructions Followed per Prompt: 60.00%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        74.60%
+Format                         57.89%
+Linguistic                     15.38%
+Length                         16.67%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c5/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                0.00%
+Total Instructions Followed:   75 out of 120
+Instructions Followed per Prompt: 62.50%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        73.02%
+Format                         76.32%
+Linguistic                     0.00%
+Length                         0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c2/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                33.33%
+Total Instructions Followed:   53 out of 84
+Instructions Followed per Prompt: 63.10%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Linguistic                     22.22%
+Content                        68.18%
+Format                         69.23%
+Length                         60.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c2/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                26.19%
+Total Instructions Followed:   48 out of 84
+Instructions Followed per Prompt: 57.14%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Linguistic                     11.11%
+Content                        59.09%
+Format                         69.23%
+Length                         60.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c5/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                8.33%
+Total Instructions Followed:   117 out of 180
+Instructions Followed per Prompt: 65.00%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        75.00%
+Format                         64.52%
+Linguistic                     10.00%
+Length                         33.33%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c5/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                5.56%
+Total Instructions Followed:   112 out of 180
+Instructions Followed per Prompt: 62.22%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        70.83%
+Format                         61.29%
+Linguistic                     0.00%
+Length                         50.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c4/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                10.53%
+Total Instructions Followed:   96 out of 152
+Instructions Followed per Prompt: 63.16%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        72.29%
+Format                         60.38%
+Linguistic                     0.00%
+Length                         50.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c4/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                10.53%
+Total Instructions Followed:   102 out of 152
+Instructions Followed per Prompt: 67.11%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        74.70%
+Format                         71.70%
+Linguistic                     0.00%
+Length                         25.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c3/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                10.00%
+Total Instructions Followed:   76 out of 120
+Instructions Followed per Prompt: 63.33%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        75.76%
+Linguistic                     11.11%
+Format                         56.41%
+Length                         50.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c3/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                7.50%
+Total Instructions Followed:   72 out of 120
+Instructions Followed per Prompt: 60.00%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        63.64%
+Linguistic                     11.11%
+Format                         64.10%
+Length                         66.67%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c2/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                39.53%
+Total Instructions Followed:   59 out of 86
+Instructions Followed per Prompt: 68.60%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        75.56%
+Format                         70.00%
+Linguistic                     14.29%
+Length                         75.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c2/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                46.51%
+Total Instructions Followed:   60 out of 86
+Instructions Followed per Prompt: 69.77%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        75.56%
+Format                         80.00%
+Linguistic                     0.00%
+Length                         50.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c5/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                5.88%
+Total Instructions Followed:   108 out of 170
+Instructions Followed per Prompt: 63.53%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        69.51%
+Format                         64.71%
+Length                         58.33%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c5/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                2.94%
+Total Instructions Followed:   108 out of 170
+Instructions Followed per Prompt: 63.53%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        70.73%
+Format                         64.71%
+Length                         50.00%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c4/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                8.11%
+Total Instructions Followed:   97 out of 148
+Instructions Followed per Prompt: 65.54%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        70.83%
+Format                         66.67%
+Length                         66.67%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c4/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                13.51%
+Total Instructions Followed:   95 out of 148
+Instructions Followed per Prompt: 64.19%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        69.44%
+Format                         65.00%
+Length                         66.67%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c3/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                27.50%
+Total Instructions Followed:   84 out of 120
+Instructions Followed per Prompt: 70.00%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        75.81%
+Format                         70.21%
+Length                         66.67%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d1_c3/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                20.00%
+Total Instructions Followed:   83 out of 120
+Instructions Followed per Prompt: 69.17%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        70.97%
+Format                         74.47%
+Length                         66.67%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c5/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                2.78%
+Total Instructions Followed:   115 out of 180
+Instructions Followed per Prompt: 63.89%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         66.15%
+Content                        73.40%
+Length                         18.18%
+Linguistic                     10.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c5/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                2.78%
+Total Instructions Followed:   110 out of 180
+Instructions Followed per Prompt: 61.11%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         63.08%
+Content                        70.21%
+Length                         18.18%
+Linguistic                     10.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c2/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                33.33%
+Total Instructions Followed:   52 out of 84
+Instructions Followed per Prompt: 61.90%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         58.82%
+Content                        72.50%
+Linguistic                     28.57%
+Length                         33.33%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c2/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                33.33%
+Total Instructions Followed:   52 out of 84
+Instructions Followed per Prompt: 61.90%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         61.76%
+Content                        67.50%
+Linguistic                     28.57%
+Length                         66.67%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c3/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                26.19%
+Total Instructions Followed:   81 out of 126
+Instructions Followed per Prompt: 64.29%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         65.22%
+Content                        73.02%
+Length                         50.00%
+Linguistic                     11.11%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c3/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                21.43%
+Total Instructions Followed:   76 out of 126
+Instructions Followed per Prompt: 60.32%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         56.52%
+Content                        73.02%
+Length                         50.00%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c4/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                7.50%
+Total Instructions Followed:   102 out of 160
+Instructions Followed per Prompt: 63.75%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         66.67%
+Content                        72.29%
+Length                         44.44%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d4_c4/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                2.50%
+Total Instructions Followed:   100 out of 160
+Instructions Followed per Prompt: 62.50%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         64.91%
+Content                        69.88%
+Length                         44.44%
+Linguistic                     9.09%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c6/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                0.00%
+Total Instructions Followed:   85 out of 144
+Instructions Followed per Prompt: 59.03%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        69.86%
+Format                         63.27%
+Length                         25.00%
+Linguistic                     7.14%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c6/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                0.00%
+Total Instructions Followed:   90 out of 144
+Instructions Followed per Prompt: 62.50%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Content                        75.34%
+Format                         69.39%
+Length                         12.50%
+Linguistic                     0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c1/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                56.52%
+Total Instructions Followed:   26 out of 46
+Instructions Followed per Prompt: 56.52%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         50.00%
+Content                        80.00%
+Length                         0.00%
+Linguistic                     25.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d3_c1/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                60.87%
+Total Instructions Followed:   28 out of 46
+Instructions Followed per Prompt: 60.87%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         62.50%
+Content                        75.00%
+Length                         0.00%
+Linguistic                     37.50%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c6/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                3.03%
+Total Instructions Followed:   124 out of 198
+Instructions Followed per Prompt: 62.63%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         56.52%
+Content                        75.00%
+Linguistic                     7.69%
+Length                         50.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c6/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                9.09%
+Total Instructions Followed:   130 out of 198
+Instructions Followed per Prompt: 65.66%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Format                         66.67%
+Content                        74.04%
+Linguistic                     15.38%
+Length                         41.67%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c1/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                67.35%
+Total Instructions Followed:   33 out of 49
+Instructions Followed per Prompt: 67.35%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Linguistic                     14.29%
+Content                        81.48%
+Format                         61.54%
+Length                         100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench_Complex/response/mat_d2_c1/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                59.18%
+Total Instructions Followed:   29 out of 49
+Instructions Followed per Prompt: 59.18%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+Linguistic                     14.29%
+Content                        74.07%
+Format                         53.85%
+Length                         50.00%
+========================================
+

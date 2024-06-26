@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 import matplotlib.pyplot as plt
-from collections import Counter
+import numpy as np
 
 # Directories to process (manually listed, excluding those with partwise and partwise_aided suffix)
 directories = [
@@ -85,20 +85,24 @@ bar_width = 0.2
 positions = list(range(len(histogram_data[models[0]].keys())))
 
 # Plotting bars for each model
+colors = ["#84DCCF", "#3A405A", "#EA526F"]
 for idx, model in enumerate(models):
     differences, frequencies = zip(*sorted(histogram_data[model].items()))
-    print(differences, frequencies)
+    frequencies = np.array(frequencies)
+    freq_pct = frequencies / np.sum(frequencies) * 100
+    print(differences, freq_pct, frequencies)
     bar_positions = [p + bar_width * idx for p in positions]
-    plt.bar(bar_positions, frequencies, width=bar_width, label=model)
+    plt.bar(bar_positions, freq_pct, width=bar_width, label=model, color=colors[idx])
 
 # Add x-ticks and labels
-plt.xlabel('Max-Min Percentage Difference')
-plt.ylabel('Frequency')
-plt.title('Histogram of Max-Min Percentage Differences for All Models')
+plt.xlabel('Difference in Per Prompt Acc.')
+plt.ylabel('% datapoints')
+plt.title('Freq. of Diff. in Per Prompt Acc. per Model with Instr. Reordering')
 plt.xticks([p + bar_width * (len(models) / 2) for p in positions], differences)
 
 # Add legend
 plt.legend()
+plt.tight_layout()
 
 # Save the plot
 histogram_file = base_dir / 'reordering_hist.pdf'

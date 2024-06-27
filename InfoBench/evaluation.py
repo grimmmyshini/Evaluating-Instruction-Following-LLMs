@@ -79,9 +79,10 @@ def run_evaluation(client, in_path, o_dir, eval_model="gpt-4-0314", temperature=
     for entry in tqdm(_data):
         # ski if eval exists
         if entry.get('eval', None) is not None:
-            result_writer.write(json.dumps(entry) + '\n')
-            result_writer.flush()
-            continue
+            if not (None in entry['eval']):
+                result_writer.write(json.dumps(entry) + '\n')
+                result_writer.flush()
+                continue
         
         input_task = entry['input']
         output = entry['output']
@@ -103,6 +104,7 @@ def run_evaluation(client, in_path, o_dir, eval_model="gpt-4-0314", temperature=
             # create a chat completion
             success = False
             early_stop = False
+            counter = 0
             while not success:
                 try:
                     completion = client.chat.completions.create(
@@ -110,9 +112,7 @@ def run_evaluation(client, in_path, o_dir, eval_model="gpt-4-0314", temperature=
                         messages=message,
                         temperature=temperature,
                     )
-                    generation = completion.choices[0].message.content
-                    message.append(
-                        {"role": "assistant", "content": generation})
+                    generation = completion.choices[0].message.content.strip()
                     # check if generation is yes or no
                     if generation.lower().startswith("yes") or generation.lower().startswith("no"):
                         if generation.lower().startswith("yes"):
@@ -125,13 +125,21 @@ def run_evaluation(client, in_path, o_dir, eval_model="gpt-4-0314", temperature=
                         elif "YES" not in generation and "NO" in generation:
                             answer += "No\n"
                         else:
-                            for msg in message:
-                                print(msg['content'])
-                            print("NO YES or NO answer!" + generation)
-                            answer += "None\n"
-                            early_stop = True
-                            break
+                            # early_stop = True
+                            # break
+                            counter += 1
+                            if counter > 10:
+                                for msg in message:
+                                    print(msg['content'])
+                                print("NO YES or NO answer!" + generation)
+                                answer += "None\n"
+                                early_stop = True
+                                break
+                            else:
+                                continue
                     success = True
+                    message.append(
+                        {"role": "assistant", "content": generation})
                 except Exception as e:
                     print("ERROR!")
                     print(e)

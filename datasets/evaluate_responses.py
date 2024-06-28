@@ -51,6 +51,8 @@ def evaluate_main(response_file: Path, model_name, infobench):
     print(f"{HIGHLIGHT}Response File: {response_file}{RESET}")
     print(f"{'-'*40}")
 
+    # print(f"{response_file}")
+    assert total_prompts != 0, f"{response_file}"
     total_accuracy = followed / total_prompts
     instructions_per_prompt = instruction_per_prompt / total_prompts
 
@@ -68,14 +70,26 @@ def evaluate_main(response_file: Path, model_name, infobench):
     print(f"{'='*40}\n")
 
 
-datasets = Path('datasets/MMLU_InfoBench_Complex')
-evaluate_files_info = datasets.rglob('*_DecomposeEval.jsonl')
-# evaluate_files_ifeval = datasets.rglob('eval_results_strict.jsonl')
-allowed_models = {'gpt4', 'gpt4o'}
+datasets = (
+    "datasets/IfevalToInfo/response",
+    "datasets/MATHWELL_Info/response",
+    "datasets/MMLU_InfoBench/response",
+    "datasets/InfoToIfeval/response",
+    "datasets/MMLU_Ifeval/response",
+    "datasets/MATHWELL_Ifeval/response"
+    )
 
-for file in evaluate_files_info:
-    if file.parent.stem in allowed_models:
-        evaluate_main(file, file.parent.stem, True)
+for dataset in datasets:
+    datas = Path(dataset)
+    evaluate_files_info = datas.rglob('*_DecomposeEval.jsonl')
+    evaluate_files_ifeval = datas.rglob('eval_results_strict.jsonl')
 
-# for file in evaluate_files_ifeval:
-#     evaluate_main(file, file.parent.stem, False)
+    allowed_models = ['gemma', 'gpt4', 'gpt4o', 'llama3', 'mistral']
+
+    for file in evaluate_files_info:
+        if file.parent.stem in allowed_models:
+            evaluate_main(file, file.parent.stem, True)
+
+    for file in evaluate_files_ifeval:
+        if file.parent.stem in allowed_models:
+            evaluate_main(file, file.parent.stem, False)

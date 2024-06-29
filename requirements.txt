@@ -3,3 +3,7 @@ openai
 tiktoken
 langdetect
 colorama
+absl-py
+immutabledict
+nltk
+numpy

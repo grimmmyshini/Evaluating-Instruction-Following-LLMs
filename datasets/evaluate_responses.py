@@ -12,10 +12,12 @@ def evaluate_main(response_file: Path, model_name, infobench):
     instruction_per_prompt = 0
     total_prompts = 0
     followed_per_type = {}
+    print(f"{response_file}")
+
     for row in df:
         if infobench:
             all_instructions = row['eval']
-            instruction_labels = [item[0] for item in row['question_label']]
+            instruction_labels = [item[0] for item in row['decomposed_questions']]
             follows_all = all_instructions.count(True) == len(all_instructions)
         else:
             all_instructions = row['follow_instruction_list']
@@ -23,8 +25,9 @@ def evaluate_main(response_file: Path, model_name, infobench):
             follows_all = row['follow_all_instructions']
 
         # assert len(all_instructions) == len(instruction_labels) and len(all_instructions) != 0
-        if len(all_instructions) != len(instruction_labels) or len(all_instructions) == 0:
-            continue
+        # if len(all_instructions) != len(instruction_labels) or len(all_instructions) == 0:
+        #     continue
+        assert len(all_instructions) == len(instruction_labels) and len(all_instructions) != 0, f"{row, file}"
         if follows_all:
             followed += 1
         total_prompts += 1
@@ -51,11 +54,10 @@ def evaluate_main(response_file: Path, model_name, infobench):
     print(f"{HIGHLIGHT}Response File: {response_file}{RESET}")
     print(f"{'-'*40}")
 
-    # print(f"{response_file}")
     assert total_prompts != 0, f"{response_file}"
     total_accuracy = followed / total_prompts
     instructions_per_prompt = instruction_per_prompt / total_prompts
-
+    
     print(f"{HIGHLIGHT}{'Total Accuracy:':<30}{RESET} {total_accuracy:.2%}")
     print(f"{HIGHLIGHT}{'Total Instructions Followed:':<30}{RESET} {instructions_followed} out of {total_instructions}")
     print(f"{HIGHLIGHT}{'Instructions Followed per Prompt:':<30}{RESET} {instructions_per_prompt:.2%}")

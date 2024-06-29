@@ -2,9 +2,10 @@
 
 # Predefined list of directories
 directories=(
-    "datasets/InfoToIfeval/response/infobench_subset"
-    "datasets/MMLU_InfoBench/response/mmlu_info"
-    "datasets/MMLU_InfoBench_Complex/response"
+    # "datasets/InfoToIfeval/response/infobench_subset"
+    # "datasets/MMLU_InfoBench/response/mmlu_info"
+    # "datasets/MMLU_InfoBench_Complex/response"
+    "datasets/MATHWELL_Info/response/mathwell_info"
     # Add more directories as needed
 )
 

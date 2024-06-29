@@ -1,0 +1,410 @@
+            Analysis Results            
+========================================
+Model: llama3
+Response File: datasets/MATHWELL_Info/response/mathwell_info/llama3/mistral_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                7.00%
+followed:                      7
+Total promptts:                100
+Total Instructions Followed:   120 out of 283
+Instructions Followed per Prompt: 42.33%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+I                              30.39%
+D                              49.17%
+========================================
+
+            Analysis Results            
+========================================
+Model: gemma
+Response File: datasets/MATHWELL_Info/response/mathwell_info/gemma/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                11.00%
+followed:                      11
+Total promptts:                100
+Total Instructions Followed:   151 out of 283
+Instructions Followed per Prompt: 53.33%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+I                              30.39%
+D                              66.30%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MATHWELL_Info/response/mathwell_info/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                15.00%
+followed:                      15
+Total promptts:                100
+Total Instructions Followed:   164 out of 283
+Instructions Followed per Prompt: 57.08%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+I                              36.27%
+D                              70.17%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MATHWELL_Info/response/mathwell_info/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                15.00%
+followed:                      15
+Total promptts:                100
+Total Instructions Followed:   160 out of 283
+Instructions Followed per Prompt: 55.67%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+I                              26.47%
+D                              73.48%
+========================================
+
+            Analysis Results            
+========================================
+Model: mistral
+Response File: datasets/MATHWELL_Info/response/mathwell_info/mistral/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                14.00%
+followed:                      14
+Total promptts:                100
+Total Instructions Followed:   154 out of 283
+Instructions Followed per Prompt: 54.67%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+I                              24.51%
+D                              71.27%
+========================================
+
+            Analysis Results            
+========================================
+Model: llama3
+Response File: datasets/MMLU_InfoBench/response/mmlu_info/llama3/mistral_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                19.84%
+followed:                      49
+Total promptts:                247
+Total Instructions Followed:   499 out of 822
+Instructions Followed per Prompt: 61.10%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+D                              60.04%
+I                              57.14%
+A                              70.69%
+========================================
+
+            Analysis Results            
+========================================
+Model: gemma
+Response File: datasets/MMLU_InfoBench/response/mmlu_info/gemma/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                10.53%
+followed:                      26
+Total promptts:                247
+Total Instructions Followed:   462 out of 822
+Instructions Followed per Prompt: 56.20%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+D                              60.04%
+I                              52.94%
+A                              47.41%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/MMLU_InfoBench/response/mmlu_info/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                14.17%
+followed:                      35
+Total promptts:                247
+Total Instructions Followed:   523 out of 822
+Instructions Followed per Prompt: 63.59%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+D                              72.86%
+I                              54.20%
+A                              45.69%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/MMLU_InfoBench/response/mmlu_info/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                14.57%
+followed:                      36
+Total promptts:                247
+Total Instructions Followed:   513 out of 822
+Instructions Followed per Prompt: 62.15%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+D                              67.52%
+I                              57.98%
+A                              50.86%
+========================================
+
+            Analysis Results            
+========================================
+Model: mistral
+Response File: datasets/MMLU_InfoBench/response/mmlu_info/mistral/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                8.91%
+followed:                      22
+Total promptts:                247
+Total Instructions Followed:   463 out of 822
+Instructions Followed per Prompt: 56.41%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+D                              63.25%
+I                              48.32%
+A                              44.83%
+========================================
+
+            Analysis Results            
+========================================
+Model: llama3
+Response File: datasets/InfoToIfeval/response/infobench_subset/llama3/mistral_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                56.00%
+followed:                      56
+Total promptts:                100
+Total Instructions Followed:   385 out of 447
+Instructions Followed per Prompt: 87.17%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+D                              90.61%
+I                              80.88%
+A                              79.63%
+C                              0.00%
+W                              100.00%
+T                              100.00%
+H                              100.00%
+F                              0.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gemma
+Response File: datasets/InfoToIfeval/response/infobench_subset/gemma/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                54.00%
+followed:                      54
+Total promptts:                100
+Total Instructions Followed:   377 out of 447
+Instructions Followed per Prompt: 86.17%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+D                              87.76%
+I                              80.88%
+A                              79.63%
+C                              100.00%
+W                              33.33%
+T                              50.00%
+H                              100.00%
+F                              100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/InfoToIfeval/response/infobench_subset/gpt4o/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                63.00%
+followed:                      63
+Total promptts:                100
+Total Instructions Followed:   401 out of 447
+Instructions Followed per Prompt: 90.06%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+D                              93.47%
+I                              86.76%
+A                              83.33%
+C                              100.00%
+W                              33.33%
+T                              50.00%
+H                              100.00%
+F                              100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/InfoToIfeval/response/infobench_subset/gpt4/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                61.00%
+followed:                      61
+Total promptts:                100
+Total Instructions Followed:   397 out of 447
+Instructions Followed per Prompt: 89.19%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+D                              93.06%
+I                              83.82%
+A                              87.04%
+C                              100.00%
+W                              33.33%
+T                              50.00%
+H                              80.00%
+F                              100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: mistral
+Response File: datasets/InfoToIfeval/response/infobench_subset/mistral/llama3_DecomposeEval.jsonl
+----------------------------------------
+Total Accuracy:                54.00%
+followed:                      54
+Total promptts:                100
+Total Instructions Followed:   378 out of 447
+Instructions Followed per Prompt: 86.46%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+D                              86.53%
+I                              81.62%
+A                              85.19%
+C                              100.00%
+W                              33.33%
+T                              50.00%
+H                              100.00%
+F                              100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: llama3
+Response File: datasets/InfoToIfeval/response/infoToIfeval/llama3/eval_results_strict.jsonl
+----------------------------------------
+Total Accuracy:                53.00%
+followed:                      53
+Total promptts:                100
+Total Instructions Followed:   71 out of 122
+Instructions Followed per Prompt: 58.17%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+length_constraints             38.24%
+detectable_format              69.39%
+change_case                    37.50%
+keywords                       60.00%
+detectable_content             100.00%
+combination                    40.00%
+startend                       60.00%
+punctuation                    50.00%
+language                       100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gemma
+Response File: datasets/InfoToIfeval/response/infoToIfeval/gemma/eval_results_strict.jsonl
+----------------------------------------
+Total Accuracy:                63.00%
+followed:                      63
+Total promptts:                100
+Total Instructions Followed:   82 out of 122
+Instructions Followed per Prompt: 67.33%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+length_constraints             61.76%
+detectable_format              81.63%
+change_case                    12.50%
+keywords                       60.00%
+detectable_content             85.71%
+combination                    20.00%
+startend                       80.00%
+punctuation                    50.00%
+language                       100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4o
+Response File: datasets/InfoToIfeval/response/infoToIfeval/gpt4o/eval_results_strict.jsonl
+----------------------------------------
+Total Accuracy:                66.00%
+followed:                      66
+Total promptts:                100
+Total Instructions Followed:   86 out of 122
+Instructions Followed per Prompt: 70.67%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+length_constraints             55.88%
+detectable_format              75.51%
+change_case                    37.50%
+keywords                       70.00%
+detectable_content             100.00%
+combination                    80.00%
+startend                       100.00%
+punctuation                    100.00%
+language                       100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: gpt4
+Response File: datasets/InfoToIfeval/response/infoToIfeval/gpt4/eval_results_strict.jsonl
+----------------------------------------
+Total Accuracy:                67.00%
+followed:                      67
+Total promptts:                100
+Total Instructions Followed:   87 out of 122
+Instructions Followed per Prompt: 70.17%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+length_constraints             61.76%
+detectable_format              73.47%
+change_case                    37.50%
+keywords                       70.00%
+detectable_content             100.00%
+combination                    80.00%
+startend                       100.00%
+punctuation                    100.00%
+language                       100.00%
+========================================
+
+            Analysis Results            
+========================================
+Model: mistral
+Response File: datasets/InfoToIfeval/response/infoToIfeval/mistral/eval_results_strict.jsonl
+----------------------------------------
+Total Accuracy:                53.00%
+followed:                      53
+Total promptts:                100
+Total Instructions Followed:   71 out of 122
+Instructions Followed per Prompt: 58.83%
+----------------------------------------
+     Accuracy per Instruction Type      
+----------------------------------------
+length_constraints             41.18%
+detectable_format              71.43%
+change_case                    25.00%
+keywords                       80.00%
+detectable_content             100.00%
+combination                    0.00%
+startend                       80.00%
+punctuation                    0.00%
+language                       50.00%
+========================================
+

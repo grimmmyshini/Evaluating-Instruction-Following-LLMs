@@ -44,7 +44,7 @@ def gen_infobench_response(input_file_path : Path, output_path : Path, model : s
         # Append the updated data point to the output file
         append_jsonl(output_file, data_point)
 
-input_dirs = ['datasets/MMLU_InfoBench', 'datasets/MMLU_InfoBench_Complex']
+input_dirs = ['datasets/MATHWELL_Info']
 
 for input_dir in input_dirs:
     input_path = Path(input_dir)
@@ -57,6 +57,6 @@ for input_dir in input_dirs:
             data = json.load(file)
 
             for model in data["models"]:
-                if "gpt" in model: continue #FIXME: Remove line
+                # if "gpt" in model: continue #FIXME: Remove line
                 print(f"Running model {model}")
                 gen_infobench_response(input_file, output_path, model)

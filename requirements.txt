@@ -7,3 +7,4 @@ absl-py
 immutabledict
 nltk
 numpy
+matplotlib

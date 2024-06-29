@@ -1,0 +1,4 @@
+Model,all at once,one at a time,one at a time (aided)
+gemma, 62.56 ±6.48, 47.22 ±7.09, 48.89 ±7.96
+llama3, 74.44 ±8.22, 77.56 ±8.22, 77.67 ±7.64
+mistral, 63.78 ±7.31, 52.22 ±8.36, 56.67 ±8.80

@@ -68,7 +68,7 @@ def evaluate_main(response_file: Path, model_name, infobench):
     #     print(f"{HIGHLIGHT}{key:<30}{RESET} {accuracy:.2%}")
 
     # print(f"{'='*40}\n")
-    return instr_following
+    return total_accuracy
 
 
 is_infobench = False
@@ -90,18 +90,19 @@ def get_avg_eval(model_dir):
         if len(eval_files) != 1:
             raise Exception(f"Need 1 {eval_file_glob} file, found {len(eval_files)} at {run_dir}")
         accuracy = evaluate_main(eval_files[0], model_dir.stem, is_infobench)
-        accs.append(accuracy)
+        accs.append(accuracy * 100)
     
     avg = np.mean(accs)
     std = np.std(accs)
-    return avg, std
+    ptp = np.ptp(accs)
+    return avg, std, ptp
 
 
 
 allowed_models = ['gpt4', 'gpt4o', 'llama3', 'mistral', 'gemma']
 comp_levels = list(range(1, 7))
-print(' ' * (10 + 3), "  Complexity Levels      Respective Std Devs")
-print(' ' * (10 + 3), "".join((f"{i}   " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)))
+print(' ' * (10 + 3), "  Complexity Levels      Respective Std Dev                            Respective Ranges")
+print(' ' * (10 + 3), "".join((f"{i}   " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)))
 for model in allowed_models:
     for d in range(1, 5):
         if d == 3:
@@ -111,10 +112,12 @@ for model in allowed_models:
         else:
             diff = d
         stds = []
+        ptps = []
         for comp in comp_levels:
             model_dir = Path(f'{dataset_dir}/response/mat_d{diff}_c{comp}/{model}')
-            accuracy, std = get_avg_eval(model_dir)
+            accuracy, std, ptp = get_avg_eval(model_dir)
             stds.append(std)
+            ptps.append(ptp)
             # printing logic
             if comp == comp_levels[0]:
                 if diff == 1:
@@ -129,8 +132,8 @@ for model in allowed_models:
                 if diff == 4:
                     print('III ', end='')
             
-            print((f"{int(accuracy * 100)}").ljust(4), end='')
-        print("", " ".join([f'{(f"{std:.02}"):<6}' for std in stds]))
+            print((f"{int(accuracy)}").ljust(4), end='')
+        print("", " ".join([f'{(f"{std:3.2f}"):<6}' for std in stds]), " ".join([f'{(f"{ptp:3.2f}"):<6}' for ptp in ptps]))
 
 
 # for file in evaluate_files_info:

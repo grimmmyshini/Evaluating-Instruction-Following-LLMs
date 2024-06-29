@@ -4,7 +4,8 @@
 BASE_DIR="datasets/ReorderingAnalysis_Ifeval"  # Replace with the actual base directory path
 
 find "$BASE_DIR" -type f -name "output.jsonl" | while read -r OUTPUT_JSONL_FILE; do
-    PARENT_DIR=$(dirname "$OUTPUT_JSONL_FILE")
+    RUN_DIR=$(dirname "$OUTPUT_JSONL_FILE")
+    PARENT_DIR=$(dirname "$RUN_DIR")
     GRAND_PARENT_DIR=$(dirname "$PARENT_DIR")
     GRAND_PARENT_DIR_NAME=$(basename "$GRAND_PARENT_DIR")
     
@@ -13,7 +14,7 @@ find "$BASE_DIR" -type f -name "output.jsonl" | while read -r OUTPUT_JSONL_FILE;
     CLEANED_DIR_NAME=${CLEANED_DIR_NAME/_partwise/}
     
     INPUT_DATA_FILE="$BASE_DIR/$CLEANED_DIR_NAME.jsonl"
-    OUTPUT_JSONL_DIR="$PARENT_DIR"
+    OUTPUT_JSONL_DIR="$RUN_DIR"
 
     if [[ -f "$INPUT_DATA_FILE" ]]; then
         echo "Processing: $GRAND_PARENT_DIR_NAME"

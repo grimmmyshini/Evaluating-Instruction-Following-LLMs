@@ -173,11 +173,11 @@ def run_evaluation(client, in_path, o_dir, eval_model="gpt-4-0314", temperature=
     return _opath
 
 def main_run(args):
-    client = OpenAI(api_key=args.api_key, base_url="http://localhost:11434/v1")
     results_file = args.input
     output_dir = args.output_dir
     eval_model = args.model
     temperature = args.temperature
+    client = OpenAI(api_key=args.api_key, base_url=("http://localhost:11434/v1" if not "gpt" in eval_model else None))
     
     if not exists(results_file):
         print(f"results_dir {results_file} not exists")

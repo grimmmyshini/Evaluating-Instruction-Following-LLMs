@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from colorama import Fore, Style, init
+import numpy as np
 
 def evaluate_main(response_file: Path, model_name, infobench):
     with open(response_file, 'r') as json_file:
@@ -78,10 +79,29 @@ else:
     eval_file_glob = 'eval_results_strict.jsonl'
     dataset_dir = 'datasets/MMLU_Ifeval_Complex'
 
+def get_avg_eval(model_dir):
+    run_dirs = list(model_dir.glob("run*"))
+    if len(run_dirs) == 0:
+        run_dirs = [model_dir]
+    
+    accs  = []
+    for run_dir in run_dirs:
+        eval_files = list(run_dir.glob(eval_file_glob))
+        if len(eval_files) != 1:
+            raise Exception(f"Need 1 {eval_file_glob} file, found {len(eval_files)} at {run_dir}")
+        accuracy = evaluate_main(eval_files[0], model_dir.stem, is_infobench)
+        accs.append(accuracy)
+    
+    avg = np.mean(accs)
+    std = np.std(accs)
+    return avg, std
+
+
+
 allowed_models = ['gpt4', 'gpt4o', 'llama3', 'mistral', 'gemma']
-comp_levels = list(range(2, 7))
-print(' ' * (10 + 3), "  Complexity Levels")
-print(' ' * (10 + 3), "".join((f"{i}   " for i in comp_levels)))
+comp_levels = list(range(1, 7))
+print(' ' * (10 + 3), "  Complexity Levels      Respective Std Devs")
+print(' ' * (10 + 3), "".join((f"{i}   " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)))
 for model in allowed_models:
     for d in range(1, 5):
         if d == 3:
@@ -90,13 +110,11 @@ for model in allowed_models:
             diff = 3
         else:
             diff = d
+        stds = []
         for comp in comp_levels:
-            eval_dir = Path(f'{dataset_dir}/response/mat_d{diff}_c{comp}/{model}')
-            eval_files = list(eval_dir.glob(eval_file_glob))
-            if len(eval_files) != 1:
-                raise Exception(f"Need 1 {eval_file_glob} file, found {len(eval_files)} at {eval_dir}")
-            accuracy = evaluate_main(eval_files[0], eval_dir.stem, is_infobench)
-
+            model_dir = Path(f'{dataset_dir}/response/mat_d{diff}_c{comp}/{model}')
+            accuracy, std = get_avg_eval(model_dir)
+            stds.append(std)
             # printing logic
             if comp == comp_levels[0]:
                 if diff == 1:
@@ -112,7 +130,7 @@ for model in allowed_models:
                     print('III ', end='')
             
             print((f"{int(accuracy * 100)}").ljust(4), end='')
-        print()
+        print("", " ".join([f'{(f"{std:.02}"):<6}' for std in stds]))
 
 
 # for file in evaluate_files_info:

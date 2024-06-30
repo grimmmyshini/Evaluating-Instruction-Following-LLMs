@@ -1,9 +1,10 @@
 #!/bin/bash
 
 directories=(
-    "datasets/MATHWELL_Info_Ifeval"
-    "datasets/MMLU_Info_Ifeval"
-    "datasets/InfoToIfeval/response/infoToIfeval"
+    # "datasets/MATHWELL_Info_Ifeval"
+    # "datasets/MMLU_Info_Ifeval"
+    # "datasets/InfoToIfeval/response/infoToIfeval"
+    "datasets/MMLU_Ifeval_Complex"
 )
 
 
@@ -11,7 +12,7 @@ directories=(
 for BASE_DIR in "${directories[@]}"; do
     find "$BASE_DIR" -type f -name "output.jsonl" | while read -r OUTPUT_JSONL_FILE; do
         RUN_DIR=$(dirname "$OUTPUT_JSONL_FILE")
-        if [[ $RUN_DIR == run* ]]; then
+        if [[ $RUN_DIR == */run* ]]; then
             PARENT_DIR=$(dirname "$RUN_DIR")
         else
             PARENT_DIR="$RUN_DIR"

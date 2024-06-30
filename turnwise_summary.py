@@ -14,7 +14,7 @@ def calc_percentage_following_instrs(file_path):
         for line in file:
             data = json.loads(line)
             follow_instruction_list = data['follow_instruction_list']
-            percentage = sum(follow_instruction_list) / len(follow_instruction_list) * 100
+            percentage = int(sum(follow_instruction_list) == len(follow_instruction_list))
             percentages.append(percentage)
     
     return percentages
@@ -103,7 +103,7 @@ for suffix, models in results.items():
         averages[suffix][model]["std"] = sum(percentages["std"])
 
 # Write the results to a CSV file
-csv_file = base_dir / "results.csv"
+csv_file = base_dir.parent.parent / "results.csv"
 with csv_file.open('w', newline='') as file:
     writer = csv.writer(file)
     
@@ -114,7 +114,7 @@ with csv_file.open('w', newline='') as file:
     # Write the data rows
     all_models = set(model for models in averages.values() for model in models)
     for model in sorted(all_models):
-        row = [model] + [f" {averages[suffix][model]["mean"]:.2f} ±{averages[suffix][model]["se"]:.2f}" for suffix in headers[1:]]
+        row = [model] + [f" {averages[suffix][model]["mean"]:.2f} ±{averages[suffix][model]["std"]:.2f}" for suffix in headers[1:]]
         writer.writerow(row)
 
 print(f"Results have been written to {csv_file}")

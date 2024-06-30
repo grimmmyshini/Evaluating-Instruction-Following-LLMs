@@ -163,7 +163,7 @@ for idx, model in enumerate(models):
     error_pos.extend(bar_positions)
     plt.bar(bar_positions, freq_pct, width=bar_width, label=labels[model], color=colors[idx])
     
-plt.errorbar(error_pos, freq_pcts, yerr=errors, fmt='o', color='#ef476f', label='Standard Errors')
+# plt.errorbar(error_pos, freq_pcts, yerr=errors, fmt='o', color='#ef476f', label='Standard Errors')
 
 # Add x-ticks and labels
 plt.xlabel('Peak To Peak Diff in Per Prompt Acc. (mean over 3 runs)')
@@ -176,7 +176,7 @@ plt.legend()
 plt.tight_layout()
 
 # Save the plot
-histogram_file = base_dir / 'reordering_hist.pdf'
+histogram_file = base_dir.parent / 'reordering_hist.pdf'
 plt.savefig(histogram_file)
 plt.close()
 

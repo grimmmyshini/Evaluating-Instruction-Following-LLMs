@@ -95,14 +95,20 @@ def get_avg_eval(model_dir):
     avg = np.mean(accs)
     std = np.std(accs)
     ptp = np.ptp(accs)
-    return avg, std, ptp
+    se = np.square(std) / len(accs)
+    return {
+        "mean" : avg,
+        "std"  : std,
+        "se"   : se,
+        "ptp"  : ptp
+    }
 
 
 
 allowed_models = ['gpt4', 'gpt4o', 'llama3', 'mistral', 'gemma']
 comp_levels = list(range(1, 7))
 print(' ' * (10 + 3), "  Complexity Levels      Respective Std Dev                            Respective Ranges")
-print(' ' * (10 + 3), "".join((f"{i}   " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)))
+print(' ' * (10 + 3), "".join((f"{i}     " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)))
 for model in allowed_models:
     for d in range(1, 5):
         if d == 3:
@@ -115,9 +121,9 @@ for model in allowed_models:
         ptps = []
         for comp in comp_levels:
             model_dir = Path(f'{dataset_dir}/response/mat_d{diff}_c{comp}/{model}')
-            accuracy, std, ptp = get_avg_eval(model_dir)
-            stds.append(std)
-            ptps.append(ptp)
+            out = get_avg_eval(model_dir)
+            stds.append(out["std"])
+            ptps.append(out["ptp"])
             # printing logic
             if comp == comp_levels[0]:
                 if diff == 1:
@@ -132,7 +138,7 @@ for model in allowed_models:
                 if diff == 4:
                     print('III ', end='')
             
-            print((f"{int(accuracy)}").ljust(4), end='')
+            print((f"{int(out["mean"]):2} ± {out["se"]:.2f}  ").ljust(4), end='')
         print("", " ".join([f'{(f"{std:3.2f}"):<6}' for std in stds]), " ".join([f'{(f"{ptp:3.2f}"):<6}' for ptp in ptps]))
 
 

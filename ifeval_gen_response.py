@@ -48,35 +48,44 @@ def process_data(input_file_path, output_file_path, model):
 
             
 
-def generate_response(input_file_path, output_path, run=None):
+def generate_response(input_file_path, output_path):
     with open("config.json", 'r') as file:
         data = json.load(file)
 
         output_path.mkdir(exist_ok=True)
         for model in data["models"]:
-            if "gpt4o" not in model: continue # FIXME: Remove line
-            print(f"Running model {model}")
             output_dir_path = output_path / model
             output_dir_path.mkdir(exist_ok=True)
-            if run is None:
-                output_file_path = output_dir_path / "output.jsonl"
+            if "Complex" in str(input_file_path):
+                if model == "gpt4": continue
+                for run in range(1, 6):
+                    (output_dir_path / f"run{run}").mkdir(exist_ok=True)
+                    output_file_path = output_dir_path / f"run{run}" / "output.jsonl"
+                    print(f"Saving to {output_file_path}")
+                    process_data(input_file_path, output_file_path, model)
             else:
-                (output_dir_path / f"run{run}").mkdir(exist_ok=True)
-                output_file_path = output_dir_path / f"run{run}" / "output.jsonl"
-            process_data(input_file_path, output_file_path, model)
+                output_file_path = output_dir_path / "output.jsonl"
+                print(f"Saving to {output_file_path}")
+                process_data(input_file_path, output_file_path, model)
+                
 
 # input_path = Path('datasets/MMLU_Ifeval_Complex')
 # output_path = Path('datasets/MMLU_Ifeval_Complex/response')
 
-input_dirs = ['datasets/MMLU_Ifeval_Complex'] #, 'datasets/MATHWELL_Ifeval', 'datasets/MMLU_Ifeval', 'datasets/InfoToIfeval', 'datasets/ReorderingAnalysis_Ifeval']
+inputs = ['datasets/MMLU_Ifeval_Complex', 'datasets/MATHWELL_Ifeval', 'datasets/MMLU_Ifeval', 'datasets/IfevalToInfo/ifeval_subset.jsonl', 'datasets/InfoToIfeval/infoToIfeval.jsonl']
 
-for run in range(1, 6):
-    print(f"\n====================Run {run}==================\n")
-    for input_dir in input_dirs:
-        print(f"Generating responses for jsonl files in {input_dir} directory")
-        input_path = Path(input_dir)
+
+for input in inputs:
+    print(f"Generating responses for jsonl files in {input} directory")
+    input_path = Path(input)
+    if input_path.is_dir():
         response_path = input_path / "response"
-        response_path.mkdir(exist_ok=True)
-        for input_file_path in input_path.glob("*.jsonl"):
-            output_path = response_path / input_file_path.stem
-            generate_response(input_file_path, output_path, run=run)
+        files = input_path.glob("*.jsonl")
+    else:
+        response_path = input_path.parent / "response"
+        files = [input_path]
+    
+    response_path.mkdir(exist_ok=True)
+    for input_file_path in files:
+        output_path = response_path / input_file_path.stem
+        generate_response(input_file_path, output_path)

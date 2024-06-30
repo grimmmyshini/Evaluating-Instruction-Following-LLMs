@@ -44,7 +44,7 @@ def gen_infobench_response(input_file_path : Path, output_path : Path, model : s
         # Append the updated data point to the output file
         append_jsonl(output_file, data_point)
 
-input_dirs = ['datasets/MATHWELL_Info']
+input_dirs = ['datasets/MATHWELL_Info', 'datasets/MMLU_InfoBench', 'datasets/IfevalToInfo/IFEvaltoInfo.jsonl', 'datasets/InfoToIfeval/infobench_subset.jsonl']
 
 for input_dir in input_dirs:
     input_path = Path(input_dir)

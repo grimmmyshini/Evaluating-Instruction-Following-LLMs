@@ -1,10 +1,14 @@
 #!/bin/bash
 
 directories=(
-    # "datasets/MATHWELL_Info_Ifeval"
-    # "datasets/MMLU_Info_Ifeval"
-    # "datasets/InfoToIfeval/response/infoToIfeval"
+    "datasets/MATHWELL_Info_Ifeval"
+    "datasets/MMLU_Info_Ifeval"
+    "datasets/MATHWELL_Ifeval"
+    "datasets/MMLU_Ifeval"
+    "datasets/InfoToIfeval/response/infoToIfeval"
+    "datasets/IfevalToInfo/response/ifeval_subset"
     "datasets/MMLU_Ifeval_Complex"
+    "datasets/ReorderingAnalysis_Ifeval"
 )
 
 

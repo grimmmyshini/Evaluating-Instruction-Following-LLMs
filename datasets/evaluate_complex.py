@@ -107,8 +107,8 @@ def get_avg_eval(model_dir):
 
 allowed_models = ['gpt4', 'gpt4o', 'llama3', 'mistral', 'gemma']
 comp_levels = list(range(1, 7))
-print(' ' * (10 + 3), "  Complexity Levels      Respective Std Dev                            Respective Ranges")
-print(' ' * (10 + 3), "".join((f"{i}     " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)))
+print(' ' * (10 + 3), "  Complexity Levels  ")#, "   Respective Std Dev                            Respective Ranges")
+print(' ' * (10 + 3), "".join((f"{i}      " for i in comp_levels)))#, "".join((f"{i}      " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)))
 for model in allowed_models:
     for d in range(1, 5):
         if d == 3:
@@ -138,8 +138,8 @@ for model in allowed_models:
                 if diff == 4:
                     print('III ', end='')
             
-            print((f"{int(out["mean"]):2} ± {out["se"]:.2f}  ").ljust(4), end='')
-        print("", " ".join([f'{(f"{std:3.2f}"):<6}' for std in stds]), " ".join([f'{(f"{ptp:3.2f}"):<6}' for ptp in ptps]))
+            print((f"{int(np.round(out["mean"])):2} ±{int(np.round(out["se"])):1}  ").ljust(4), end='')
+        print("")#, " ".join([f'{(f"{std:3.2f}"):<6}' for std in stds]), " ".join([f'{(f"{ptp:3.2f}"):<6}' for ptp in ptps]))
 
 
 # for file in evaluate_files_info:

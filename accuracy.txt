@@ -293,15 +293,14 @@ datasets/MMLU_InfoBench/response/mmlu_info/llama3/mistral_DecomposeEval.jsonl
 Model: llama3
 Response File: datasets/MMLU_InfoBench/response/mmlu_info/llama3/mistral_DecomposeEval.jsonl
 ----------------------------------------
-Total Accuracy:                19.84%
-Total Instructions Followed:   499 out of 822
-Instructions Followed per Prompt: 61.10%
+Total Accuracy:                14.00%
+Total Instructions Followed:   153 out of 282
+Instructions Followed per Prompt: 54.75%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-D                              60.04%
-I                              57.14%
-A                              70.69%
+D                              57.92%
+I                              45.00%
 ========================================
 
 datasets/MMLU_InfoBench/response/mmlu_info/gemma/llama3_DecomposeEval.jsonl
@@ -310,15 +309,14 @@ datasets/MMLU_InfoBench/response/mmlu_info/gemma/llama3_DecomposeEval.jsonl
 Model: gemma
 Response File: datasets/MMLU_InfoBench/response/mmlu_info/gemma/llama3_DecomposeEval.jsonl
 ----------------------------------------
-Total Accuracy:                10.53%
-Total Instructions Followed:   462 out of 822
-Instructions Followed per Prompt: 56.20%
+Total Accuracy:                13.00%
+Total Instructions Followed:   149 out of 282
+Instructions Followed per Prompt: 52.25%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-D                              60.04%
-I                              52.94%
-A                              47.41%
+D                              57.92%
+I                              40.00%
 ========================================
 
 datasets/MMLU_InfoBench/response/mmlu_info/gpt4o/llama3_DecomposeEval.jsonl
@@ -327,15 +325,14 @@ datasets/MMLU_InfoBench/response/mmlu_info/gpt4o/llama3_DecomposeEval.jsonl
 Model: gpt4o
 Response File: datasets/MMLU_InfoBench/response/mmlu_info/gpt4o/llama3_DecomposeEval.jsonl
 ----------------------------------------
-Total Accuracy:                14.17%
-Total Instructions Followed:   523 out of 822
-Instructions Followed per Prompt: 63.59%
+Total Accuracy:                20.00%
+Total Instructions Followed:   174 out of 282
+Instructions Followed per Prompt: 61.42%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-D                              72.86%
-I                              54.20%
-A                              45.69%
+D                              70.30%
+I                              40.00%
 ========================================
 
 datasets/MMLU_InfoBench/response/mmlu_info/gpt4/llama3_DecomposeEval.jsonl
@@ -344,15 +341,14 @@ datasets/MMLU_InfoBench/response/mmlu_info/gpt4/llama3_DecomposeEval.jsonl
 Model: gpt4
 Response File: datasets/MMLU_InfoBench/response/mmlu_info/gpt4/llama3_DecomposeEval.jsonl
 ----------------------------------------
-Total Accuracy:                14.57%
-Total Instructions Followed:   513 out of 822
-Instructions Followed per Prompt: 62.15%
+Total Accuracy:                22.00%
+Total Instructions Followed:   181 out of 282
+Instructions Followed per Prompt: 64.25%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-D                              67.52%
-I                              57.98%
-A                              50.86%
+D                              73.27%
+I                              41.25%
 ========================================
 
 datasets/MMLU_InfoBench/response/mmlu_info/mistral/llama3_DecomposeEval.jsonl
@@ -361,15 +357,14 @@ datasets/MMLU_InfoBench/response/mmlu_info/mistral/llama3_DecomposeEval.jsonl
 Model: mistral
 Response File: datasets/MMLU_InfoBench/response/mmlu_info/mistral/llama3_DecomposeEval.jsonl
 ----------------------------------------
-Total Accuracy:                8.91%
-Total Instructions Followed:   463 out of 822
-Instructions Followed per Prompt: 56.41%
+Total Accuracy:                13.00%
+Total Instructions Followed:   156 out of 282
+Instructions Followed per Prompt: 54.75%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-D                              63.25%
-I                              48.32%
-A                              44.83%
+D                              64.85%
+I                              31.25%
 ========================================
 
 datasets/InfoToIfeval/response/infobench_subset/llama3/mistral_DecomposeEval.jsonl
@@ -603,20 +598,20 @@ datasets/MMLU_Ifeval/response/mmlu_ifval/llama3/eval_results_strict.jsonl
 Model: llama3
 Response File: datasets/MMLU_Ifeval/response/mmlu_ifval/llama3/eval_results_strict.jsonl
 ----------------------------------------
-Total Accuracy:                35.46%
-Total Instructions Followed:   525 out of 756
-Instructions Followed per Prompt: 70.65%
+Total Accuracy:                37.00%
+Total Instructions Followed:   206 out of 299
+Instructions Followed per Prompt: 69.58%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-keywords                       80.98%
-combination                    52.00%
-detectable_format              78.44%
-startend                       78.57%
-length_constraints             39.62%
-change_case                    80.61%
-detectable_content             70.97%
-punctuation                    27.27%
+keywords                       81.71%
+combination                    41.67%
+detectable_format              71.43%
+startend                       85.19%
+length_constraints             46.15%
+change_case                    74.36%
+detectable_content             68.18%
+punctuation                    26.67%
 ========================================
 
 datasets/MMLU_Ifeval/response/mmlu_ifval/gemma/eval_results_strict.jsonl
@@ -625,20 +620,20 @@ datasets/MMLU_Ifeval/response/mmlu_ifval/gemma/eval_results_strict.jsonl
 Model: gemma
 Response File: datasets/MMLU_Ifeval/response/mmlu_ifval/gemma/eval_results_strict.jsonl
 ----------------------------------------
-Total Accuracy:                21.91%
-Total Instructions Followed:   435 out of 756
-Instructions Followed per Prompt: 57.84%
+Total Accuracy:                17.00%
+Total Instructions Followed:   159 out of 299
+Instructions Followed per Prompt: 52.25%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-keywords                       66.85%
-combination                    32.00%
-detectable_format              84.43%
-startend                       72.86%
-length_constraints             33.02%
-change_case                    26.53%
-detectable_content             69.35%
-punctuation                    18.18%
+keywords                       57.32%
+combination                    25.00%
+detectable_format              79.37%
+startend                       81.48%
+length_constraints             33.33%
+change_case                    23.08%
+detectable_content             59.09%
+punctuation                    13.33%
 ========================================
 
 datasets/MMLU_Ifeval/response/mmlu_ifval/gpt4o/eval_results_strict.jsonl
@@ -647,20 +642,20 @@ datasets/MMLU_Ifeval/response/mmlu_ifval/gpt4o/eval_results_strict.jsonl
 Model: gpt4o
 Response File: datasets/MMLU_Ifeval/response/mmlu_ifval/gpt4o/eval_results_strict.jsonl
 ----------------------------------------
-Total Accuracy:                51.39%
-Total Instructions Followed:   605 out of 756
-Instructions Followed per Prompt: 81.21%
+Total Accuracy:                46.00%
+Total Instructions Followed:   237 out of 299
+Instructions Followed per Prompt: 79.17%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-keywords                       86.96%
-combination                    84.00%
-detectable_format              92.81%
-startend                       94.29%
-length_constraints             52.83%
-change_case                    73.47%
-detectable_content             87.10%
-punctuation                    47.73%
+keywords                       90.24%
+combination                    83.33%
+detectable_format              88.89%
+startend                       100.00%
+length_constraints             53.85%
+change_case                    61.54%
+detectable_content             81.82%
+punctuation                    46.67%
 ========================================
 
 datasets/MMLU_Ifeval/response/mmlu_ifval/gpt4/eval_results_strict.jsonl
@@ -669,20 +664,20 @@ datasets/MMLU_Ifeval/response/mmlu_ifval/gpt4/eval_results_strict.jsonl
 Model: gpt4
 Response File: datasets/MMLU_Ifeval/response/mmlu_ifval/gpt4/eval_results_strict.jsonl
 ----------------------------------------
-Total Accuracy:                50.20%
-Total Instructions Followed:   605 out of 756
-Instructions Followed per Prompt: 80.44%
+Total Accuracy:                56.00%
+Total Instructions Followed:   246 out of 299
+Instructions Followed per Prompt: 82.42%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-keywords                       85.33%
-combination                    84.00%
-detectable_format              89.22%
-startend                       91.43%
-length_constraints             56.60%
-change_case                    67.35%
-detectable_content             90.32%
-punctuation                    72.73%
+keywords                       87.80%
+combination                    91.67%
+detectable_format              85.71%
+startend                       92.59%
+length_constraints             64.10%
+change_case                    66.67%
+detectable_content             95.45%
+punctuation                    80.00%
 ========================================
 
 datasets/MMLU_Ifeval/response/mmlu_ifval/mistral/eval_results_strict.jsonl
@@ -691,20 +686,20 @@ datasets/MMLU_Ifeval/response/mmlu_ifval/mistral/eval_results_strict.jsonl
 Model: mistral
 Response File: datasets/MMLU_Ifeval/response/mmlu_ifval/mistral/eval_results_strict.jsonl
 ----------------------------------------
-Total Accuracy:                19.52%
-Total Instructions Followed:   416 out of 756
-Instructions Followed per Prompt: 56.34%
+Total Accuracy:                18.00%
+Total Instructions Followed:   163 out of 299
+Instructions Followed per Prompt: 55.00%
 ----------------------------------------
      Accuracy per Instruction Type      
 ----------------------------------------
-keywords                       70.65%
-combination                    4.00%
-detectable_format              74.25%
-startend                       80.00%
-length_constraints             27.36%
-change_case                    40.82%
-detectable_content             56.45%
-punctuation                    2.27%
+keywords                       68.29%
+combination                    8.33%
+detectable_format              73.02%
+startend                       81.48%
+length_constraints             30.77%
+change_case                    33.33%
+detectable_content             54.55%
+punctuation                    6.67%
 ========================================
 
 datasets/MATHWELL_Ifeval/response/mathwell_ifeval/llama3/eval_results_strict.jsonl

@@ -16,7 +16,8 @@ directories = [
 base_dir = Path('datasets/ReorderingAnalysis_Ifeval/response')
 
 # Models to process
-models = ['gemma', 'llama3', 'mistral']
+labels = {'gemma': 'Gemma', 'llama3': 'LLaMA3', 'mistral':'Mistral'}
+models = list(labels.keys())
 filename = 'eval_results_strict.jsonl'
 
 # Function to read jsonl file
@@ -50,10 +51,10 @@ def get_stat_percentages(model_dir):
         percentages = [percentages[i] for percentages in all_percentages]
         all_mean.append(np.mean(percentages))
         all_std.append(np.std(percentages))
-        all_se.append(np.square(np.std(percentages)) / len(percentages))
+        all_se.append(np.std(percentages) / np.sqrt(len(percentages)))
         all_ptp.append(np.ptp(percentages))
     
-    print("PTP:", " ".join([f"{item:.2f}" for item in all_ptp]))
+    print("SE:", " ".join([f"{item:.2f}" for item in all_se]))
     
     return {
         "mean" : all_mean, 
@@ -63,18 +64,19 @@ def get_stat_percentages(model_dir):
     }
 
 
-def truncate_to_two_decimals(value):
-    return int(value * 100) / 100.0
+def truncate(value):
+    return int(value)
 
 # Initialize histogram data
 histogram_data = {model: {} for model in models}
 
-def update_hist_data(max_min_differences, model):
-    for diff in max_min_differences:
+def update_hist_data(max_min_differences, max_min_ses, model):
+    for diff, se in zip(max_min_differences, max_min_ses):
         if diff not in histogram_data[model]:
             for mod in models:
-                histogram_data[mod][diff] = 0
-        histogram_data[model][diff] += 1
+                histogram_data[mod][diff] = {"counts": 0, "se" : []}
+        histogram_data[model][diff]["counts"] += 1
+        histogram_data[model][diff]["se"].append(se)
 
 # Loop through each model
 for model in models:
@@ -117,17 +119,17 @@ for model in models:
         max_min_std = np.sqrt(np.square(stds[max_ind]) + np.square(stds[min_ind]))
         max_min_se = np.sqrt(np.square(ses[max_ind]) + np.square(ses[min_ind]))
         max_min_ptp = ptps[max_ind] + ptps[min_ind]
-        max_min_difference_truncated = truncate_to_two_decimals(max_min_difference)
-        max_min_se_truncated = truncate_to_two_decimals(max_min_se)
-        max_min_std_truncated = truncate_to_two_decimals(max_min_std)
-        max_min_ptp_truncated = truncate_to_two_decimals(max_min_ptp)
+        max_min_difference_truncated = truncate(max_min_difference)
+        max_min_se_truncated = truncate(max_min_se)
+        max_min_std_truncated = truncate(max_min_std)
+        max_min_ptp_truncated = truncate(max_min_ptp)
         max_min_differences.append(max_min_difference_truncated)
         max_min_ses.append(max_min_se_truncated)
         max_min_stds.append(max_min_std_truncated)
         max_min_ptps.append(max_min_ptp_truncated)
 
     # Update histogram data for the current model
-    update_hist_data(max_min_differences, model)
+    update_hist_data(max_min_differences, max_min_ses, model)
 
     # Output the differences for the current model (optional)
     for idx, (difference, ses, std, ptp) in enumerate(zip(max_min_differences, max_min_ses, max_min_stds, max_min_ptps)):
@@ -137,6 +139,7 @@ for model in models:
 
 # Generate and save a multi-bar histogram for all models
 plt.figure(figsize=(6, 5))
+plt.ylim(0, 55)
 
 # Define width of the bars
 bar_width = 0.2
@@ -144,17 +147,26 @@ bar_width = 0.2
 positions = list(range(len(histogram_data[models[0]].keys())))
 
 # Plotting bars for each model
-colors = ["#84DCCF", "#3A405A", "#EA526F"]
+colors = ["#ffd166", "#06d6a0", "#118ab2"]
+error_pos = []
+errors = []
+freq_pcts = []
 for idx, model in enumerate(models):
-    differences, frequencies = zip(*sorted(histogram_data[model].items()))
+    differences, items = zip(*sorted(histogram_data[model].items()))
+    frequencies = [item["counts"] for item in items]
+    errors.extend([np.mean(item["se"]) for item in items])
     frequencies = np.array(frequencies)
     freq_pct = frequencies / np.sum(frequencies) * 100
+    freq_pcts.extend(freq_pct)
     print(differences, freq_pct, frequencies)
     bar_positions = [p + bar_width * idx for p in positions]
-    plt.bar(bar_positions, freq_pct, width=bar_width, label=model, color=colors[idx])
+    error_pos.extend(bar_positions)
+    plt.bar(bar_positions, freq_pct, width=bar_width, label=labels[model], color=colors[idx])
+    
+plt.errorbar(error_pos, freq_pcts, yerr=errors, fmt='o', color='#ef476f', label='Standard Errors')
 
 # Add x-ticks and labels
-plt.xlabel('Difference in Per Prompt Acc.')
+plt.xlabel('Peak To Peak Diff in Per Prompt Acc. (mean over 3 runs)')
 plt.ylabel('% datapoints')
 plt.title('Freq. of Diff. in Per Prompt Acc. per Model with Instr. Reordering')
 plt.xticks([p + bar_width * (len(models) / 2) for p in positions], differences)

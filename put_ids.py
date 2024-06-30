@@ -1,16 +1,3 @@
-# import json
-
-# input_file_path = 'datasets/IfevalToInfo/response/IFEvaltoInfo/gemma/output.jsonl'
-# output_file_path = 'datasets/IfevalToInfo/response/IFEvaltoInfo/gemma/output_with_ids.jsonl'
-
-# with open(input_file_path, 'r') as infile, open(output_file_path, 'w') as outfile:
-#     for i, line in enumerate(infile, start=1):
-#         record = json.loads(line)
-#         record['id'] = i
-#         outfile.write(json.dumps(record) + '\n')
-
-# print(f"Updated file saved to {output_file_path}")
-
 import json
 import os
 

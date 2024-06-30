@@ -104,13 +104,21 @@ def get_avg_eval(model_dir):
     }
 
 
-
-allowed_models = ['gpt4', 'gpt4o', 'llama3', 'mistral', 'gemma']
+latex_fmt = False
+labels = {
+    'gpt4'   : 'GPT4', 
+    'gpt4o'  : 'GPT4o',
+    'llama3' : 'LLaMA3',
+    'mistral': 'Mistral',
+    'gemma'  : 'Gemma'
+}
+allowed_models = list(labels.keys())
 comp_levels = list(range(1, 7))
+diffs = list(range(1, 5))
 print(' ' * (10 + 3), "  Complexity Levels  ")#, "   Respective Std Dev                            Respective Ranges")
 print(' ' * (10 + 3), "".join((f"{i}      " for i in comp_levels)))#, "".join((f"{i}      " for i in comp_levels)), "".join((f"{i}      " for i in comp_levels)))
 for model in allowed_models:
-    for d in range(1, 5):
+    for d in diffs:
         if d == 3:
             diff = 4
         elif d == 4:
@@ -127,19 +135,19 @@ for model in allowed_models:
             # printing logic
             if comp == comp_levels[0]:
                 if diff == 1:
-                    print(model.ljust(10), end='')
-                    print('I   ', end='')
+                    print(labels[model].ljust(10), end='')
+                    print(f'{"& " if latex_fmt else ""}I   ', end='')
                 else:
                     print(' ' * 10, end='')
                 if diff == 2:
-                    print('II  ', end='')
+                    print(f'{"& " if latex_fmt else ""}II  ', end='')
                 if diff == 3:
-                    print('IV  ', end='')
+                    print(f'{"& " if latex_fmt else ""}IV  ', end='')
                 if diff == 4:
-                    print('III ', end='')
+                    print(f'{"& " if latex_fmt else ""}III ', end='')
             
-            print((f"{int(np.round(out["mean"])):2} ±{int(np.round(out["se"])):1}  ").ljust(4), end='')
-        print("")#, " ".join([f'{(f"{std:3.2f}"):<6}' for std in stds]), " ".join([f'{(f"{ptp:3.2f}"):<6}' for ptp in ptps]))
+            print((f"{'& \\colorbypct{' if latex_fmt else ''}{int(np.round(out["mean"])):2}{'} $\\pm ' if latex_fmt else ' ±'}{int(np.round(out["std"])):1}{'$' if latex_fmt else ''}  ").ljust(4), end='')
+        print(f"\\\\ {'\\hline' if d == diffs[-1] else '\\cline{2-8}'}" if latex_fmt else "")#, " ".join([f'{(f"{std:3.2f}"):<6}' for std in stds]), " ".join([f'{(f"{ptp:3.2f}"):<6}' for ptp in ptps]))
 
 
 # for file in evaluate_files_info:

@@ -29,7 +29,7 @@ def read_jsonl_file(filepath):
 def calculate_true_percentage(follow_instruction_list):
     true_count = sum(follow_instruction_list)
     total_count = len(follow_instruction_list)
-    return (true_count / total_count * 100) if total_count > 0 else 0
+    return true_count
 
 def get_stat_percentages(model_dir):
     all_percentages = []
@@ -65,7 +65,7 @@ def get_stat_percentages(model_dir):
 
 
 def truncate(value):
-    return int(value)
+    return np.round(value * 100) / 100
 
 # Initialize histogram data
 histogram_data = {model: {} for model in models}
@@ -120,9 +120,9 @@ for model in models:
         max_min_se = np.sqrt(np.square(ses[max_ind]) + np.square(ses[min_ind]))
         max_min_ptp = ptps[max_ind] + ptps[min_ind]
         max_min_difference_truncated = truncate(max_min_difference)
-        max_min_se_truncated = truncate(max_min_se)
-        max_min_std_truncated = truncate(max_min_std)
-        max_min_ptp_truncated = truncate(max_min_ptp)
+        max_min_se_truncated = max_min_se
+        max_min_std_truncated = max_min_std
+        max_min_ptp_truncated = max_min_ptp
         max_min_differences.append(max_min_difference_truncated)
         max_min_ses.append(max_min_se_truncated)
         max_min_stds.append(max_min_std_truncated)
@@ -136,6 +136,12 @@ for model in models:
         print(f"Datapoint {idx + 1}: Max-Min Percentage Difference = {difference:.2f}+-{ses:.2f}%   Std = {std:.2f}%   PTP = {ptp:.2f}%")
     
     print(f"Max std_err: {np.max(max_min_ses)}   std_dev: {np.max(max_min_stds)}   ptp:{np.max(max_min_ptps)}\n")
+
+
+
+# for diff in [2.33, 2.67, 3.00]:
+#     for mod in models:
+#         histogram_data[mod][diff] = {"counts": 0, "se" : []}
 
 # Generate and save a multi-bar histogram for all models
 plt.figure(figsize=(6, 5))
@@ -151,25 +157,28 @@ colors = ["#ffd166", "#06d6a0", "#118ab2"]
 error_pos = []
 errors = []
 freq_pcts = []
+
+        
 for idx, model in enumerate(models):
     differences, items = zip(*sorted(histogram_data[model].items()))
     frequencies = [item["counts"] for item in items]
-    errors.extend([np.mean(item["se"]) for item in items])
+    curr_errs = [np.sum(np.array(item["se"]) > 0.33) for item in items]
+    errors.extend(curr_errs)
     frequencies = np.array(frequencies)
     freq_pct = frequencies / np.sum(frequencies) * 100
     freq_pcts.extend(freq_pct)
-    print(differences, freq_pct, frequencies)
+    print([f"{item}" for item in differences], freq_pct, frequencies, [f"{item:.2f}" for item in curr_errs])
     bar_positions = [p + bar_width * idx for p in positions]
     error_pos.extend(bar_positions)
     plt.bar(bar_positions, freq_pct, width=bar_width, label=labels[model], color=colors[idx])
     
-# plt.errorbar(error_pos, freq_pcts, yerr=errors, fmt='o', color='#ef476f', label='Standard Errors')
+plt.errorbar(error_pos, freq_pcts, yerr=errors, fmt='_', color='#ef476f', label='Error', markeredgewidth=2, capsize=4)
 
 # Add x-ticks and labels
 plt.xlabel('Peak To Peak Diff in Per Prompt Acc. (mean over 3 runs)')
 plt.ylabel('% datapoints')
 plt.title('Freq. of Diff. in Per Prompt Acc. per Model with Instr. Reordering')
-plt.xticks([p + bar_width * (len(models) / 2) for p in positions], differences)
+plt.xticks([p + bar_width * (1) for p in positions], differences)
 
 # Add legend
 plt.legend()

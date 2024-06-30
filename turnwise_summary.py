@@ -33,22 +33,12 @@ def get_avg_following_instructions(model_dir):
     for percentages in all_percentages:
         assert len(percentages) == num_datapoints, "Mismatch in number of datapoints"
 
-    all_mean = []
-    all_std = []
-    all_se = []
-    all_ptp = []
-    for i in range(num_datapoints):
-        percentages = [percentages[i] for percentages in all_percentages]
-        all_mean.append(np.mean(percentages))
-        all_se.append(np.square(np.std(percentages)) / len(percentages))
-        all_std.append(np.std(percentages))
-        all_ptp.append(np.ptp(percentages))
+    all_sum = []
+    for percentages in all_percentages:
+        all_sum.append(np.sum(percentages))
 
     return {
-        "mean" : all_mean,
-        "std"  : all_std,
-        "se"   : all_se,
-        "ptp"  : all_ptp
+        "sum" : all_sum
     }
 
 # Collecting the results
@@ -78,29 +68,23 @@ for suff in ["", "_partwise", "_partwise_aided"]:
 
                 # Initialize results for this model if not already present
                 if model_dir.name not in results[suffix]:
-                    results[suffix][model_dir.name] = {}
-                    results[suffix][model_dir.name]["mean"] = []
-                    results[suffix][model_dir.name]["std"] = []
-                    results[suffix][model_dir.name]["ptp"] = []
-                    results[suffix][model_dir.name]["se"] = []
+                    results[suffix][model_dir.name] = []
                     
                     # Extend the model's list with the percentages
-                results[suffix][model_dir.name]["mean"].extend(output["mean"])
-                results[suffix][model_dir.name]["std"].extend(output["std"])
-                results[suffix][model_dir.name]["ptp"].extend(output["ptp"])
-                results[suffix][model_dir.name]["se"].extend(output["se"])
+                results[suffix][model_dir.name].extend(output["sum"])
 
 # Calculate the averages for each model and suffix
 averages = {}
 for suffix, models in results.items():
     averages[suffix] = {}
     for model, percentages in models.items():
-        assert len(percentages["mean"]) != 0
+        assert len(percentages) != 0
+        print(suffix, model, len(percentages))
         averages[suffix][model] = {}
-        averages[suffix][model]["mean"] = sum(percentages["mean"]) / len(percentages["mean"])
-        averages[suffix][model]["se"] = np.sqrt(sum(percentages["se"]) / len(percentages["se"]))
-        averages[suffix][model]["ptp"] = sum(percentages["ptp"])
-        averages[suffix][model]["std"] = sum(percentages["std"])
+        averages[suffix][model]["mean"] = np.mean(percentages)
+        averages[suffix][model]["se"] = np.std(percentages) / np.sqrt(len(percentages))
+        averages[suffix][model]["ptp"] = np.ptp(percentages)
+        averages[suffix][model]["std"] = np.std(percentages)
 
 # Write the results to a CSV file
 csv_file = base_dir.parent.parent / "results.csv"
@@ -114,7 +98,7 @@ with csv_file.open('w', newline='') as file:
     # Write the data rows
     all_models = set(model for models in averages.values() for model in models)
     for model in sorted(all_models):
-        row = [model] + [f" {averages[suffix][model]["mean"]:.2f} ±{averages[suffix][model]["std"]:.2f}" for suffix in headers[1:]]
+        row = [model] + [f" {int(np.round(averages[suffix][model]["mean"])):2} ±{int(np.round(averages[suffix][model]["std"])):1}" for suffix in headers[1:]]
         writer.writerow(row)
 
 print(f"Results have been written to {csv_file}")

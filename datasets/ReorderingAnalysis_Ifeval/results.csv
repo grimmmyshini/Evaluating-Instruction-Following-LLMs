@@ -1,4 +1,4 @@
 Model,all at once,one at a time,one at a time (aided)
-gemma, 0.25 ±6.13, 0.12 ±5.19, 0.11 ±4.24
-llama3, 0.42 ±17.44, 0.48 ±18.38, 0.50 ±13.67
-mistral, 0.29 ±10.84, 0.15 ±10.37, 0.18 ±12.26
+gemma, 25 ±0, 12 ±0, 11 ±2
+llama3, 42 ±3, 48 ±3, 50 ±1
+mistral, 29 ±1, 15 ±2, 18 ±1

@@ -175,9 +175,9 @@ for idx, model in enumerate(models):
 plt.errorbar(error_pos, freq_pcts, yerr=errors, fmt='_', color='#ef476f', label='Error', markeredgewidth=2, capsize=4)
 
 # Add x-ticks and labels
-plt.xlabel('Peak To Peak Diff in Per Prompt Acc. (mean over 3 runs)')
+plt.xlabel('Peak To Peak Diff in Instr. Followed Per Prompt (mean of 3 runs)')
 plt.ylabel('% datapoints')
-plt.title('Freq. of Diff. in Per Prompt Acc. per Model with Instr. Reordering')
+# plt.title('Freq. of Diff. in Per Prompt Acc. per Model with Instr. Reordering')
 plt.xticks([p + bar_width * (1) for p in positions], differences)
 
 # Add legend

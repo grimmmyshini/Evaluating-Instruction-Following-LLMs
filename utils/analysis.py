@@ -4,7 +4,7 @@ from pathlib import Path
 from subprocess import run
 import json
 from tqdm import tqdm
-from utils.chat import chat
+from chat import chat
 from instruction_following_eval.convert_to_ifeval import math_instrs_ok
 import instruction_following_eval.instructions
 
@@ -39,7 +39,7 @@ def analysis2(prompt_file, store_files):
         with open(store_files[i+1], 'w') as json_file:
             json.dump(record, json_file, indent=4)
 
-# analysis_2_prompts_base = '/home/grimmyshini/CS4NLP-Project/datasets/ReorderingAnalysis'
+# analysis_2_prompts_base = 'datasets/ReorderingAnalysis'
 # analysis_2_prompts = [analysis_2_prompts_base + '/mathwell_combi_' + str(i) + '.json' for i in range(0, 6)]
 # add_constraints_to_prompts_separated(init_prompts, analysis_2_prompts[0], 3, 4)
 # analysis2(analysis_2_prompts[0], analysis_2_prompts)
@@ -107,8 +107,8 @@ def analysis3(blind, prompt_file, store_file, model):
         with open(store_file, 'w') as json_file:
                 json.dump(record, json_file, indent=4)
 
-analysis_3_prompts = '/home/grimmyshini/CS4NLP-Project/datasets/RepromptingAnalysis/mathwell_separated.json'
-analysis_3_response = '/home/grimmyshini/CS4NLP-Project/datasets/RepromptingAnalysis/response/'
+analysis_3_prompts = 'datasets/RepromptingAnalysis/mathwell_separated.json'
+analysis_3_response = 'datasets/RepromptingAnalysis/response/'
 store_file = '/eval_results.json'
 model = "llama3"
 

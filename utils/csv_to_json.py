@@ -72,10 +72,10 @@ def csv_to_json_mathwell(csv_file_path, json_file_path, difficulty):
     with open(json_file_path, 'w') as json_file:
         json.dump(existing_records, json_file, indent=4)
 
-json_file_mmlu = '/home/grimmyshini/CS4NLP-Project/datasets/fomatted_prompts_mmlu.json'
-json_file_mathwell = '/home/grimmyshini/CS4NLP-Project/datasets/fomatted_prompts_mathwell.json'
+json_file_mmlu = 'datasets/fomatted_prompts_mmlu.json'
+json_file_mathwell = 'datasets/fomatted_prompts_mathwell.json'
 
-base_path_mmlu = '/home/grimmyshini/CS4NLP-Project/datasets/MMLU-Math'
+base_path_mmlu = 'datasets/MMLU-Math'
 base_path_mathwell = '/home/grimmyshini/CS4NLP-Project'
 
 # csv_to_json_mmlu(base_path_mmlu + '/test/abstract_algebra_test.csv', json_file_mmlu, 4)

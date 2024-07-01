@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 from tqdm import tqdm
-from utils.chat import chat
+from chat import chat
 
 
 # Function to read a single line from JSONL file

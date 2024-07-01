@@ -1,7 +1,7 @@
 import json
 import os
 from pathlib import Path
-from utils.chat import chat
+from chat import chat
 from tqdm import tqdm
 
 def gen_infobench_response(input_file_path : Path, output_path : Path, model : str):

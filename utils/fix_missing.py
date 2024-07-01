@@ -121,7 +121,7 @@ def combine_constraints(incomplete_file, complete_file):
     with open(complete_file, 'r') as json_file:
         complete = json.load(json_file)
 
-    with open('/home/grimmyshini/CS4NLP-Project/datasets/incomplete_prompts.json', 'r') as json_file:
+    with open('datasets/incomplete_prompts.json', 'r') as json_file:
         missing_prompts = json.load(json_file)
 
     missing_keys = []
@@ -143,4 +143,4 @@ def combine_constraints(incomplete_file, complete_file):
     with open(incomplete_file, 'w') as json_file:
         json.dump(final_records, json_file, indent=4)
 
-combine_constraints('/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mmlu.json', '/home/grimmyshini/CS4NLP-Project/datasets/constrained_prompts_mmlu_full.json')
+combine_constraints('datasets/constrained_prompts_mmlu.json', 'datasets/constrained_prompts_mmlu_full.json')

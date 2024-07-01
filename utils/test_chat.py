@@ -1,4 +1,4 @@
-from utils.chat import chat
+from chat import chat
 import json
 
 with open("config.json", 'r') as file:

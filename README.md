@@ -15,8 +15,8 @@
 
 
 This project was done for the Computational Semanticts for Natural Language Processing (CS4NLP) course. 
-The project aims to test the intruction following capabilities of LLMs using methods from recent research. 
-It gave us new insights into the LLMs as well as the methods presented in the research.
+It aims to test the instruction following capabilities of LLMs using methods from recent research. 
+This project gave us new insights into the LLMs as well as the methods presented in the research.
 
 
 The detailed description of the project and results are available in [this report](assets/report.pdf).
@@ -37,7 +37,7 @@ There are 5 experiments in the repo:
 
 ### Experiment 1: IFEval and InfoBench Evaluations
 
-In this experiment, we aim to assess two qualities relating to the instruction following capabilities of LLMs.
+In this experiment, we aim to assess two factors relating to the instruction following capabilities of LLMs.
 First, how do different LLMs perform across domains, and second, how well are the evaluation metrics able to asses this performance.
 
 *Experiment datasets*: 
@@ -64,8 +64,7 @@ datasets
 In this experiment, we try to
 assess 2 aspects that make a prompt and instruction
 set 'difficult' for an LLM to follow.
-The first aspect we assess is the inherent difficulty of the prompt. The second aspect we
-assess is the difficulty or complexity of the instructions.
+The first aspect is the inherent difficulty of the prompt and the second aspect is the difficulty or complexity of the instructions.
 
 *Experiment datasets*: 
 ```bash
@@ -100,8 +99,7 @@ datasets
 ### Experiment 3: Guided vs. Blind Reprompting
 
 In this experiment we compare two types of reprompting – Guided
-and Blind reprompting. Guided reprompting involves prompting the LLM to fix the specific instructions it did not previously follow. Whereas Blind reprompting refers to re-feeding the same
-initial prompt back to the LLM multiple times, letting it infer the issues itself.
+and Blind. Guided reprompting involves prompting the LLM to fix the specific instruction(s) it did not previously follow. Blind reprompting refers to re-feeding the same initial prompt back to the LLM multiple times, allowing it identify the failed instruction itself.
 
 *Experiment datasets*: 
 ```bash
@@ -112,8 +110,7 @@ datasets
 
 ### Experiment 4: Instruction Reordering
 
-For this experiment, we try to assess the accuracy of
-instruction following over all the possible combinations of the added instruction.
+For this experiment, we try to examine the accuracy of instruction following over all possible combinations of appended instructions.
 
 *Experiment datasets*: 
 ```bash
@@ -130,16 +127,16 @@ datasets
 ### Experiment 5: Step-by-step Prompting
 
 In this experiment, we specifically consider two broad
-ways of providing instructions to LLMs – all together or step-by-step. In the former, we simply append all instructions to the base prompt (as seen
+ways of providing instructions to LLMs – all together or step-by-step. In the former case, we simply append all instructions to the base prompt (as seen
 in earlier examples) and then feed this to the LLM.
-In the latter, we split the instructions over different
+In the latter case, we split the instructions over different
 'steps' (each constitutes one instruction) and then
 feed these and the base prompt to the LLM one by
 one. We further expand this step-by-step technique
 by introducing an extra statement: 'Along with this
 instruction, follow all previous instructions as well'
 to be appended to every instruction prompt. We
-call this specific prompting method 'step-by-step
+call this particular variant 'step-by-step
 (aid)'
 
 *Experiment datasets*: 
@@ -189,7 +186,7 @@ python utils/evaluate_responses.py
 ```
 
 ### Experiment 2
-This will print the table as seen in the paper:
+This will print table 4 as seen in the paper:
 ```bash
 python utils/evaluate_complex.py
 ```

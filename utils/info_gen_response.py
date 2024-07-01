@@ -57,6 +57,5 @@ for input_dir in input_dirs:
             data = json.load(file)
 
             for model in data["models"]:
-                # if "gpt" in model: continue #FIXME: Remove line
                 print(f"Running model {model}")
                 gen_infobench_response(input_file, output_path, model)

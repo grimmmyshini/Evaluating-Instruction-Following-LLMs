@@ -77,7 +77,7 @@ def generate_response(input_file_path, output_path, run=None, mode="all"):
 
         output_path.mkdir(exist_ok=True)
         for model in data["models"]:
-            if "gpt" in model: continue # FIXME: Remove line
+            if "gpt" in model: continue
             print(f"Running model {model}")
             output_dir_path = output_path / model
             output_dir_path.mkdir(exist_ok=True)

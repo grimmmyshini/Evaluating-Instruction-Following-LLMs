@@ -4,6 +4,7 @@
 # Assessing Instruction Following Capabilities of Large Language Models
 ### [CS4NLP Spring Semester 2024](https://www.mrinmaya.io/teaching_csnlp24)
 ### Professor: [Mrinmaya Sachan](https://www.mrinmaya.io/)
+### Project Supervisor: [Sankalan Pal Chowdhury](https://inf.ethz.ch/people/people-atoz/person-detail.Mjc5ODAz.TGlzdC8zMDQsLTIxNDE4MTU0NjA=.html)
 
 
 <a href="#">

@@ -9,10 +9,8 @@
 <a href="#">
     <img src="https://img.shields.io/badge/Python-3.8--3.12-1cb855">
 </a>
-<a href="#">
-    <img src="https://img.shields.io/badge/License-MIT-8a0023">
-</a>
-<br>
+
+<br/><br/>
 </div>
 
 
@@ -21,7 +19,7 @@ The project aims to test the intruction following capabilities of LLMs using met
 It gave us new insights into the LLMs as well as the methods presented in the research.
 
 
-The detailed description of the project and results are available in this paper <mark>add link</mark>.
+The detailed description of the project and results are available in [this report](assets/report.pdf).
 
 ## Getting Started
 
